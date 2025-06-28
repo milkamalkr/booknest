@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 
-from routers import auth, me, subscription
+from routers import auth, me, subscription, books
 
 app = FastAPI()
 
@@ -9,6 +9,7 @@ app = FastAPI()
 app.include_router(auth.router, prefix="/auth", tags=["Auth"])
 app.include_router(me.router, prefix="/users", tags=["Users"])
 app.include_router(subscription.router, prefix="/users", tags=["Users"])
+app.include_router(books.router, tags=["Books"])
 
 @app.get("/")
 def root() -> dict[str, str]:

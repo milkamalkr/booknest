@@ -1,27 +1,18 @@
-from pydantic import BaseModel, EmailStr
 from typing import List
 from datetime import datetime
+from pydantic import BaseModel
 
-class UserRegister(BaseModel):
-    name: str
-    email: EmailStr
-    phone: str
-    password: str
-    subscription_type: str  # "basic" or "premium"
-
-class UserLogin(BaseModel):
-    email: EmailStr
-    password: str
 
 class BookCreate(BaseModel):
     title: str
     author: str
-    published_year: int
     owner_id: str
     rent_per_week: int
+    published_year: int
     status: str = "available"
     current_renter_id: str | None = None
     created_at: datetime | None = None
+
 
 class BooksCreateRequest(BaseModel):
     books: List[BookCreate]
