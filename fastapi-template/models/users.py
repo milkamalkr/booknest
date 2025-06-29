@@ -13,15 +13,3 @@ class UserLogin(BaseModel):
     email: EmailStr
     password: str
 
-class BookCreate(BaseModel):
-    title: str
-    author: str
-    published_year: int
-    owner_id: str
-    rent_per_week: int
-    status: str = "available"
-    current_renter_id: str | None = None
-    created_at: datetime | None = None
-
-class BooksCreateRequest(BaseModel):
-    books: List[BookCreate]

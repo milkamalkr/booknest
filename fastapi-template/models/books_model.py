@@ -12,7 +12,9 @@ class BookCreate(BaseModel):
     status: str = "available"
     current_renter_id: str | None = None
     created_at: datetime | None = None
-
+    description: str | None = None
+    image_url: str | None = None
+    tags: List[str] | None = None
 
 class BooksCreateRequest(BaseModel):
     books: List[BookCreate]
