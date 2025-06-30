@@ -62,3 +62,14 @@ VALUES (
 #pip install psycopg2-binary passlib
 pip uninstall bcrypt passlib -y
 pip install bcrypt passlib
+
+CREATE TABLE rental_history (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    book_id UUID REFERENCES books(id) ON DELETE CASCADE,
+    renter_id UUID REFERENCES users(id) ON DELETE CASCADE,
+    rented_by_owner_id UUID REFERENCES users(id) ON DELETE SET NULL,
+    rent_start TIMESTAMP NOT NULL DEFAULT NOW(),
+    rent_end TIMESTAMP,  -- NULL if still ongoing
+    status TEXT CHECK (status IN ('rented', 'returned')),
+    note TEXT  -- optional field for manual remarks
+);

@@ -50,3 +50,50 @@ Add pydantic models in books_model.py module
 Validate that the status can only be one of ["available", "rented", "pending"]
 Validate that current_renter_id (if provided) is a valid user ID in the users table
 Return error messages if validations fail
+
+
+
+Write a FastAPI route POST /books/{id}/request that:
+
+Lets any authenticated user submit a rent request for a book
+Uses book_id from path, current user from get_current_user()
+Validates:
+Book exists
+User is not the owner of the book
+User does not already have a rent request for this book (pending/accepted)
+Inserts into rent_requests: book_id, renter_id, status = 'pending', request_date = NOW()
+
+Also inserts into rental_history:
+book_id, renter_id, status = 'pending', rented_by_owner_id = NULL, rent_start = NOW()
+Uses psycopg2 and RealDictCursor
+Is located in routers/books.py
+
+Uses dependency get_current_user() for JWT user
+Returns success or clear error if duplicate request exists
+
+🧾 Additional Prompts for Related API Adjustments
+✅ Prompt for /rent-requests/{id}/accept (PATCH)
+Update /rent-requests/{id}/accept to:
+
+Allow only the book owner to accept a request
+
+Update the selected rent_request status to 'accepted'
+
+Set the corresponding book.status = 'rented' and book.current_renter_id
+
+Update the latest matching row in rental_history to status = 'rented'
+
+Remove the accepted user from waitlists for this book
+
+Leave other users in waitlist and their requests as is
+
+✅ Prompt for /books/{id}/return (PATCH)
+Update /books/{id}/return to:
+
+Allow only book owner or admin to mark book as returned
+
+Set book.status = 'available' and book.current_renter_id = NULL
+
+Update the latest rental_history record (status: 'rented') for this book to status = 'returned', rent_end = NOW()
+
+Send notification (print/log or background job) to all users in waitlist for this book to invite them to submit a rent request

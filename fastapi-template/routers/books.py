@@ -197,3 +197,58 @@ def update_book(
     cur.close()
     conn.close()
     return book
+
+@router.post("/books/{id}/request")
+def request_rent(
+    id: str,
+    user: dict = Depends(me.get_current_user)
+):
+    conn = get_connection()
+    cur = conn.cursor()
+    # Validate book exists
+    cur.execute("SELECT owner_id FROM books WHERE id = %s", (id,))
+    book = cur.fetchone()
+    if not book:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="Book not found")
+    # User is not the owner
+    if book["owner_id"] == user["id"]:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="Owner cannot request to rent their own book")
+    # User does not already have a rent request for this book (pending/accepted)
+    cur.execute(
+        """
+        SELECT 1 FROM rent_requests WHERE book_id = %s AND renter_id = %s AND status IN ('pending', 'accepted')
+        """,
+        (id, user["id"])
+    )
+    if cur.fetchone():
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="You already have a pending or accepted rent request for this book")
+    # Insert into rent_requests
+    cur.execute(
+        """
+        INSERT INTO rent_requests (book_id, renter_id, status, request_date)
+        VALUES (%s, %s, 'pending', NOW())
+        RETURNING id
+        """,
+        (id, user["id"])
+    )
+    rent_request_id = cur.fetchone()["id"]
+    # Insert into rental_history
+    cur.execute(
+        """
+        INSERT INTO rental_history (book_id, renter_id, status, rented_by_owner_id, rent_start)
+        VALUES (%s, %s, 'pending', NULL, NOW())
+        RETURNING id
+        """,
+        (id, user["id"])
+    )
+    rental_history_id = cur.fetchone()["id"]
+    conn.commit()
+    cur.close()
+    conn.close()
+    return {"msg": "Rent request submitted", "rent_request_id": rent_request_id, "rental_history_id": rental_history_id}
