@@ -1,0 +1,52 @@
+Write a FastAPI route GET /books that:
+
+Lists all books from a PostgreSQL database
+
+Supports optional query filters: title, author, status
+
+Is accessible to any authenticated user (via JWT)
+
+Uses Pydantic for request/response models
+
+Uses a router inside routers/books.py
+
+Gets database connection via db.get_connection()
+
+Uses a dependency get_current_user() to validate the JWT
+
+Returns JSON list of books with owner and current renter names (joined from users table)
+
+Paginate the results (limit, offset)
+
+Sort results by title or date added
+
+Use psycopg2 with RealDictCursor
+
+Return total count of books matching filters
+
+
+
+Write a FastAPI route GET /books/{id} that:
+
+Returns the details of a book with provided id from a PostgreSQL database
+Is accessible to any authenticated user (via JWT)
+Uses Pydantic for request/response models
+Uses a router inside routers/books.py
+Gets database connection via db.get_connection()
+Uses a dependency get_current_user() to validate the JWT
+Returns JSON with all details available in the DB
+
+Write a FastAPI route PATCH /books/{id} that:
+
+Updates book details in a PostgreSQL database using psycopg2
+Accepts JSON body to update status and/or current_renter_id
+Validates that only admin users can access this route
+Uses a dependency get_current_user() which returns the logged-in user (with is_admin: bool)
+Uses a Pydantic model (BookUpdate) with optional fields status, current_renter_id. 
+Is implemented inside a file routers/books.py
+Uses a database connection from db.get_connection()
+Returns the updated book or an appropriate error if book is not found or user is not admin
+Add pydantic models in books_model.py module
+Validate that the status can only be one of ["available", "rented", "pending"]
+Validate that current_renter_id (if provided) is a valid user ID in the users table
+Return error messages if validations fail

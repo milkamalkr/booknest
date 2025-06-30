@@ -1,29 +1,18 @@
 from fastapi import APIRouter, HTTPException, Depends, Header, Query
 from typing import List, Optional, Any
 from db import get_connection
-from models.books_model  import BooksCreateRequest, BookCreate
+from models.books_model  import BooksCreateRequest, BookCreate, BookOut, BookUpdate
 import routers.auth as auth
 import routers.me as me
 from jose import jwt, JWTError
 from .subscription import get_current_admin
 from uuid import uuid4
 from datetime import datetime
-from pydantic import BaseModel
+
 
 router = APIRouter()
 
-class BookOut(BaseModel):
-    id: str
-    title: str
-    author: str
-    published_year: int
-    owner_id: str
-    owner_name: str
-    rent_per_week: int
-    status: str
-    current_renter_id: Optional[str] = None
-    current_renter_name: Optional[str] = None
-    created_at: datetime
+
 
 @router.post("/books")
 def add_books(
@@ -33,7 +22,6 @@ def add_books(
     conn = get_connection()
     cur = conn.cursor()
     inserted = []
-    print("inside")
     for book in books_req.books:
         print(book)
         book_id = str(uuid4())
@@ -43,7 +31,6 @@ def add_books(
         
         
         try:
-            print("1111111111")
             cur.execute(
                 """
                 INSERT INTO books (id, title, author, owner_id, description, image_url, tags, published_year, created_at, current_renter_id, rent_per_week, status)
@@ -117,9 +104,96 @@ def list_books(
         ORDER BY b.{sort_by} {sort_order}
         LIMIT %s OFFSET %s
     """
-    print("222222")
     cur.execute(query, params + [limit, offset])
     books = cur.fetchall()
     cur.close()
     conn.close()
     return {"total": total, "books": books}
+
+@router.get("/books/{id}", response_model=BookOut)
+def get_book(
+    id: str,
+    user: dict = Depends(me.get_current_user)
+):
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute(
+        '''
+        SELECT b.*, o.name as owner_name, r.name as current_renter_name
+        FROM books b
+        LEFT JOIN users o ON b.owner_id = o.id
+        LEFT JOIN users r ON b.current_renter_id = r.id
+        WHERE b.id = %s
+        ''',
+        (id,)
+    )
+    book = cur.fetchone()
+    cur.close()
+    conn.close()
+    if not book:
+        raise HTTPException(status_code=404, detail="Book not found")
+    return book
+
+@router.patch("/books/{id}", response_model=BookOut)
+def update_book(
+    id: str,
+    update: BookUpdate,
+    user: dict = Depends(me.get_current_user)
+):
+    # Check admin or owner
+    conn = get_connection()
+    cur = conn.cursor()
+    cur.execute("SELECT owner_id FROM books WHERE id = %s", (id,))
+    row = cur.fetchone()
+    if not row:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="Book not found")
+    is_owner = row["owner_id"] == user["id"]
+    if not (user.get("is_admin") or is_owner):
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=403, detail="Admin or owner access required")
+    if update.status is None and update.current_renter_id is None:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="No fields to update")
+    # Validate current_renter_id if provided
+    if update.current_renter_id is not None:
+        cur.execute("SELECT id FROM users WHERE id = %s", (update.current_renter_id,))
+        if not cur.fetchone():
+            cur.close()
+            conn.close()
+            raise HTTPException(status_code=400, detail="current_renter_id does not exist")
+    # Build update query
+    set_clauses = []
+    params = []
+    if update.status is not None:
+        set_clauses.append("status = %s")
+        params.append(update.status)
+    if update.current_renter_id is not None:
+        set_clauses.append("current_renter_id = %s")
+        params.append(update.current_renter_id)
+    params.append(id)
+    set_clause = ", ".join(set_clauses)
+    cur.execute(f"UPDATE books SET {set_clause} WHERE id = %s RETURNING *", params)
+    book = cur.fetchone()
+    if not book:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="Book not found")
+    # Get owner and renter names
+    cur.execute(
+        '''
+        SELECT b.*, o.name as owner_name, r.name as current_renter_name
+        FROM books b
+        LEFT JOIN users o ON b.owner_id = o.id
+        LEFT JOIN users r ON b.current_renter_id = r.id
+        WHERE b.id = %s
+        ''',
+        (id,)
+    )
+    book = cur.fetchone()
+    cur.close()
+    conn.close()
+    return book
