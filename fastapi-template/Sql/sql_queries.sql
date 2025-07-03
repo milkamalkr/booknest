@@ -70,6 +70,10 @@ CREATE TABLE rental_history (
     rented_by_owner_id UUID REFERENCES users(id) ON DELETE SET NULL,
     rent_start TIMESTAMP NOT NULL DEFAULT NOW(),
     rent_end TIMESTAMP,  -- NULL if still ongoing
-    status TEXT CHECK (status IN ('rented', 'returned')),
+    status TEXT CHECK (status IN ('rented', 'returned', 'pending')),
     note TEXT  -- optional field for manual remarks
 );
+
+ALTER TABLE rental_history
+  DROP CONSTRAINT rental_history_status_check,
+  ADD CONSTRAINT rental_history_status_check CHECK (status IN ('pending', 'rented', 'returned'));
