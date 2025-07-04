@@ -8,6 +8,7 @@ from jose import jwt, JWTError
 from .subscription import get_current_admin
 from uuid import uuid4
 from datetime import datetime
+from math import ceil
 
 
 router = APIRouter()
@@ -33,8 +34,8 @@ def add_books(
         try:
             cur.execute(
                 """
-                INSERT INTO books (id, title, author, owner_id, description, image_url, tags, published_year, created_at, current_renter_id, rent_per_week, status)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                INSERT INTO books (id, title, author, owner_id, description, image_url, tags, published_year, created_at, current_renter_id, rent_per_week, value, status)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 RETURNING id
                 """,
                 (
@@ -49,6 +50,7 @@ def add_books(
                     created_at,
                     current_renter_id,
                     book.rent_per_week,
+                    book.value,
                     book.status
                 )
             )
@@ -228,6 +230,19 @@ def request_rent(
         cur.close()
         conn.close()
         raise HTTPException(status_code=400, detail="You already have a pending or accepted rent request for this book")
+    # Enforce user max_limit validation
+    cur.execute("SELECT current_total, max_limit FROM users WHERE id = %s", (user["id"],))
+    user_limit = cur.fetchone()
+    cur.execute("SELECT value FROM books WHERE id = %s", (id,))
+    book_value_row = cur.fetchone()
+    if user_limit and book_value_row:
+        current_total = user_limit["current_total"] or 0
+        max_limit = user_limit["max_limit"] or 0
+        book_value = book_value_row["value"] or 0
+        if current_total + book_value > max_limit:
+            cur.close()
+            conn.close()
+            raise HTTPException(status_code=400, detail="Request would exceed your subscription limit. Please upgrade or return a book.")
     # Insert into rent_requests
     cur.execute(
         """
@@ -248,33 +263,25 @@ def request_rent(
         (id, user["id"])
     )
     rental_history_id = cur.fetchone()["id"]
+    # Update user's current_total
+    cur.execute(
+        "UPDATE users SET current_total = current_total + %s WHERE id = %s",
+        (book_value, user["id"])
+    )
     conn.commit()
     cur.close()
     conn.close()
     return {"msg": "Rent request submitted", "rent_request_id": rent_request_id, "rental_history_id": rental_history_id}
 
-@router.patch("/rent-requests/{id}/accept")
-def accept_rent_request(
+@router.get("/books/{id}/rent-cost")
+def get_rent_cost(
     id: str,
     user: dict = Depends(me.get_current_user)
 ):
     conn = get_connection()
     cur = conn.cursor()
-    # Get rent request and book
-    cur.execute("SELECT book_id, renter_id, status FROM rent_requests WHERE id = %s", (id,))
-    req = cur.fetchone()
-    if not req:
-        cur.close()
-        conn.close()
-        raise HTTPException(status_code=404, detail="Rent request not found")
-    if req["status"] != "pending":
-        cur.close()
-        conn.close()
-        raise HTTPException(status_code=400, detail="Request is not pending")
-    book_id = req["book_id"]
-    renter_id = req["renter_id"]
     # Check if user is book owner
-    cur.execute("SELECT owner_id FROM books WHERE id = %s", (book_id,))
+    cur.execute("SELECT owner_id FROM books WHERE id = %s", (id,))
     book = cur.fetchone()
     if not book:
         cur.close()
@@ -283,33 +290,41 @@ def accept_rent_request(
     if book["owner_id"] != user["id"]:
         cur.close()
         conn.close()
-        raise HTTPException(status_code=403, detail="Only the book owner can accept requests")
-    # Accept the rent request
-    cur.execute("UPDATE rent_requests SET status = 'accepted' WHERE id = %s", (id,))
-    # Set book status and current_renter_id
-    cur.execute("UPDATE books SET status = 'rented', current_renter_id = %s WHERE id = %s", (renter_id, book_id))
-    # Update latest rental_history for this book and renter to 'rented'
-    # Find the latest rental_history id
+        raise HTTPException(status_code=403, detail="Only the book owner can access rent cost")
+    # Fetch latest rental_history row for this book
     cur.execute(
-        """
-        SELECT id FROM rental_history
-        WHERE book_id = %s AND renter_id = %s AND status = 'pending'
-        ORDER BY rent_start DESC LIMIT 1
-        """,
-        (book_id, renter_id)
+        '''
+        SELECT h.*, b.rent_per_week FROM rental_history h
+        JOIN books b ON h.book_id = b.id
+        WHERE h.book_id = %s
+        ORDER BY h.rent_start DESC LIMIT 1
+        ''',
+        (id,)
     )
-    history_row = cur.fetchone()
-    if history_row:
-        cur.execute(
-            "UPDATE rental_history SET status = 'rented' WHERE id = %s",
-            (history_row["id"],)
-        )
-    # Remove accepted user from waitlists for this book (delete other pending requests for this user/book)
-    cur.execute(
-        "DELETE FROM rent_requests WHERE book_id = %s AND renter_id = %s AND status = 'pending' AND id != %s",
-        (book_id, renter_id, id)
-    )
-    conn.commit()
+    row = cur.fetchone()
+    if not row:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="No rental history found for this book")
+    rent_start = row["rent_start"]
+    rent_end = row["rent_end"]
+    status = row["status"]
+    if status == "rented" or not rent_end:
+        from datetime import datetime as dt
+        rent_end = dt.utcnow()
+    days = (rent_end - rent_start).days
+    if (rent_end - rent_start).seconds > 0:
+        days += 1  # count partial day as full day
+    weeks = ceil(days / 7) if days > 0 else 1
+    total_rent = weeks * row["rent_per_week"]
+    result = {
+        "book_id": row["book_id"],
+        "renter_id": row["renter_id"],
+        "weeks": weeks,
+        "total_rent": total_rent,
+        "status": status,
+        "days": days
+    }
     cur.close()
     conn.close()
-    return {"msg": "Rent request accepted and book rented"}
+    return result

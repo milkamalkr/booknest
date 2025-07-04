@@ -8,6 +8,7 @@ class BookCreate(BaseModel):
     author: str
     owner_id: str
     rent_per_week: int
+    value: int
     published_year: int
     status: str = "available"
     current_renter_id: str | None = None
@@ -27,6 +28,7 @@ class BookOut(BaseModel):
     owner_id: str
     owner_name: str
     rent_per_week: int
+    value: int
     status: str
     current_renter_id: Optional[str] = None
     current_renter_name: Optional[str] = None

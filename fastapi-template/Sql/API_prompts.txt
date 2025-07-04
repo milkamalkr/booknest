@@ -72,28 +72,44 @@ Uses dependency get_current_user() for JWT user
 Returns success or clear error if duplicate request exists
 
 🧾 Additional Prompts for Related API Adjustments
-✅ Prompt for /rent-requests/{id}/accept (PATCH)
+✅ Write a FastAPI route /rent-requests/{id}/accept (PATCH)
 Update /rent-requests/{id}/accept to:
-
 Allow only the book owner to accept a request
-
 Update the selected rent_request status to 'accepted'
-
 Set the corresponding book.status = 'rented' and book.current_renter_id
-
 Update the latest matching row in rental_history to status = 'rented'
-
-Remove the accepted user from waitlists for this book
-
+If the user is in the waitlist for this book, remove the accepted user from waitlists for this book
 Leave other users in waitlist and their requests as is
 
 ✅ Prompt for /books/{id}/return (PATCH)
 Update /books/{id}/return to:
 
-Allow only book owner or admin to mark book as returned
-
+Allow only book owner to mark book as returned
 Set book.status = 'available' and book.current_renter_id = NULL
-
 Update the latest rental_history record (status: 'rented') for this book to status = 'returned', rent_end = NOW()
 
 Send notification (print/log or background job) to all users in waitlist for this book to invite them to submit a rent request
+
+Write a FastAPI route GET /books/{id}/rent-cost that:
+
+Allows only the book owner to access it
+Uses book_id as a path parameter
+Fetches the latest rental_history row for that book (ordered by rent_start DESC)
+Joins books table to get rent_per_week
+If rental_history.status = 'rented', use NOW() as rent_end
+Calculates:
+days = rent_end - rent_start
+weeks = ceil(days / 7)
+total_rent = weeks * rent_per_week
+Returns:
+{
+  "book_id": "<uuid>",
+  "renter_id": "<uuid>",
+  "weeks": <int>,
+  "total_rent": <int>,
+  "status": "<rented|returned>",
+  "days": <int>
+}
+Uses psycopg2 with RealDictCursor
+Uses get_current_user() for JWT authentication and access check
+Route should be placed in routers/books.py
