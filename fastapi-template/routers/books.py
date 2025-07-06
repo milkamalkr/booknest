@@ -239,6 +239,8 @@ def request_rent(
         current_total = user_limit["current_total"] or 0
         max_limit = user_limit["max_limit"] or 0
         book_value = book_value_row["value"] or 0
+        print(current_total, book_value, max_limit)
+        print(current_total + book_value, max_limit)
         if current_total + book_value > max_limit:
             cur.close()
             conn.close()
@@ -253,11 +255,11 @@ def request_rent(
         (id, user["id"])
     )
     rent_request_id = cur.fetchone()["id"]
-    # Insert into rental_history
+    # Insert into rental_history (do not set rent_start yet)
     cur.execute(
         """
-        INSERT INTO rental_history (book_id, renter_id, status, rented_by_owner_id, rent_start)
-        VALUES (%s, %s, 'pending', NULL, NOW())
+        INSERT INTO rental_history (book_id, renter_id, status, rented_by_owner_id)
+        VALUES (%s, %s, 'pending', NULL)
         RETURNING id
         """,
         (id, user["id"])
@@ -328,3 +330,63 @@ def get_rent_cost(
     cur.close()
     conn.close()
     return result
+
+@router.patch("/books/{id}/return")
+def return_book(
+    id: str,
+    user: dict = Depends(me.get_current_user)
+):
+    conn = get_connection()
+    cur = conn.cursor()
+    # Fetch the book
+    cur.execute("SELECT owner_id, status, current_renter_id, value FROM books WHERE id = %s", (id,))
+    book = cur.fetchone()
+    if not book:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="Book not found")
+    if book["owner_id"] != user["id"]:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=403, detail="Only the book owner can mark as returned")
+    if book["status"] != "rented":
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="Book is not currently rented")
+    # Set book status to available and current_renter_id to NULL
+    cur.execute("UPDATE books SET status = 'available', current_renter_id = NULL WHERE id = %s", (id,))
+    # Update latest rental_history for this book and renter
+    cur.execute(
+        """
+        SELECT id FROM rental_history
+        WHERE book_id = %s AND renter_id = %s AND status = 'rented'
+        ORDER BY rent_start DESC LIMIT 1
+        """,
+        (id, book["current_renter_id"])
+    )
+    history_row = cur.fetchone()
+    rent_history_id = "NAN" if not history_row else history_row["id"]
+    if history_row:
+        cur.execute(
+            "UPDATE rental_history SET status = 'returned', rent_end = NOW() WHERE id = %s",
+            (rent_history_id,)
+        )
+        # Also update rent_requests status to 'returned' for this book and renter
+        cur.execute(
+            "UPDATE rent_requests SET status = 'returned' WHERE book_id = %s AND renter_id = %s AND status = 'accepted'",
+            (id, book["current_renter_id"])
+        )
+        # Subtract book value from user's current_total
+        cur.execute(
+            "SELECT value FROM books WHERE id = %s",
+            (id,)
+        )
+        cur.execute(
+            "UPDATE users SET current_total = current_total - %s WHERE id = %s",
+            (book["value"], book["current_renter_id"])
+        )
+        
+    conn.commit()
+    cur.close()
+    conn.close()
+    return {"msg": "Book marked as returned", "rent_history_id": rent_history_id}

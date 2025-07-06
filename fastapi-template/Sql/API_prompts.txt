@@ -82,13 +82,26 @@ If the user is in the waitlist for this book, remove the accepted user from wait
 Leave other users in waitlist and their requests as is
 
 ✅ Prompt for /books/{id}/return (PATCH)
-Update /books/{id}/return to:
 
-Allow only book owner to mark book as returned
-Set book.status = 'available' and book.current_renter_id = NULL
-Update the latest rental_history record (status: 'rented') for this book to status = 'returned', rent_end = NOW()
+Implement a FastAPI route PATCH /books/{id}/return that:
 
-Send notification (print/log or background job) to all users in waitlist for this book to invite them to submit a rent request
+Allows only the book owner (not admin, not renter) to mark the book as returned
+Uses book_id from the URL and get_current_user() to identify the user
+Connects to PostgreSQL using psycopg2 and RealDictCursor
+
+Performs the following steps:
+Fetch the book by id and validate it exists
+Verify the current user is the owner of the book
+Check that the book's current status is 'rented'
+Set the book's status to 'available' and current_renter_id = NULL
+Update the latest rental_history row for that book and renter:
+Set status = 'returned'
+Set rent_end = NOW()
+Return a success message if update is successful, otherwise appropriate errors (e.g., 403, 404)
+Place the route inside routers/books.py
+
+Optionally log or simulate a notification to all users in the waitlists for that book
+
 
 Write a FastAPI route GET /books/{id}/rent-cost that:
 
@@ -113,3 +126,66 @@ Returns:
 Uses psycopg2 with RealDictCursor
 Uses get_current_user() for JWT authentication and access check
 Route should be placed in routers/books.py
+
+Write a FastAPI route GET /rent-requests/my-outgoing that:
+
+Returns a list of all rent requests made by the currently authenticated user (renter)
+Is accessible to any authenticated user using a dependency get_current_user()
+Joins the rent_requests, books, and users tables to include:
+request_id
+book_id
+book_title
+book_owner_id
+status (pending, accepted, declined)
+request_date
+Number of weeks requested: use rental_history.rent_start and rent_end or NOW() if still ongoing, then apply ceil(days / 7)
+Orders the results by request_date descending
+Uses psycopg2 with RealDictCursor
+Implements route inside routers/rent_requests.py
+Returns list of results in this format:
+[
+  {
+    "request_id": "uuid",
+    "book_id": "uuid",
+    "book_title": "string",
+    "book_owner_id": "uuid",
+    "status": "pending",
+    "request_date": "ISODate",
+    "weeks": 2
+  },
+  ...
+]
+Add book image URL
+Filter by request status
+Add pagination
+
+
+
+book owner
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib29rb3duZXJAYm9va25lc3QuY29tIiwiaWQiOiJmMjQxNjA3NC1mZmU0LTQ1ODUtYjAyYy0xMTc0ZThmNGE1YjgiLCJleHAiOjE3NTE4MjE3MzZ9.gzjcmR10YHGHmARUp6N2gasyyiCfposQHML0LiSc-fA
+
+Renterer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSZW50ZXJlckBib29rbmVzdC5jb20iLCJpZCI6IjRhYjUwZTA0LTljZjAtNDA1Zi05ZWEyLTMzNWZhODI5Mjc3ZCIsImV4cCI6MTc1MTgyMjAwNH0.V1GcyrN_PCglGlgYqoxGASnDr0-1sicuoKbdD4s1OKI
+
+9ffb897f-9005-4181-879e-e2c96071b5af req id for book4
+
+admin 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBib29rbmVzdC5jb20iLCJpZCI6IjU1YjkwNGZjLTE2YTctNDkwOS05ZWYxLTczNGFmOTY5ZTk4NiIsImV4cCI6MTc1MTgyMTc3OH0.VyN93SxIQIOBhdjs9mD4vcOs8JIb8MvV_4NxYxeReZI
+
+SELECT
+    rh.rent_start,
+    rh.rent_end,
+    rh.status AS rental_status,
+    rh.renter_id,
+    rr.*
+FROM
+    rental_history rh
+JOIN
+    rent_requests rr
+    ON rh.book_id = rr.book_id AND rh.renter_id = rr.renter_id
+WHERE
+    rh.book_id = %s
+ORDER BY
+    rh.rent_start DESC;
+
+
