@@ -80,6 +80,7 @@ Set the corresponding book.status = 'rented' and book.current_renter_id
 Update the latest matching row in rental_history to status = 'rented'
 If the user is in the waitlist for this book, remove the accepted user from waitlists for this book
 Leave other users in waitlist and their requests as is
+Set current_total of renter to current_total + book value
 
 ✅ Prompt for /books/{id}/return (PATCH)
 
@@ -99,6 +100,7 @@ Set status = 'returned'
 Set rent_end = NOW()
 Return a success message if update is successful, otherwise appropriate errors (e.g., 403, 404)
 Place the route inside routers/books.py
+Set current_total of renter to current_total - book value
 
 Optionally log or simulate a notification to all users in the waitlists for that book
 
@@ -161,13 +163,13 @@ Add pagination
 
 
 
-book owner
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib29rb3duZXJAYm9va25lc3QuY29tIiwiaWQiOiJmMjQxNjA3NC1mZmU0LTQ1ODUtYjAyYy0xMTc0ZThmNGE1YjgiLCJleHAiOjE3NTE4MjE3MzZ9.gzjcmR10YHGHmARUp6N2gasyyiCfposQHML0LiSc-fA
+book owner (a5b8) book 5cd
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib29rb3duZXJAYm9va25lc3QuY29tIiwiaWQiOiJmMjQxNjA3NC1mZmU0LTQ1ODUtYjAyYy0xMTc0ZThmNGE1YjgiLCJleHAiOjE3NTE5MTYzNjR9.adKh6iuxOllFuxU8RSMLeOFynHr0sbHikjc-Sw6UUFI
 
-Renterer
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSZW50ZXJlckBib29rbmVzdC5jb20iLCJpZCI6IjRhYjUwZTA0LTljZjAtNDA1Zi05ZWEyLTMzNWZhODI5Mjc3ZCIsImV4cCI6MTc1MTgyMjAwNH0.V1GcyrN_PCglGlgYqoxGASnDr0-1sicuoKbdD4s1OKI
+Renterer (277d)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSZW50ZXJlckBib29rbmVzdC5jb20iLCJpZCI6IjRhYjUwZTA0LTljZjAtNDA1Zi05ZWEyLTMzNWZhODI5Mjc3ZCIsImV4cCI6MTc1MTkxNjM3OX0.qEH16jQ_FgZA9yowjHFcmdLu1gxsUxuwntDVuJl3pDo
 
-9ffb897f-9005-4181-879e-e2c96071b5af req id for book4
+86f62a7e-5c46-4fac-a554-8bfe7886dfc0 req id for book4
 
 admin 
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkBib29rbmVzdC5jb20iLCJpZCI6IjU1YjkwNGZjLTE2YTctNDkwOS05ZWYxLTczNGFmOTY5ZTk4NiIsImV4cCI6MTc1MTgyMTc3OH0.VyN93SxIQIOBhdjs9mD4vcOs8JIb8MvV_4NxYxeReZI

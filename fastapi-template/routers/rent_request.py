@@ -28,7 +28,7 @@ def accept_rent_request(
     book_id = req["book_id"]
     renter_id = req["renter_id"]
     # Check if user is book owner
-    cur.execute("SELECT owner_id FROM books WHERE id = %s", (book_id,))
+    cur.execute("SELECT owner_id, value FROM books WHERE id = %s", (book_id,))
     book = cur.fetchone()
     if not book:
         cur.close()
@@ -61,6 +61,11 @@ def accept_rent_request(
     cur.execute(
         "DELETE FROM rent_requests WHERE book_id = %s AND renter_id = %s AND status = 'pending' AND id != %s",
         (book_id, renter_id, id)
+    )
+    # Update user's current_total
+    cur.execute(
+        "UPDATE users SET current_total = current_total + %s WHERE id = %s",
+        (book["value"], renter_id)
     )
     conn.commit()
     cur.close()
@@ -113,6 +118,46 @@ def my_outgoing_rent_requests(
             "weeks": weeks,
             "rental_history_status": row["status"],
             "rental_history_rent_end": row["rent_end"]
+        })
+    cur.close()
+    conn.close()
+    return results
+
+@router.get("/rent-requests/my-incoming")
+def my_incoming_rent_requests(
+    status: str = Query(None, description="Filter by request status (pending, accepted, declined, returned)"),
+    limit: int = Query(10, ge=1, le=100),
+    offset: int = Query(0, ge=0),
+    user: dict = Depends(me.get_current_user)
+):
+    conn = get_connection()
+    cur = conn.cursor()
+    params = [user["id"]]
+    status_filter = ""
+    if status:
+        status_filter = "AND rr.status = %s"
+        params.append(status)
+    query = f'''
+        SELECT rr.id as request_id, rr.book_id, b.title as book_title, b.image_url, rr.renter_id, rr.status, rr.request_date
+        FROM rent_requests rr
+        JOIN books b ON rr.book_id = b.id
+        WHERE b.owner_id = %s {status_filter}
+        ORDER BY rr.request_date DESC
+        LIMIT %s OFFSET %s
+    '''
+    params.extend([limit, offset])
+    cur.execute(query, params)
+    rows = cur.fetchall()
+    results = []
+    for row in rows:
+        results.append({
+            "request_id": row["request_id"],
+            "book_id": row["book_id"],
+            "book_title": row["book_title"],
+            "image_url": row["image_url"],
+            "renter_id": row["renter_id"],
+            "status": row["status"],
+            "request_date": row["request_date"]
         })
     cur.close()
     conn.close()

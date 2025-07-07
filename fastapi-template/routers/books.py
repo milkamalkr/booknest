@@ -239,8 +239,6 @@ def request_rent(
         current_total = user_limit["current_total"] or 0
         max_limit = user_limit["max_limit"] or 0
         book_value = book_value_row["value"] or 0
-        print(current_total, book_value, max_limit)
-        print(current_total + book_value, max_limit)
         if current_total + book_value > max_limit:
             cur.close()
             conn.close()
@@ -265,11 +263,7 @@ def request_rent(
         (id, user["id"])
     )
     rental_history_id = cur.fetchone()["id"]
-    # Update user's current_total
-    cur.execute(
-        "UPDATE users SET current_total = current_total + %s WHERE id = %s",
-        (book_value, user["id"])
-    )
+    
     conn.commit()
     cur.close()
     conn.close()
@@ -385,7 +379,7 @@ def return_book(
             "UPDATE users SET current_total = current_total - %s WHERE id = %s",
             (book["value"], book["current_renter_id"])
         )
-        
+
     conn.commit()
     cur.close()
     conn.close()

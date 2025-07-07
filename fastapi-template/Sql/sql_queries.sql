@@ -24,7 +24,7 @@ CREATE TABLE rent_requests (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     book_id UUID REFERENCES books(id) ON DELETE CASCADE,
     renter_id UUID REFERENCES users(id) ON DELETE CASCADE,
-    status TEXT CHECK (status IN ('pending', 'accepted', 'declined')) DEFAULT 'pending',
+    status TEXT CHECK (status IN ('pending', 'accepted', 'declined', 'returned')) DEFAULT 'pending',
     request_date TIMESTAMP DEFAULT NOW(),
     decision_date TIMESTAMP
 );
