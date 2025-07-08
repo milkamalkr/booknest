@@ -371,10 +371,10 @@ def return_book(
             (id, book["current_renter_id"])
         )
         # Subtract book value from user's current_total
-        cur.execute(
+        """ cur.execute(
             "SELECT value FROM books WHERE id = %s",
             (id,)
-        )
+        ) """
         cur.execute(
             "UPDATE users SET current_total = current_total - %s WHERE id = %s",
             (book["value"], book["current_renter_id"])
@@ -384,3 +384,112 @@ def return_book(
     cur.close()
     conn.close()
     return {"msg": "Book marked as returned", "rent_history_id": rent_history_id}
+
+@router.post("/books/{id}/waitlist")
+def add_to_waitlist(
+    id: str,
+    user: dict = Depends(me.get_current_user)
+):
+    
+    conn = get_connection()
+    cur = conn.cursor()
+    # Validate book exists and is rented
+    cur.execute("SELECT owner_id, status FROM books WHERE id = %s", (id,))
+    book = cur.fetchone()
+    if not book:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="Book not found")
+    if book["status"] != "rented":
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="Waitlisting is only allowed for rented books")
+    if book["owner_id"] == user["id"]:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="Owner cannot join waitlist for their own book")
+    # Check if user is already on the waitlist
+
+    cur.execute("SELECT 1 FROM waitlists WHERE book_id = %s AND user_id = %s", (id, user["id"]))
+    if cur.fetchone():
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="You are already on the waitlist for this book")
+    # Insert into waitlists
+    try:
+        cur.execute(
+            "INSERT INTO waitlists (user_id, book_id, created_at) VALUES (%s, %s, NOW())",
+            (user["id"], id)
+        )
+    except Exception as e:
+        # If DB constraint fails (duplicate), treat as idempotent
+        conn.rollback()
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="You are already on the waitlist for this book")
+    # Get user's position in the waitlist
+    cur.execute("""
+        SELECT position
+        FROM (
+            SELECT user_id, ROW_NUMBER() OVER (ORDER BY created_at ASC) AS position
+            FROM waitlists
+            WHERE book_id = %s
+        ) AS ranked_waitlist
+        WHERE user_id = %s
+    """, (id, user["id"]))
+    positionDb = cur.fetchone()
+    position = positionDb["position"]
+    conn.commit()
+    cur.close()
+    conn.close()
+    return {
+        "book_id": id,
+        "user_id": user["id"],
+        "position": position,
+        "message": "You have been added to the waitlist. This does not guarantee a book will be delivered, need to send a Book request and the admin should accept it"
+    }
+
+@router.get("/books/{id}/waitlist")
+def get_book_waitlist(
+    id: str,
+    user: dict = Depends(me.get_current_user)
+):
+    conn = get_connection()
+    cur = conn.cursor()
+    # Check if book exists and get owner
+    cur.execute("SELECT owner_id FROM books WHERE id = %s", (id,))
+    book = cur.fetchone()
+    if not book:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="Book not found")
+    if book["owner_id"] != user["id"]:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=403, detail="Only the book owner can view the waitlist")
+    # Query waitlist with position only
+    cur.execute(
+        '''
+        SELECT
+            wl.user_id AS renter_id,
+            ROW_NUMBER() OVER (ORDER BY wl.created_at ASC) AS position
+        FROM waitlists wl
+        WHERE wl.book_id = %s
+        ORDER BY wl.created_at ASC
+        ''',
+        (id,)
+    )
+    waitlist = cur.fetchall()
+    cur.close()
+    conn.close()
+    return {
+        "book_id": id,
+        "waitlist": [
+            {
+                "renter_id": row["renter_id"],
+                "position": row["position"]
+            }
+            for row in waitlist
+        ]
+    }
+

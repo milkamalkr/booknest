@@ -57,10 +57,15 @@ def accept_rent_request(
             "UPDATE rental_history SET status = 'rented', rent_start = NOW() WHERE id = %s",
             (history_row["id"],)
         )
-    # Remove accepted user from waitlists for this book (delete other pending requests for this user/book)
+    # Delete other pending requests for this user/book
     cur.execute(
         "DELETE FROM rent_requests WHERE book_id = %s AND renter_id = %s AND status = 'pending' AND id != %s",
         (book_id, renter_id, id)
+    )
+    # Remove the accepted renter from the waitlist for this book
+    cur.execute(
+        "DELETE FROM waitlists WHERE book_id = %s AND user_id = %s",
+        (book_id, renter_id)
     )
     # Update user's current_total
     cur.execute(

@@ -138,7 +138,7 @@ request_id
 book_id
 book_title
 book_owner_id
-status (pending, accepted, declined)
+status (pending, accepted, declined, returned)
 request_date
 Number of weeks requested: use rental_history.rent_start and rent_end or NOW() if still ongoing, then apply ceil(days / 7)
 Orders the results by request_date descending
@@ -161,13 +161,64 @@ Add book image URL
 Filter by request status
 Add pagination
 
+Write a FastAPI route GET /rent-requests/my-incoming	that:
 
+Returns a list of all rent requests made by others to books owned by me (authenticated user) (book owner)
+Is accessible to any authenticated user using a dependency get_current_user()
+Joins the rent_requests, books, and users tables to include:
+request_id
+book_id
+book_title
+renter_id
+status (pending, accepted, declined, returned)
+request_date
+Orders the results by request_date descending
+Uses psycopg2 with RealDictCursor
+Implements route inside routers/rent_requests.py
+Returns list of results in this format:
+[
+  {
+    "request_id": "uuid",
+    "book_id": "uuid",
+    "book_title": "string",
+    "renter_id": "uuid",
+    "status": "pending",
+    "request_date": "ISODate"
+  },
+  ...
+]
+Add book image URL
+Filter by request status
+Add pagination
+
+Write a FastAPI route POST /books/{id}/waitlist that:
+
+Adds the current authenticated user to the waitlist for a book
+Uses book_id from the URL path
+Uses a dependency get_current_user() to retrieve the authenticated user
+Connects to PostgreSQL via psycopg2 with RealDictCursor
+Validates that:
+The book exists
+The user is not already on the waitlist for the book
+The user is not the owner of the book
+Inserts a new record into the waitlists table with user_id, book_id, and created_at = NOW()
+Calculates and returns the user's current position in the waitlist by ordering all waitlist entries for the book by created_at ASC
+Returns a JSON response like:
+{
+  "book_id": "uuid",
+  "user_id": "uuid",
+  "position": 3,
+  "message": "You have been added to the waitlist."
+}
+Place the route inside routers/books.py
+Return an error if the book is currently available (waitlisting only for rented books)
+Ensure the route is idempotent (no duplicates) with App side logic and DB CONSTRAINT
 
 book owner (a5b8) book 5cd
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib29rb3duZXJAYm9va25lc3QuY29tIiwiaWQiOiJmMjQxNjA3NC1mZmU0LTQ1ODUtYjAyYy0xMTc0ZThmNGE1YjgiLCJleHAiOjE3NTE5MTYzNjR9.adKh6iuxOllFuxU8RSMLeOFynHr0sbHikjc-Sw6UUFI
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib29rb3duZXJAYm9va25lc3QuY29tIiwiaWQiOiJmMjQxNjA3NC1mZmU0LTQ1ODUtYjAyYy0xMTc0ZThmNGE1YjgiLCJleHAiOjE3NTE5OTM5Mzl9.ClbHFb4BP_vn59VJJeFwWwAtNDWO6w9ic8AJuGCT-Lk
 
 Renterer (277d)
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSZW50ZXJlckBib29rbmVzdC5jb20iLCJpZCI6IjRhYjUwZTA0LTljZjAtNDA1Zi05ZWEyLTMzNWZhODI5Mjc3ZCIsImV4cCI6MTc1MTkxNjM3OX0.qEH16jQ_FgZA9yowjHFcmdLu1gxsUxuwntDVuJl3pDo
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJSZW50ZXJlckBib29rbmVzdC5jb20iLCJpZCI6IjRhYjUwZTA0LTljZjAtNDA1Zi05ZWEyLTMzNWZhODI5Mjc3ZCIsImV4cCI6MTc1MTk5Mzc5NX0.xf1Ndtfcj6NNRy5DUhvVKbTToJfuggkpdmElXaJUqrs
 
 86f62a7e-5c46-4fac-a554-8bfe7886dfc0 req id for book4
 
