@@ -222,14 +222,14 @@ def request_rent(
     # User does not already have a rent request for this book (pending/accepted)
     cur.execute(
         """
-        SELECT 1 FROM rent_requests WHERE book_id = %s AND renter_id = %s AND status IN ('pending', 'accepted')
+        SELECT 1 FROM rent_requests WHERE book_id = %s AND renter_id = %s AND status IN ('pending')
         """,
         (id, user["id"])
     )
     if cur.fetchone():
         cur.close()
         conn.close()
-        raise HTTPException(status_code=400, detail="You already have a pending or accepted rent request for this book")
+        raise HTTPException(status_code=400, detail="You already have a pending rent request for this book")
     # Enforce user max_limit validation
     cur.execute("SELECT current_total, max_limit FROM users WHERE id = %s", (user["id"],))
     user_limit = cur.fetchone()
@@ -371,10 +371,6 @@ def return_book(
             (id, book["current_renter_id"])
         )
         # Subtract book value from user's current_total
-        """ cur.execute(
-            "SELECT value FROM books WHERE id = %s",
-            (id,)
-        ) """
         cur.execute(
             "UPDATE users SET current_total = current_total - %s WHERE id = %s",
             (book["value"], book["current_renter_id"])

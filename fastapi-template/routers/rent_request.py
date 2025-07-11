@@ -38,6 +38,16 @@ def accept_rent_request(
         cur.close()
         conn.close()
         raise HTTPException(status_code=403, detail="Only the book owner can accept requests")
+    # Check if any other rent request for this book is already accepted
+    cur.execute(
+        "SELECT id FROM rent_requests WHERE book_id = %s AND status = 'accepted'",
+        (book_id,)
+    )
+    already_accepted = cur.fetchone()
+    if already_accepted:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=400, detail="This book is already rented by other user.")
     # Accept the rent request
     cur.execute("UPDATE rent_requests SET status = 'accepted' WHERE id = %s", (id,))
     # Set book status and current_renter_id
