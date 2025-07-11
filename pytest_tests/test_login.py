@@ -30,8 +30,8 @@ def book_owner_token():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    book_owner_token = data["access_token"] or data["token"]
-    return book_owner_token
+    data["user_id"] = 'f2416074-ffe4-4585-b02c-1174e8f4a5b8'
+    return data
 
 @pytest.fixture(scope="session")
 def book_owner_token5():
@@ -46,15 +46,15 @@ def book_owner_token5():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    book_owner_token = data["access_token"] or data["token"]
-    return book_owner_token
+    data["user_id"] = '253b10ae-5e94-4d4c-b6bd-0b0e8a521f28'
+    return data
 
 @pytest.fixture(scope="session")
 def book_owner_token6():
     response = client.post(
         "/auth/login",
         json={
-            "email": "bookowner6booknest.com",
+            "email": "bookowner6@booknest.com",
             "password": "secret"
         }
     )
@@ -62,8 +62,8 @@ def book_owner_token6():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    book_owner_token = data["access_token"] or data["token"]
-    return book_owner_token
+    data["user_id"] = '0995dd36-c3d1-4512-b505-9b80f7aa09b5'
+    return data
 
 @pytest.fixture(scope="session")
 def book_owner_token7():
@@ -78,8 +78,8 @@ def book_owner_token7():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    book_owner_token = data["access_token"] or data["token"]
-    return book_owner_token
+    data["user_id"] = '0995dd36-c3d1-4512-b505-9b80f7aa09b5'
+    return data
 
 
 @pytest.fixture(scope="session")
@@ -95,8 +95,8 @@ def login_admin():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    admin_token = data["access_token"] or data["token"]
-    return admin_token
+    data["user_id"] = '55b904fc-16a7-4909-9ef1-734af969e986'
+    return data
 
 @pytest.fixture(scope="session")
 def login_renter():
@@ -111,8 +111,8 @@ def login_renter():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    renter_token = data["access_token"] or data["token"]
-    return renter_token
+    data["user_id"] = '4ab50e04-9cf0-405f-9ea2-335fa829277d'
+    return data
 
 @pytest.fixture(scope="session")
 def login_renter2():
@@ -127,8 +127,8 @@ def login_renter2():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    renter_token = data["access_token"] or data["token"]
-    return renter_token
+    data["user_id"] = '12cc0dbb-7ed8-4c22-98f6-8d9aa87d45ae'
+    return data
 
 @pytest.fixture(scope="session")
 def login_renter3():
@@ -143,8 +143,8 @@ def login_renter3():
     assert response.status_code == status.HTTP_200_OK
     data = response.json()
     assert "access_token" in data or "token" in data
-    renter_token = data["access_token"] or data["token"]
-    return renter_token
+    data["user_id"] = '73fd0c3c-0211-4734-89b0-7d856db42f15'
+    return data
 
 
 def login_token(book_owner_token, login_admin, login_renter):

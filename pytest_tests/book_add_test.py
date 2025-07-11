@@ -89,3 +89,85 @@ class TestBookAdd(config_dev):
             assert "msg" in data
             assert "accepted" in data["msg"] or "rented" in data["msg"]
 
+    def test_return_book(self, book_owner_token):
+        book_id = "3be515c6-7158-454e-a1f6-4b2221801149"
+        url = f"/books/{book_id}/return"
+        headers = {"Authorization": f"Bearer {book_owner_token}"}
+        response = client.patch(url, headers=headers)
+        assert response.status_code in [200, 400, 403, 404], f"Unexpected status: {response.status_code}, {response.text}"
+        if response.status_code == 200:
+            data = response.json()
+            print(data)
+            assert "msg" in data
+            assert "returned" in data["msg"].lower()
+
+    def test_waitlist_update_on_return_and_rerent(self, book_owner_token, login_renter, login_renter2, login_renter3):
+        book_id = "3be515c6-7158-454e-a1f6-4b2221801149"
+        # 1. renter1 sends rent request
+        headers_renter1 = {"Authorization": f"Bearer {login_renter}"}
+        resp = client.post(f"/books/{book_id}/request", headers=headers_renter1)
+        assert resp.status_code == 200, f"renter1 rent request failed: {resp.text}"
+        print(resp.text)
+        rent_request_id1 = resp.json()["rent_request_id"]
+        # book owner accepts request
+        headers_owner = {"Authorization": f"Bearer {book_owner_token}"}
+        resp = client.patch(f"/rent-requests/{rent_request_id1}/accept", headers=headers_owner)
+        assert resp.status_code == 200, f"owner accept failed: {resp.text}"
+        # Verify book is rented to renter1
+        resp = client.get(f"/books/{book_id}", headers=headers_owner)
+        assert resp.status_code == 200
+        book = resp.json()
+        print(resp.text)
+        assert book["current_renter_id"] is not None
+        # 2. renter2 & renter3 add themselves to waitlist
+        for renter_token in [login_renter2, login_renter3]:
+            headers = {"Authorization": f"Bearer {renter_token}"}
+            resp = client.post(f"/books/{book_id}/waitlist", headers=headers)
+            print(resp.text)
+            assert resp.status_code == 200, f"waitlist join failed: {resp.text}"
+        # 3. renter1 returns the book
+        resp = client.patch(f"/books/{book_id}/return", headers=headers_owner)
+        print(resp.text)
+        assert resp.status_code == 200, f"return failed: {resp.text}"
+        # 4. renter2 sends rent request
+        headers_renter2 = {"Authorization": f"Bearer {login_renter2}"}
+        resp = client.post(f"/books/{book_id}/request", headers=headers_renter2)
+        print(resp.text)
+        assert resp.status_code == 200, f"renter2 rent request failed: {resp.text}"
+        rent_request_id2 = resp.json()["rent_request_id"]
+        # 5. book owner accepts request
+        resp = client.patch(f"/rent-requests/{rent_request_id2}/accept", headers=headers_owner)
+        print(resp.text)
+        assert resp.status_code == 200, f"owner accept 2 failed: {resp.text}"
+        # 6. Verify renter2 is removed from waitlist
+        resp = client.get(f"/books/{book_id}/waitlist", headers=headers_owner)
+        print(resp.text)
+        assert resp.status_code == 200
+        waitlist = resp.json()["waitlist"]
+        renter2_in_waitlist = any(w["renter_id"] == login_renter2 for w in waitlist)
+        assert not renter2_in_waitlist, "renter2 should be removed from waitlist"
+        # 7. verify renter3 is position 1 in waitlist
+        renter3_entry = next((w for w in waitlist if w["renter_id"] == login_renter3), None)
+        assert renter3_entry is not None, "renter3 should be in waitlist"
+        assert renter3_entry["position"] == 1, f"renter3 should be position 1, got {renter3_entry['position']}"
+
+
+'''
+Check waitlist getting updated when book is rented out
+returned
+1. renter1 send rent request to book owner
+book owner accepts request
+Verify book owner is Rented to renter1
+2. renter2 & renter3 add themself in waitlist
+3. renter1 returns the book
+4. renter2 sends rent request
+5. book owner accepts request
+6. Verify renter 2 is removed from waitlist
+7. verify renter 3 is position 1 in waitlist
+use book_owner_token and book_id = "3be515c6-7158-454e-a1f6-4b2221801149"
+
+Clean up select * from rent_requests where status = 'accepted'; > change to returned
+DELETE FROM waitlists;
+
+'''
+
