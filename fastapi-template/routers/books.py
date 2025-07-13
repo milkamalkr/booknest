@@ -1,3 +1,6 @@
+from fastapi import Query
+from psycopg2.extras import RealDictCursor
+
 from fastapi import APIRouter, HTTPException, Depends, Header, Query
 from typing import List, Optional, Any
 from db import get_connection
@@ -13,7 +16,74 @@ from math import ceil
 
 router = APIRouter()
 
-
+# Rental history for a book (owner only)
+@router.get("/books/{id}/history")
+def get_book_rental_history(
+    id: str,
+    renter_id: str = Query(None),
+    rent_start: str = Query(None, description="Filter: rent_start >= this date (YYYY-MM-DD)"),
+    rent_end: str = Query(None, description="Filter: rent_end <= this date (YYYY-MM-DD)"),
+    status: str = Query(None),
+    user: dict = Depends(me.get_current_user)
+):
+    conn = get_connection()
+    cur = conn.cursor(cursor_factory=RealDictCursor)
+    # Check book exists and ownership
+    cur.execute("SELECT owner_id FROM books WHERE id = %s", (id,))
+    book = cur.fetchone()
+    if not book:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=404, detail="Book not found")
+    if book["owner_id"] != user["id"]:
+        cur.close()
+        conn.close()
+        raise HTTPException(status_code=403, detail="Only the book owner can view rental history")
+    # Build query and params
+    filters = ["rh.book_id = %s"]
+    params = [id]
+    if renter_id:
+        filters.append("rh.renter_id = %s")
+        params.append(renter_id)
+    if rent_start:
+        filters.append("rh.rent_start >= %s")
+        params.append(rent_start)
+    if rent_end:
+        filters.append("rh.rent_end <= %s")
+        params.append(rent_end)
+    if status:
+        filters.append("rh.status = %s")
+        params.append(status)
+    where_clause = " AND ".join(filters)
+    query = f"""
+        SELECT
+            rh.renter_id,
+            rh.rent_start,
+            rh.rent_end,
+            rh.status,
+            CEIL(EXTRACT(EPOCH FROM (COALESCE(rh.rent_end, NOW()) - rh.rent_start)) / 604800) AS weeks,
+            CEIL(EXTRACT(EPOCH FROM (COALESCE(rh.rent_end, NOW()) - rh.rent_start)) / 604800) * b.rent_per_week AS rent
+        FROM rental_history rh
+        JOIN books b ON rh.book_id = b.id
+        WHERE {where_clause}
+        ORDER BY rh.rent_start DESC
+    """
+    cur.execute(query, params)
+    rows = cur.fetchall()
+    cur.close()
+    conn.close()
+    # Format output
+    history = []
+    for row in rows:
+        history.append({
+            "renter_id": row["renter_id"],
+            "rent_start": row["rent_start"].isoformat() if row["rent_start"] else None,
+            "rent_end": row["rent_end"].isoformat() if row["rent_end"] else None,
+            "status": row["status"],
+            "weeks": int(row["weeks"]),
+            "rent": int(row["rent"])
+        })
+    return {"book_id": id, "history": history}
 
 @router.post("/books")
 def add_books(

@@ -2,9 +2,18 @@ from fastapi import FastAPI
 
 
 from routers import auth, me, subscription, books, rent_request
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # or ["*"] for all origins (not recommended for production)
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 app.include_router(auth.router, prefix="/auth", tags=["Auth"])
 app.include_router(me.router, prefix="/users", tags=["Users"])
