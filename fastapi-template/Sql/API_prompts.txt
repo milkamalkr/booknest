@@ -211,8 +211,63 @@ Returns a JSON response like:
   "message": "You have been added to the waitlist."
 }
 Place the route inside routers/books.py
-Return an error if the book is currently available (waitlisting only for rented books)
+Return an error if the book is currently available (waitlisting only for rented books -Changed . Not rented books can also be added to waitlist/interested)
 Ensure the route is idempotent (no duplicates) with App side logic and DB CONSTRAINT
+
+Write a FastAPI route GET /books/{id}/history that:
+
+Returns the rental history for the book with the given book_id
+Access is restricted to the owner of the book only
+Uses get_current_user() to authenticate and verify ownership
+Accepts optional query parameters for filtering:
+renter_id
+rent_start (as a start date filter)
+rent_end (as an end date filter)
+status (e.g., 'rented', 'returned', etc.)
+Joins rental_history with the books table to get rent_per_week
+Calculates:
+Rented period in weeks = CEIL((rent_end - rent_start) / 7 days)
+If rent_end IS NULL, use NOW() instead
+Total rent = weeks * rent_per_week
+Returns data in the following JSON structure:
+{
+  "book_id": "<uuid>",
+  "history": [
+    {
+      "renter_id": "<uuid>",
+      "rent_start": "ISODate",
+      "rent_end": "ISODate or null",
+      "status": "rented/returned/...",
+      "weeks": 3,
+      "rent": 150
+    },
+    ...
+  ]
+}
+SQL query must:
+
+Filter based on optional parameters
+Use ROW_NUMBER() only if ordering is needed
+Use psycopg2 with RealDictCursor
+Route should be defined in routers/books.py
+
+✅ Example SQL Logic to Use in the Route
+SELECT
+    rh.renter_id,
+    rh.rent_start,
+    rh.rent_end,
+    rh.status,
+    CEIL(EXTRACT(EPOCH FROM (COALESCE(rh.rent_end, NOW()) - rh.rent_start)) / 604800) AS weeks,
+    CEIL(EXTRACT(EPOCH FROM (COALESCE(rh.rent_end, NOW()) - rh.rent_start)) / 604800) * b.rent_per_week AS rent
+FROM rental_history rh
+JOIN books b ON rh.book_id = b.id
+WHERE rh.book_id = %s
+  AND (%s IS NULL OR rh.renter_id = %s)
+  AND (%s IS NULL OR rh.rent_start >= %s)
+  AND (%s IS NULL OR rh.rent_end <= %s)
+  AND (%s IS NULL OR rh.status = %s)
+ORDER BY rh.rent_start DESC;
+
 
 book owner (a5b8) book 5cd
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJib29rb3duZXJAYm9va25lc3QuY29tIiwiaWQiOiJmMjQxNjA3NC1mZmU0LTQ1ODUtYjAyYy0xMTc0ZThmNGE1YjgiLCJleHAiOjE3NTE5OTM5Mzl9.ClbHFb4BP_vn59VJJeFwWwAtNDWO6w9ic8AJuGCT-Lk

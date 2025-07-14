@@ -1,3 +1,7 @@
+# Explicit OPTIONS handler for CORS preflight on /books/{id}/waitlist
+from fastapi import Response
+
+
 from fastapi import Query
 from psycopg2.extras import RealDictCursor
 
@@ -15,6 +19,14 @@ from math import ceil
 
 
 router = APIRouter()
+
+
+@router.options("/books/{id}/waitlist")
+def options_books_waitlist(id: str, response: Response):
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type"
+    return Response(status_code=204)
 
 # Rental history for a book (owner only)
 @router.get("/books/{id}/history")
@@ -456,20 +468,25 @@ def add_to_waitlist(
     id: str,
     user: dict = Depends(me.get_current_user)
 ):
-    
+
     conn = get_connection()
     cur = conn.cursor()
+
     # Validate book exists and is rented
     cur.execute("SELECT owner_id, status FROM books WHERE id = %s", (id,))
     book = cur.fetchone()
+
     if not book:
         cur.close()
         conn.close()
         raise HTTPException(status_code=404, detail="Book not found")
-    if book["status"] != "rented":
+
+    """ if book["status"] != "rented":
         cur.close()
         conn.close()
         raise HTTPException(status_code=400, detail="Waitlisting is only allowed for rented books")
+     """
+
     if book["owner_id"] == user["id"]:
         cur.close()
         conn.close()
@@ -480,7 +497,7 @@ def add_to_waitlist(
     if cur.fetchone():
         cur.close()
         conn.close()
-        raise HTTPException(status_code=400, detail="You are already on the waitlist for this book")
+        raise HTTPException(status_code=429, detail="You are already on the waitlist for this book")
     # Insert into waitlists
     try:
         cur.execute(
@@ -506,6 +523,7 @@ def add_to_waitlist(
     positionDb = cur.fetchone()
     position = positionDb["position"]
     conn.commit()
+
     cur.close()
     conn.close()
     return {
