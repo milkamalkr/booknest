@@ -20,6 +20,21 @@ CREATE TABLE books (
     current_renter_id UUID REFERENCES users(id),
     created_at TIMESTAMP DEFAULT NOW()
 );
+-- Add new columns to books table
+ALTER TABLE books ADD COLUMN language VARCHAR(64);
+ALTER TABLE books ADD COLUMN title_local VARCHAR(256);
+
+-- Add CHECK constraint for language
+ALTER TABLE books
+    DROP CONSTRAINT IF EXISTS books_language_check,
+    ADD CONSTRAINT books_language_check
+    CHECK (
+        language IS NULL OR
+        LOWER(language) IN (
+            'hindi','bengali','marathi','telugu','tamil','gujarati','urdu','kannada','odia','malayalam','punjabi','assamese','maithili','meitei(manipuri)','english germanic','english','sanskrit','spanish','french'
+        )
+    );
+
 CREATE TABLE rent_requests (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     book_id UUID REFERENCES books(id) ON DELETE CASCADE,

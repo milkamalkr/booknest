@@ -1,5 +1,4 @@
- 1  python
-    2  sudo apt update
+ 1  python    2  sudo apt update
     3  sudo apt -y upgrade
     4  apt install python
     5  sudo apt install python
@@ -41,3 +40,18 @@
    41  uvicorn main:app --host 0.0.0.0 --port 8000
 
    sudo apt-get install postgresql
+
+
+'Hindi','Bengali','Marathi','Telugu','Tamil','Gujarati','Urdu','Kannada','Odia','Malayalam','Punjabi','Assamese','Maithili','Meitei(Manipuri)','English Germanic','Sanskrit','Spanish','French'
+
+-- Add new columns to books table
+ALTER TABLE books ADD COLUMN language VARCHAR(64);
+ALTER TABLE books ADD COLUMN title_local VARCHAR(256);
+
+-- Add CHECK constraint for language
+ALTER TABLE books
+    ADD CONSTRAINT books_language_check
+    CHECK (language IS NULL OR language IN ('Hindi','Bengali','Marathi','Telugu','Tamil','Gujarati','Urdu','Kannada','Odia','Malayalam','Punjabi','Assamese','Maithili','Meitei(Manipuri)','English Germanic','Sanskrit','Spanish','French'));
+
+-- To check language in allowed list:
+-- WHERE language IN ('Hindi','Bengali','Marathi','Telugu','Tamil','Gujarati','Urdu','Kannada','Odia','Malayalam','Punjabi','Assamese','Maithili','Meitei(Manipuri)','English Germanic','Sanskrit','Spanish','French')

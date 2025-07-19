@@ -153,6 +153,7 @@ def list_books(
     title: Optional[str] = Query(None),
     author: Optional[str] = Query(None),
     status: Optional[str] = Query(None),
+    current_renter_id: Optional[str] = Query(None),
     limit: int = Query(10, ge=1, le=100),
     offset: int = Query(0, ge=0),
     sort_by: str = Query("title", pattern="^(title|created_at)$"),
@@ -172,6 +173,9 @@ def list_books(
     if status:
         filters.append("b.status = %s")
         params.append(status)
+    if current_renter_id:
+        filters.append("b.current_renter_id = %s")
+        params.append(current_renter_id)
     where_clause = f"WHERE {' AND '.join(filters)}" if filters else ""
     # Count query
     count_query = f"SELECT COUNT(*) FROM books b {where_clause}"
