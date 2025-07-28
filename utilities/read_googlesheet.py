@@ -9,7 +9,7 @@ scope = [
 ]
 
 # Path to your credentials file
-creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("D:\\BookNest\\utilities\\credentials.json", scope)
 
 # Authorize the client
 client = gspread.authorize(creds)
