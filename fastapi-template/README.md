@@ -31,3 +31,19 @@ In addition to these extension there a few settings that are also useful to enab
 - Test the API functionality by navigating to `/docs` URL to view the Swagger UI
 - Configure your Python test in the Test Panel or by triggering the **Python: Configure Tests** command from the Command Palette
 - Run tests in the Test Panel or by clicking the Play Button next to the individual tests in the `test_main.py` file
+
+How to run 
+============
+Basic command (default localhost only):
+Production-ready command (accessible from other machines):
+Key parameters explained:
+
+--reload: Auto-reloads the server when code changes
+--host 0.0.0.0: Makes the server accessible from any IP address
+--port 8000: Specifies the port number (default is 8000)
+After starting, you can access:
+
+API documentation at: http://localhost:8000/docs
+Alternative docs at: http://localhost:8000/redoc
+API root at: http://localhost:8000
+Make sure you're in the correct directory containing main.py when running these commands.

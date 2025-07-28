@@ -116,8 +116,8 @@ def add_books(
         try:
             cur.execute(
                 """
-                INSERT INTO books (id, title, author, owner_id, description, image_url, tags, published_year, created_at, current_renter_id, rent_per_week, value, status)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                INSERT INTO books (id, title, author, owner_id, description, image_url, tags, published_year, created_at, current_renter_id, rent_per_week, value, status, language, title_local)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 RETURNING id
                 """,
                 (
@@ -133,7 +133,9 @@ def add_books(
                     current_renter_id,
                     book.rent_per_week,
                     book.value,
-                    book.status
+                    book.status,
+                    book.language,
+                    book.title_local
                 )
             )
             inserted.append({"id": book_id, "title": book.title})

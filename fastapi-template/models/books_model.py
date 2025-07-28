@@ -16,6 +16,9 @@ class BookCreate(BaseModel):
     description: str | None = None
     image_url: str | None = None
     tags: List[str] | None = None
+    language: str = "english"
+    title_local: str | None = None
+    
 
 class BooksCreateRequest(BaseModel):
     books: List[BookCreate]
@@ -36,6 +39,9 @@ class BookOut(BaseModel):
     description: str = None
     image_url: Optional[str] = None
     tags: List[str] = []
+    languaage: str
+    title_local: Optional[str] = None
+    bookid: str
 
 class BookUpdate(BaseModel):
     status: Optional[str] = None
