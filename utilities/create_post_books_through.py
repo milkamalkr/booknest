@@ -34,8 +34,14 @@ records = worksheet.get_all_records()
 
 # Create JSON array with the required format
 json_data = {"books": []}
-
+skip_till = 1
+n = 0
 for row in records:
+    n += 1
+    if n <= skip_till:
+        print("skip this row")
+        continue
+    
     if row.get("Title (English)") and row.get("Author/Publisher"):
         book = {
             "title": row["Title (English)"],
@@ -46,7 +52,7 @@ for row in records:
             "value": row.get("Book Value", 299),  # Default value if not provided
             "published_year": row.get("Published Year", 2000),  # Default year if not provided
             "image_url": "",  # Can be updated later
-            "description": row.get("Description", "."),
+            "description": row.get("Description", row.get("description","")),
             "tags": [],  # Can be populated based on categories if available
             "language": row.get("Language", "English"),
             "title_local": row.get("Title in language (If not English) ", "")
