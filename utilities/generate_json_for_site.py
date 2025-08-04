@@ -37,19 +37,26 @@ records = worksheet.get_all_records()
 # Create JSON array from 'Title (English)' and 'Language' columns
 json_array = []
 cnt = 1
+key_sn = "S_No"
+key_title = "Book_Title"
+key_author = "Author"
+key_rent = "Rent_per_week"
+key_language = "Language"
+
 for row in records:
     if row.get("Title (English)") and row["Author/Publisher"]:
         print(row["Title (English)"])
         book = {}
-        book["S.No"] = cnt
+        book[key_sn] = cnt
         cnt += 1
         if row.get("Title in language (If not English) "):
-            book["Book Title"] = row["Title (English)"] + " (" + row["Title in language (If not English) "] + ")"
+            book[key_title] = row["Title (English)"] + " (" + row["Title in language (If not English) "] + ")"
         else:    
-            book["Book Title"] = row["Title (English)"]
+            book[key_title] = row["Title (English)"]
 
-        book["Author"] = row["Author/Publisher"]
-        book["Rent / week"] = row["Expected Rent per week"]
+        book[key_author] = row["Author/Publisher"]
+        book[key_rent] = row["Expected Rent per week"]
+        book[key_language] = row["Language"]
         json_array.append(book)
 
 
