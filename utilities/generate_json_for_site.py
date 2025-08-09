@@ -27,9 +27,9 @@ worksheet = sheet.get_worksheet(0)  # or use .worksheet("Sheet1")
 data = worksheet.get_all_values()
 
 # Print the data
-for row in data:
-    print("================================\n")
-    print(row)
+#for row in data:
+#    print("================================\n")
+    #print(row)
  
 # Get all rows as list of dicts (header must be present)
 records = worksheet.get_all_records()
@@ -43,25 +43,37 @@ key_author = "Author"
 key_rent = "Rent_per_week"
 key_language = "Language"
 
+# Add this helper function before the main loop
+def is_duplicate_title(json_array, new_title):
+    """Check if a book with the same title exists in json_array"""
+    return any(book[key_title].lower() == new_title.lower() for book in json_array)
+
+# Modify the main loop
 for row in records:
     if row.get("Title (English)") and row["Author/Publisher"]:
-        print(row["Title (English)"])
-        book = {}
-        book[key_sn] = cnt
-        cnt += 1
+        # Construct the title first
         if row.get("Title in language (If not English) "):
-            book[key_title] = row["Title (English)"] + " (" + row["Title in language (If not English) "] + ")"
+            title = row["Title (English)"] + " (" + row["Title in language (If not English) "] + ")"
         else:    
-            book[key_title] = row["Title (English)"]
-
-        book[key_author] = row["Author/Publisher"]
-        book[key_rent] = row["Expected Rent per week"]
-        book[key_language] = row["Language"]
-        json_array.append(book)
+            title = row["Title (English)"]
+            
+        # Check for duplicates before adding
+        if not is_duplicate_title(json_array, title):
+            book = {}
+            book[key_sn] = cnt
+            cnt += 1
+            book[key_title] = title
+            book[key_author] = row["Author/Publisher"]
+            book[key_rent] = row["Expected Rent per week"]
+            book[key_language] = row["Language"]
+            json_array.append(book)
+            print(f"Added: {title}")
+        else:
+            print(f"Skipped duplicate: {title}")
 
 
 # Print or write to file
-print(json.dumps(json_array, indent=2, ensure_ascii=False))
+#print(json.dumps(json_array, indent=2, ensure_ascii=False))
 
 # Optionally save to file
 with open("csvjson.json", "w", encoding="utf-8") as f:
