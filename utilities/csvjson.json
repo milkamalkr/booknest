@@ -1,0 +1,4160 @@
+[
+  {
+    "S_No": 1,
+    "Book_Title": "Bible (ബൈബിൾ)",
+    "Author": "POC",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 2,
+    "Book_Title": "Question Basket",
+    "Author": "The Art of Living,  Sri sri Ravishankar ",
+    "Rent_per_week": 10,
+    "Language": "English "
+  },
+  {
+    "S_No": 3,
+    "Book_Title": "Canakya On Management",
+    "Author": "Ashok R Garde",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 4,
+    "Book_Title": "12 Rules for Life: An Antidote to Chaos",
+    "Author": "Jordan Peterson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 5,
+    "Book_Title": "Code Name Bananas",
+    "Author": "David Walliams",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 6,
+    "Book_Title": "The Beast Of Buckingham Palace",
+    "Author": "David Walliams",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 7,
+    "Book_Title": "Five Survive",
+    "Author": "Holly Jackson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 8,
+    "Book_Title": "As Good As Dead",
+    "Author": "Holly Jackson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 9,
+    "Book_Title": "Good Girl, Bad Blood",
+    "Author": "Holly Jackson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 10,
+    "Book_Title": "A Good Girl's Guide to Murder",
+    "Author": "Holly Jackson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 11,
+    "Book_Title": "Baby Sitter Club - Dawn and the Impossible Three",
+    "Author": "Martin & Galligan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 12,
+    "Book_Title": "The Boy in the Dress",
+    "Author": "David Walliams",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 13,
+    "Book_Title": "The Murder of Roger Ackroyd",
+    "Author": "Agatha Christie",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 14,
+    "Book_Title": "The last bear",
+    "Author": "Hannah Gold",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 15,
+    "Book_Title": "the Bad Guys - Movie Novelization",
+    "Author": "DreamWorks",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 16,
+    "Book_Title": "Diary of a Wimpy Kid - Cabin fever",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 17,
+    "Book_Title": "Diary of a Wimpy Kid - The Third Wheel",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 18,
+    "Book_Title": "Diary of a Wimpy Kid - Old School",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 19,
+    "Book_Title": "Diary of a Wimpy Kid - Hard Luck",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 20,
+    "Book_Title": "Diary of a Wimpy Kid - The Ugly Truth",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 21,
+    "Book_Title": "Diary of a Wimpy Kid - No Brainer",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 22,
+    "Book_Title": "Half Girlfriend",
+    "Author": "Chetan Bhagat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 23,
+    "Book_Title": "The Habit of Winning",
+    "Author": "Prakash Iyer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 24,
+    "Book_Title": "It Started with a Friend Request",
+    "Author": "Sudeep Nagarkar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 25,
+    "Book_Title": "Someone Like You",
+    "Author": "Nikita Singh, Durjoy Dutta",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 26,
+    "Book_Title": "Life is what you make it",
+    "Author": "Preeti Shenoy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 27,
+    "Book_Title": "A Thousand Splendid Suns",
+    "Author": "Khaled Hosseini",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 28,
+    "Book_Title": "The Backbenchers - The presidency Night",
+    "Author": "Sidharth Oberoi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 29,
+    "Book_Title": "Two Fates",
+    "Author": "Judy Balan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 30,
+    "Book_Title": "That's the way we met ..kya life hogi set",
+    "Author": "Sudeep Nagarkar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 31,
+    "Book_Title": "The Inscrutable Americans",
+    "Author": "Anurag Mathur",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 32,
+    "Book_Title": "The Bestseller She Wrote",
+    "Author": "Ravi Subramanian",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 33,
+    "Book_Title": "The Village by the Sea",
+    "Author": "Anita Desai",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 34,
+    "Book_Title": "Complete/Convenient",
+    "Author": "Ketan Bhagat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 35,
+    "Book_Title": "The Color of Our Sky",
+    "Author": "Amita Trasi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 36,
+    "Book_Title": "Private India",
+    "Author": "Ashwin Sanghi & James Patterson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 37,
+    "Book_Title": "Connect the Dots",
+    "Author": "Rashmi Bansal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 38,
+    "Book_Title": "The Professional",
+    "Author": "Subroto Bagchi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 39,
+    "Book_Title": "Being Reshma",
+    "Author": "Reshma Qureshi with Tania Singh",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 40,
+    "Book_Title": "There's Something About You",
+    "Author": "Yashodhara Lal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 41,
+    "Book_Title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+    "Author": "Hector Garcia",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 42,
+    "Book_Title": "i came upon a lighthouse",
+    "Author": "Shantanu Naidu",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 43,
+    "Book_Title": "400 Days",
+    "Author": "Chetan Bhagat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 44,
+    "Book_Title": "Gently Falls The Bakula",
+    "Author": "Sudha Murthy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 45,
+    "Book_Title": "Waiting for the Mahatma",
+    "Author": "R.K. Narayan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 46,
+    "Book_Title": "What Young India Wants",
+    "Author": "Chetan Bhagat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 47,
+    "Book_Title": "Parker Pyne Investigates",
+    "Author": "Agatha Christie",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 48,
+    "Book_Title": "Take Me Home",
+    "Author": "Rashmi Bansal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 49,
+    "Book_Title": "I am Malala",
+    "Author": "Malala Yousafzai",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 50,
+    "Book_Title": "The Girl in Room 105",
+    "Author": "Chetan Bhagat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 51,
+    "Book_Title": "One Indian Girl",
+    "Author": "Chetan Bhagat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 52,
+    "Book_Title": "The Temporary Bride - A memoir of love and food in Iran",
+    "Author": "Jennifer Klinec",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 53,
+    "Book_Title": "Touch the Sky",
+    "Author": "Rashmi Bansal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 54,
+    "Book_Title": "Can Love Happen twice?",
+    "Author": "Ravinder Singh",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 55,
+    "Book_Title": "Juvenile Journey",
+    "Author": "Rashmi C.R",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 56,
+    "Book_Title": "house of cards",
+    "Author": "Sudha Murthy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 57,
+    "Book_Title": "Turning Points",
+    "Author": "A.P.J Abdul Kalam",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 58,
+    "Book_Title": "And the Mountains Echoed",
+    "Author": "Khaled Hosseini",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 59,
+    "Book_Title": "Dongri to Dubai - Six decades of the Mumbai Mafia",
+    "Author": "S. Hussain Zaidi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 60,
+    "Book_Title": "We are displaced",
+    "Author": "Malala Yousafzai",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 61,
+    "Book_Title": "Incognito",
+    "Author": "Lata Gwalani",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 62,
+    "Book_Title": "One Arranged Murder",
+    "Author": "Chetan Bhagat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 63,
+    "Book_Title": "Getting Burned (Nancy Drew Girl Detective Book )",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 64,
+    "Book_Title": "The Diary of a Young Girl",
+    "Author": "Anne Frank",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 65,
+    "Book_Title": "Movie Menace, Hardy Boys",
+    "Author": "Franklin W. Dixon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 66,
+    "Book_Title": "The Island of Adventure",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 67,
+    "Book_Title": "Stop the Clock (Nancy Drew Girl Detective Book)",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 68,
+    "Book_Title": "The Missing Horse Mystery ",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 69,
+    "Book_Title": "Hardy Boys - Tricks of the trade",
+    "Author": "Franklin W. Dixon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 70,
+    "Book_Title": "Seeing Green (Nancy Drew Girl Detective)",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 71,
+    "Book_Title": "A taste of Danger - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 72,
+    "Book_Title": "The Hardy Boys - House Arrest",
+    "Author": "Franklin W. Dixon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 73,
+    "Book_Title": "High Risk  (Nancy Girl Detective)",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 74,
+    "Book_Title": "The Lightning Thief  (Percy Jackson and the Olympians 1)",
+    "Author": "Rick Riordan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 75,
+    "Book_Title": "Mystery By Moonlight - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 76,
+    "Book_Title": "Secret of the Spa - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 77,
+    "Book_Title": "Harry Potter and the Deathly Hallows",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 78,
+    "Book_Title": "The Stolen Relic - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 79,
+    "Book_Title": "The Titan's Curse (Percy Jackson 3)",
+    "Author": "Rick Riordan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 80,
+    "Book_Title": "Harry Potter and the Half Blood Prince",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 81,
+    "Book_Title": "The hardy Boys - The Caribbean Cruise Caper",
+    "Author": "Franklin W. Dixon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 82,
+    "Book_Title": "The Hardy Boys - The Search for the Snow Leopard",
+    "Author": "Franklin W. Dixon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 83,
+    "Book_Title": "The Adventures of Shrilok Homeless",
+    "Author": "Pika Nani",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 84,
+    "Book_Title": "Harry Potter and The Order of the Phoenix",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 85,
+    "Book_Title": "The Mountain of Adventure",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 86,
+    "Book_Title": "Harry Potter and the Goblet of Fire",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 87,
+    "Book_Title": "The Secret Seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 88,
+    "Book_Title": "Polars On The Path - Animal Ark",
+    "Author": "Lucy Daniels",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 89,
+    "Book_Title": "Dolphin Diaries - Into the Blue",
+    "Author": "Lucy Daniels",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 90,
+    "Book_Title": "Bimbo & Topsy",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 91,
+    "Book_Title": "Well, Really, Mr Twiddle!",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 92,
+    "Book_Title": "The adventures of Mr Pink-Whistle",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 93,
+    "Book_Title": "Heidi",
+    "Author": "Johanna Spyri",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 94,
+    "Book_Title": "The river of Adventure",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 95,
+    "Book_Title": "Eight Cousins",
+    "Author": "Louisa May Alcott",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 96,
+    "Book_Title": "The Wild Cat Crime - Nancy Drew 141",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 97,
+    "Book_Title": "Riverboat Roulette - Nancy Drew Diaries",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 98,
+    "Book_Title": "Intruder - Nancy Drew Girl Detective",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 99,
+    "Book_Title": "Winter Term: Book 9 (Malory Towers)",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 100,
+    "Book_Title": "Fatal Attraction - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 101,
+    "Book_Title": "Dustbin Baby",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 102,
+    "Book_Title": "Secret at Mystic Lake - Nancy Drew Diaries",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 103,
+    "Book_Title": "The Girl of Ink & Stars",
+    "Author": "Kiran Millwood Hargrave ",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 104,
+    "Book_Title": "Beast quest:Ravira the ruler of the underworld",
+    "Author": "Adam Blade",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 105,
+    "Book_Title": "Love You to Death (The Mediator Book 1)",
+    "Author": "Meg Cabot",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 106,
+    "Book_Title": "Missing Sanctuary",
+    "Author": "Meg Cabot",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 107,
+    "Book_Title": "Cookie",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 108,
+    "Book_Title": "Harry Potter and the Prisoner of Azkaban",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 109,
+    "Book_Title": "The Jungle Book",
+    "Author": "Rudyard Kipling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 110,
+    "Book_Title": "David Copperfield",
+    "Author": "Charles Dickens",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 111,
+    "Book_Title": "The Adventure of Toms Sawyer",
+    "Author": "Mark Twain",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 112,
+    "Book_Title": "The third form at St Clare's",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 113,
+    "Book_Title": "Summer Term at St Clare's",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 114,
+    "Book_Title": "The O'Sullivan Twins",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 115,
+    "Book_Title": "The Twins at St Claire's",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 116,
+    "Book_Title": "The Blue Umbrella",
+    "Author": "Ruskin Bond",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 117,
+    "Book_Title": "The Naughtiest Girl marches on",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 118,
+    "Book_Title": "New term at Malory Towers",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 119,
+    "Book_Title": "Naughtiest Girl Saves the day",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 120,
+    "Book_Title": "Well Done, Secret Seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 121,
+    "Book_Title": "Naughtiest Girl wants to win",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 122,
+    "Book_Title": "Naughtiest Girl Helps a friend",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 123,
+    "Book_Title": "Secret Seven Mystery",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 124,
+    "Book_Title": "Three Cheers, Secret Seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 125,
+    "Book_Title": "The Famous Five - Five fall into Adventure",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 126,
+    "Book_Title": "The Famous Five - Five Get into trouble",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 127,
+    "Book_Title": "The Famous Five - Five go off to camp",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 128,
+    "Book_Title": "The Famous Five - Five On Kirrin Island Again",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 129,
+    "Book_Title": "James and the Giant Peach",
+    "Author": "Roald Dahl",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 130,
+    "Book_Title": "The magic of the lost temple",
+    "Author": "Sudha Murthy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 131,
+    "Book_Title": "The Six red wizards",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 132,
+    "Book_Title": "The Suitcase kid",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 133,
+    "Book_Title": "The bed and breakfast star",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 134,
+    "Book_Title": "Merry Christmas, Geronimo!",
+    "Author": "G. Stilton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 135,
+    "Book_Title": "George's Marvellous Medicine",
+    "Author": "Roald Dahl",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 136,
+    "Book_Title": "The Famous Five - Five go down to the sea",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 137,
+    "Book_Title": "The Famous Five - Five have a wonderful time",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 138,
+    "Book_Title": "The Famous Five - Five go to mystery Moor",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 139,
+    "Book_Title": "The Famous Five - Five have plenty of Fun",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 140,
+    "Book_Title": "The Famous Five - Five on Secret trail",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 141,
+    "Book_Title": "The Famous Five - Five go to Billycock Hill",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 142,
+    "Book_Title": "The Famous Five - Five go to Demon's Rocks",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 143,
+    "Book_Title": "The Famous Five - Five have a mystery to solve",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 144,
+    "Book_Title": "The Famous Five - Five on finniston farm",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 145,
+    "Book_Title": "The Famous Five - Five get into a fix",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 146,
+    "Book_Title": "Puzzle for the secret seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 147,
+    "Book_Title": "Secret Seven - Mystery of the Skull",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 148,
+    "Book_Title": "Fun for the secret seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 149,
+    "Book_Title": "Look out, secret seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 150,
+    "Book_Title": "Shock for the secret seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 151,
+    "Book_Title": "Good old secret seven",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 152,
+    "Book_Title": "Notebooks of a Middle-school Princess",
+    "Author": "Meg Cabot",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 153,
+    "Book_Title": "Pony in the porch",
+    "Author": "Lucy Daniels",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 154,
+    "Book_Title": "Bunnies in the Bathroom",
+    "Author": "Lucy Daniels",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 155,
+    "Book_Title": "Squirrels in the School",
+    "Author": "Lucy Daniels",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 156,
+    "Book_Title": "Calf in the Cottage",
+    "Author": "Lucy Daniels",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 157,
+    "Book_Title": "Crime in the Queen's court - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 158,
+    "Book_Title": "The Perfect Escape - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 159,
+    "Book_Title": "The Hardy Boys - X-Factor",
+    "Author": "Franklin W. Dixon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 160,
+    "Book_Title": "Super Mystery 2 - Once Upon a crime - Nancy Drew",
+    "Author": "Carolyn Keene",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 161,
+    "Book_Title": "Sleepovers",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 162,
+    "Book_Title": "Best Friends",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 163,
+    "Book_Title": "Totally Lucy - Best Friends forever",
+    "Author": "Kelly McKain",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 164,
+    "Book_Title": "The Famous Five - Five are together again",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 165,
+    "Book_Title": "Harry Potter and the Chamber of Secrets - Book 2",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 166,
+    "Book_Title": "Harry Potter and the Philosopher's Stone - Book 1",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 167,
+    "Book_Title": "The Dare Game",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 168,
+    "Book_Title": "The Story of Tracy Beaker",
+    "Author": "Jacqueline Wilson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 169,
+    "Book_Title": "Naughty Amelia Jane!",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 170,
+    "Book_Title": "Good work, Secret seven B#6",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 171,
+    "Book_Title": "Go ahead, secret seven B#5",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 172,
+    "Book_Title": "Secret seven on the trail  B#4",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 173,
+    "Book_Title": "Well Done, Secret Seven B#3",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 174,
+    "Book_Title": "The Secret Seven B#1",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 175,
+    "Book_Title": "The secret seven B#2 ",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 176,
+    "Book_Title": "The famous five #5 - The five go off in a Caravan",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 177,
+    "Book_Title": "The famous five #4 - Five go to smuggler's top",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 178,
+    "Book_Title": "The famous five #3 - Five run away together",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 179,
+    "Book_Title": "The famous five #1 - Five on a treasure island",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 180,
+    "Book_Title": "The Naughtiest girl Again",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 181,
+    "Book_Title": "The Naughtiest girl in the School",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 182,
+    "Book_Title": "Summer term Malory Towers #8",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 183,
+    "Book_Title": "Last Term Malory Towers #6",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 184,
+    "Book_Title": "Third year Malory towers #3",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 185,
+    "Book_Title": "In the fifth Malory Towers #5",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 186,
+    "Book_Title": "New class at Malory Towers #13",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 187,
+    "Book_Title": "Second Form Malory towers #2",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 188,
+    "Book_Title": "First term at malory towers #1",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 189,
+    "Book_Title": "Charlie and the chocolate factory",
+    "Author": "Roald Dahl",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 190,
+    "Book_Title": "Matilda",
+    "Author": "Roald Dahl",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 191,
+    "Book_Title": "Princess Mirror - belle and the Magic Shoes",
+    "Author": "Julia Donaldson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 192,
+    "Book_Title": "Mary Poppins",
+    "Author": "P.L Travers",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 193,
+    "Book_Title": "The Adventures of the wishing chair",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 194,
+    "Book_Title": "Diary of a wimpy kid - Dog Days",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 195,
+    "Book_Title": "Diary of a wimpy kid - The last straw",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 196,
+    "Book_Title": "Diary of a wimpy kid - Rodrick Rules",
+    "Author": "Jeff Kinney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 197,
+    "Book_Title": "The Sixth Form at St Claire's #9",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 198,
+    "Book_Title": "Claudine at St Claire's #7",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 199,
+    "Book_Title": "Fifth formers of St Claire's #6",
+    "Author": "Enid Blyton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 200,
+    "Book_Title": "PACHA, MANJA, CHUVAPPU (പച്ച, മഞ്ഞ, ചുവപ്പ്)",
+    "Author": "T.D. RAMAKRISHNAN ",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 201,
+    "Book_Title": "Muthal (മുതൽ)",
+    "Author": "Vinoy Thomas",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 202,
+    "Book_Title": "Iru (ഇരു)",
+    "Author": "V. Shinilal",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 203,
+    "Book_Title": "Muthappan (മുത്തപ്പൻ)",
+    "Author": "Akhil. K",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 204,
+    "Book_Title": "Rathri Panthrandinu Sesham (രാത്രി പന്ത്രണ്ടിന് ശേഷം)",
+    "Author": "Akhil P. Dharmajan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 205,
+    "Book_Title": "PATTUNOOL PUZHU (പട്ടുനൂൽപ്പുഴു)",
+    "Author": "S.Hareesh",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 206,
+    "Book_Title": "Karu (കരു)",
+    "Author": "Majeed Syed",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 207,
+    "Book_Title": "Kattoor kadavu  (കാട്ടൂർ കടവ്)",
+    "Author": "Ashokan Charuvil",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 208,
+    "Book_Title": "Thapomayiyude achan (തപോമയിയുടെ അച്ഛൻ)",
+    "Author": "E. Santhosh Kumar",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 209,
+    "Book_Title": "Swaram (സ്വരം)",
+    "Author": "E.P. Sreekumar",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 210,
+    "Book_Title": "Mudiyarakal (മുടിയറകൾ)",
+    "Author": "Francis Noronha",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 211,
+    "Book_Title": "Puttu (പുറ്റ്)",
+    "Author": "Vinoy Thomas",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 212,
+    "Book_Title": "Akasathinu Chuvattil (ആകാശത്തിന് ചുവട്ടിൽ)",
+    "Author": "M. Mukundan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 213,
+    "Book_Title": "Paralokam (പരലോകം)",
+    "Author": "PUNATHIL KUNHABDULLA",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 214,
+    "Book_Title": "KHASAKKINTE ITHIHASAM (ഖസാക്കിന്റെ ഇതിഹാസം)",
+    "Author": "O.V. Vijayan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 215,
+    "Book_Title": "Vridhasadanam (വൃദ്ധസദനം)",
+    "Author": "T.V. Kochubava",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 216,
+    "Book_Title": "Ramachi (രാമച്ചി)",
+    "Author": "Vinoy Thomas",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 217,
+    "Book_Title": "PADINJARE KOLLAM CHORAKKALAM (പടിഞ്ഞാറേ കൊല്ലം ചോരക്കാലം)",
+    "Author": "G.R. Indhugopan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 218,
+    "Book_Title": "Adithyanum Radhayum Mattu chilarum (ആദിത്യനും രാധയും മറ്റുചിലരും)",
+    "Author": "M. Mukundan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 219,
+    "Book_Title": "Niyogam (നിയോഗം)",
+    "Author": "Sethu",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 220,
+    "Book_Title": "Vishakanyaka (വിഷകന്യക)",
+    "Author": "S.K. Pottekkattu",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 221,
+    "Book_Title": "Bhagavatha Kathakal (ഭാഗവത കഥകൾ)",
+    "Author": "NA",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 222,
+    "Book_Title": "Brigadier Kathakal (ബ്രിഗേഡിയർ കഥകൾ)",
+    "Author": "Malayatoor Ramakarishnan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 223,
+    "Book_Title": "Atayalangal (അടയാളങ്ങൾ)",
+    "Author": "Sethu",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 224,
+    "Book_Title": "Oru theruvinte kadha (ഒരു തെരുവിൻ്റെ കഥ)",
+    "Author": "S.K. Pottekkattu",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 225,
+    "Book_Title": "Sethuvinte Kadhakal (സേതുവിൻ്റെ കഥകൾ)",
+    "Author": "Sethu",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 226,
+    "Book_Title": "Nakshathrangale Kaaval (നക്ഷത്രങ്ങളെ കാവൽ)",
+    "Author": "Pathmarajan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 227,
+    "Book_Title": "Ayalkkar (അയൽക്കാർ)",
+    "Author": "P. Kesavadev",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 228,
+    "Book_Title": "Madhuram gayathi (മധുരം ഗായതി)",
+    "Author": "O.V. Vijayan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 229,
+    "Book_Title": "Vaadakakku Oru Hridayam (വാടകക്ക് ഒരു ഹൃദയം)",
+    "Author": "Pathmarajan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 230,
+    "Book_Title": "KATHAKAL - BENYAMIN (കഥകൾ - ബെന്യാമിൻ)",
+    "Author": "Benyamin",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 231,
+    "Book_Title": "Sugandhi enna aandal devanayaki (സുഗന്ധി എന്ന ആണ്ടാൾ ദേവനായകി)",
+    "Author": "T.D. RAMAKRISHNAN ",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 232,
+    "Book_Title": "Detective Prabhakaran (ഡിറ്റക്റ്റീവ് പ്രഭാകരൻ)",
+    "Author": "G.R. Indhugopan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 233,
+    "Book_Title": "Jeevithathinte pusthakam (ജീവിതത്തിൻ്റെ പുസ്തകം)",
+    "Author": "V.J. James",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 234,
+    "Book_Title": "Pravasam (പ്രവാസം)",
+    "Author": "M. Mukundan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 235,
+    "Book_Title": "Manjaveyil Maranangal (മഞ്ഞവെയിൽ മരണങ്ങൾ)",
+    "Author": "Benyamin",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 236,
+    "Book_Title": "Yanthram (യന്ത്രം)",
+    "Author": "Malayatoor Ramakarishnan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 237,
+    "Book_Title": "Zachariyayude Kathakal (സക്കറിയയുടെ കഥകൾ)",
+    "Author": "Paul Zacharia",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 238,
+    "Book_Title": "Manushyanu Oru Aamukham (മനുഷ്യന് ഒരു ആമുഖം)",
+    "Author": "Subhash Chandran",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 239,
+    "Book_Title": "Khathakan (ഘാതകൻ)",
+    "Author": "K.R. Meera",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 240,
+    "Book_Title": "Kanneerum Kinavum (കണ്ണീരും കിനാവും - ആത്മകഥ)",
+    "Author": "V.T. Bhattathiripad",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 241,
+    "Book_Title": "Vaanaprastham (വാനപ്രസ്ഥം)",
+    "Author": "M.T. Vasudevan Nair",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 242,
+    "Book_Title": "Peruvazhiyambalam (പെരുവഴിയമ്പലം)",
+    "Author": "Pathmarajan",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 243,
+    "Book_Title": "The History of Napoleon Buonaparte",
+    "Author": "J. G. Lockhart",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 244,
+    "Book_Title": "The Pursuit of Happyness",
+    "Author": "Chris Gardner",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 245,
+    "Book_Title": "My Autobiography",
+    "Author": "Charles Chaplin",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 246,
+    "Book_Title": "The Courage To Be Disliked,  How to free yourself, change your life and achieve real happiness",
+    "Author": "Ichiro Kishimi and Fumitake Koga",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 247,
+    "Book_Title": "The courage to be happy",
+    "Author": "Ichiro Kishimi and Fumitake Koga",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 248,
+    "Book_Title": "Autopilot",
+    "Author": "Andrew Smart",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 249,
+    "Book_Title": "The 12 BAD habits that hold GOOD People back",
+    "Author": "James Waldroop and Timothy Butler",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 250,
+    "Book_Title": "A.R. Rahman-The Spirit of Music : Biography",
+    "Author": "Nasreen Munni Kabir",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 251,
+    "Book_Title": "The $100 Startup",
+    "Author": "Chris Guillebeau",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 252,
+    "Book_Title": "It's a Jungle in There: Inspiring Lessons, Hard-Won Insights",
+    "Author": "Steven Schussler, Marvin Karlins",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 253,
+    "Book_Title": "The Story of TATA",
+    "Author": "Peter Casey",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 254,
+    "Book_Title": "SACHIN",
+    "Author": "Gulu Ezekiel",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 255,
+    "Book_Title": "Elon Musk",
+    "Author": "Walter Isaacson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 256,
+    "Book_Title": "Unlimited memory",
+    "Author": "Grandmaster Kevin Horsly",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 257,
+    "Book_Title": "WILL",
+    "Author": "Will Smith",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 258,
+    "Book_Title": "Streangths Finder",
+    "Author": "Tom Rath",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 259,
+    "Book_Title": "The art of thinking clearly",
+    "Author": "Rolf Dobelli",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 260,
+    "Book_Title": "The new Leaders",
+    "Author": "Daniel Goleman",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 261,
+    "Book_Title": "Valkyries",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 262,
+    "Book_Title": "Of love and other Demons",
+    "Author": "Gabriel Garcia Marquez",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 263,
+    "Book_Title": "Before the coffee gets cold",
+    "Author": "Toshikazu Kawaguchi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 264,
+    "Book_Title": "How Buffet Does it",
+    "Author": "Pardoe",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 265,
+    "Book_Title": "Zero to One",
+    "Author": "Peter Thiel",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 266,
+    "Book_Title": "Shoe Dog",
+    "Author": "Phil Knight",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 267,
+    "Book_Title": "The man who knew infinity",
+    "Author": "Robert Kanigel",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 268,
+    "Book_Title": "Kundalini",
+    "Author": "Darrel Irving",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 269,
+    "Book_Title": "The Untethered Soul",
+    "Author": "Michael A. Singer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 270,
+    "Book_Title": "1008 Kabir Vani",
+    "Author": "Sawan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 271,
+    "Book_Title": "Unconditional Life",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 272,
+    "Book_Title": "Ageless Body, timeless mind",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 273,
+    "Book_Title": "The Zahir",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 274,
+    "Book_Title": "Buddha - A story of enlightenment",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 275,
+    "Book_Title": "The book of secrets",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 276,
+    "Book_Title": "Sri Ramana Gita",
+    "Author": "Bhagwan Sri Ramana Maharshi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 277,
+    "Book_Title": "The Holy Geeta",
+    "Author": "Swami Chinmayananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 278,
+    "Book_Title": "Mahabharata - Jaya ",
+    "Author": "Devdutt Pattnaik",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 279,
+    "Book_Title": "Bridge of Rama",
+    "Author": "Ashok. K. Banker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 280,
+    "Book_Title": "Siege of Mithila",
+    "Author": "Ashok. K. Banker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 281,
+    "Book_Title": "Prince of Ayodhya",
+    "Author": "Ashok. K. Banker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 282,
+    "Book_Title": "Siddhartha",
+    "Author": "Hermann Hesse",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 283,
+    "Book_Title": "An intimate Note to the Sincere Seeker - Vol 7",
+    "Author": "Sri Sri Ravishankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 284,
+    "Book_Title": "God Loves Fun",
+    "Author": "Sri Sri Ravishankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 285,
+    "Book_Title": "An intimate Note to the Sincere Seeker - Vol 3",
+    "Author": "Sri Sri Ravishankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 286,
+    "Book_Title": "Celebrating Silence",
+    "Author": "Sri Sri Ravishankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 287,
+    "Book_Title": "Og Mandino's University of Success",
+    "Author": "Og Mandino",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 288,
+    "Book_Title": "the 21 most powerful minutes in a leader's Day",
+    "Author": "John C. Maxwell",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 289,
+    "Book_Title": "The Upside of irrationality",
+    "Author": "Dan Ariely",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 290,
+    "Book_Title": "Mind Maps At Work: How To Be The Best",
+    "Author": "Tony Buzan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 291,
+    "Book_Title": "Living with the Himalayan Masters",
+    "Author": "Swami Rama",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 292,
+    "Book_Title": "Atmamun",
+    "Author": "Kapil Gupta",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 293,
+    "Book_Title": "Andy Grove: The Life and Times of an American",
+    "Author": "Richard S. Tedlow",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 294,
+    "Book_Title": "The Jim Corbett Omnibus",
+    "Author": "Corbett Jim",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 295,
+    "Book_Title": "The Aladdin Factor",
+    "Author": "Jack Canfield, Mark Hansen",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 296,
+    "Book_Title": "Shantaram",
+    "Author": "Gregory David Roberts",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 297,
+    "Book_Title": "Upanishads",
+    "Author": "Adi Shankaracharya",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 298,
+    "Book_Title": "Ashtavakra Gita",
+    "Author": "Art of living",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 299,
+    "Book_Title": "Your Sacred Self",
+    "Author": "Dr. Wayne W. Dyer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 300,
+    "Book_Title": "Steve Jobs - The Exclusive Biography",
+    "Author": "Walter Isaacson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 301,
+    "Book_Title": "The Bhagavat Gita",
+    "Author": "Sri Sri Ravishankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 302,
+    "Book_Title": "The 360 Degree Leader",
+    "Author": "John C. Maxwell",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 303,
+    "Book_Title": "Good to great",
+    "Author": "Jim Collins",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 304,
+    "Book_Title": "The Innovator's DNA",
+    "Author": "Dyer Gregersen Christensen",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 305,
+    "Book_Title": "The art of the Start",
+    "Author": "Guy Kawasaki",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 306,
+    "Book_Title": "The defenitive Drucker",
+    "Author": "Elizabeth Edersheim",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 307,
+    "Book_Title": "The Toyota Way",
+    "Author": "Jeffrey Liker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 308,
+    "Book_Title": "Out of My Comfort Zone: The Autobiography",
+    "Author": "Steve Waugh",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 309,
+    "Book_Title": "High Performance Cluster Computing",
+    "Author": "Rajkumar Buyya",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 310,
+    "Book_Title": "How to Cheat at IT Project Management",
+    "Author": "Susan Snedaker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 311,
+    "Book_Title": "Artificial Intelligence - A Modern Approach",
+    "Author": "Russel Norving",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 312,
+    "Book_Title": "Algorithm Design",
+    "Author": "Kleinberg Tardos",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 313,
+    "Book_Title": "The intelligent Investor",
+    "Author": "Benjamin Graham",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 314,
+    "Book_Title": "Super Trader",
+    "Author": "Van. K. Tharp",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 315,
+    "Book_Title": "Misbehaving",
+    "Author": "Richard H. Thaler",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 316,
+    "Book_Title": "Start with why",
+    "Author": "Simon Sinek",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 317,
+    "Book_Title": "Getting things done",
+    "Author": "David Allen",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 318,
+    "Book_Title": "The 4-hour work week",
+    "Author": "Timothy Ferriss",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 319,
+    "Book_Title": "The right choice",
+    "Author": "Shiv Shivakumar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 320,
+    "Book_Title": "Rework ",
+    "Author": "David Heinemeier Hansson, Jason Fried",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 321,
+    "Book_Title": "The Victory Project",
+    "Author": "Saurabh Mukherjea, Anupam Gupta",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 322,
+    "Book_Title": "Tools of Titans",
+    "Author": "Tim Ferriss",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 323,
+    "Book_Title": "The Success System that never fails",
+    "Author": "W. Clement Stone",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 324,
+    "Book_Title": "21 Lessons for the 21st Century",
+    "Author": "Yuval Noah Harari",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 325,
+    "Book_Title": "The code of the extraordinary Mind",
+    "Author": "Vishen Lakhiani",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 326,
+    "Book_Title": "Everything Is F*cked",
+    "Author": "Mark Manson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 327,
+    "Book_Title": "Essentialism",
+    "Author": "Greg McKeown",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 328,
+    "Book_Title": "Hyperfocus",
+    "Author": "Chris Bailey",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 329,
+    "Book_Title": "Option B",
+    "Author": "Sheryl Sandberg, Adam Grant",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 330,
+    "Book_Title": "Beyond order",
+    "Author": "Jordan B. Peterson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 331,
+    "Book_Title": "The Pathless path",
+    "Author": "Paul Millerd",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 332,
+    "Book_Title": "The Almanack of Naval Ravikant",
+    "Author": "Eric Jorgenson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 333,
+    "Book_Title": "Designing Your Life",
+    "Author": "Bill Burnett, Dave Evans",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 334,
+    "Book_Title": "Continuous Discovery Habits",
+    "Author": "Teresa Torres",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 335,
+    "Book_Title": "Sprint: How to Solve Big Problems",
+    "Author": "Jake Knapp",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 336,
+    "Book_Title": "The Science of getting Started",
+    "Author": "Patrick King",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 337,
+    "Book_Title": "Bounce",
+    "Author": "Mathew Syed",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 338,
+    "Book_Title": "Ego is the enemy",
+    "Author": "Ryan Holiday",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 339,
+    "Book_Title": "Why we sleep",
+    "Author": "Matthew Walker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 340,
+    "Book_Title": "The Undoing Project",
+    "Author": "Michael Lewis",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 341,
+    "Book_Title": "Indistractable",
+    "Author": "Nir Eyal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 342,
+    "Book_Title": "Originals",
+    "Author": "Adam Grant",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 343,
+    "Book_Title": "Range",
+    "Author": "David Epstein",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 344,
+    "Book_Title": "How to perform under pressure",
+    "Author": "Hendrie Weisinger, J.P. Pawliw",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 345,
+    "Book_Title": "How to Make Money in Intraday Trading",
+    "Author": "Ashwani Gujral, Rachana A. Vaidya",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 346,
+    "Book_Title": "How i made $2 million in the stock market",
+    "Author": "Nicolas Darvas",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 347,
+    "Book_Title": "Richer, Wiser, Happier",
+    "Author": "William Green",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 348,
+    "Book_Title": "How to day trade for a living",
+    "Author": "Dr. Andrew Aziz",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 349,
+    "Book_Title": "Technical Analysis of the financial market",
+    "Author": "John J. Murphy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 350,
+    "Book_Title": "Trading in The Zone",
+    "Author": "Douglas",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 351,
+    "Book_Title": "The Barefoot investor",
+    "Author": "Scott Pape",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 352,
+    "Book_Title": "Market Wizards",
+    "Author": "Schwager",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 353,
+    "Book_Title": "The millionaire fastlane",
+    "Author": "M.J. DeMarco",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 354,
+    "Book_Title": "The millionaire next door",
+    "Author": "Stanley, Danko",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 355,
+    "Book_Title": "The Dhandho investor",
+    "Author": "Mohnish Pabrai",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 356,
+    "Book_Title": "The most important Thing",
+    "Author": "Howard Marks",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 357,
+    "Book_Title": "Debt",
+    "Author": "David Graeber",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 358,
+    "Book_Title": "Diamonds in the dust",
+    "Author": "Saurabh Mukherjea, Rakshit, Salil Desai",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 359,
+    "Book_Title": "Getting started in technical analysis",
+    "Author": "Jack D. Schwager",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 360,
+    "Book_Title": "The Warren Buffet way",
+    "Author": "Robert G. Hagstrom",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 361,
+    "Book_Title": "Money Hack$",
+    "Author": "Rowan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 362,
+    "Book_Title": "Gurus of Chaos",
+    "Author": "Saurabh Mukherjea",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 363,
+    "Book_Title": "Secrets of millionaire mind",
+    "Author": "T. Harv Eker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 364,
+    "Book_Title": "The Psychology of Money",
+    "Author": "Morgan Housel",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 365,
+    "Book_Title": "100 Baggers: Stocks That Return 100-to-1",
+    "Author": "Christopher W. Mayer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 366,
+    "Book_Title": "The disciplined trader",
+    "Author": "Douglas",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 367,
+    "Book_Title": "Common stocks and uncommon profits",
+    "Author": "Philip A. Fisher",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 368,
+    "Book_Title": "Trade like a stock market wizard",
+    "Author": "Mark Minervini",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 369,
+    "Book_Title": "Common Sense",
+    "Author": "Greenblatt",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 370,
+    "Book_Title": "Just keep Buying",
+    "Author": "Nick Maggiulli",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 371,
+    "Book_Title": "Coffee can investing",
+    "Author": "Saurabh Mukherjea, Rakshit, Pranab Uniyal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 372,
+    "Book_Title": "I will teach you to be rich",
+    "Author": "Ramit Sethi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 373,
+    "Book_Title": "The hero of ages",
+    "Author": "Brandon Sanderson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 374,
+    "Book_Title": "The well of Ascension",
+    "Author": "Brandon Sanderson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 375,
+    "Book_Title": "Mistborn",
+    "Author": "Brandon Sanderson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 376,
+    "Book_Title": "Focus",
+    "Author": "Daniel Goleman",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 377,
+    "Book_Title": "Money - Master the game",
+    "Author": "Tony Robbins",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 378,
+    "Book_Title": "Linchpin",
+    "Author": "Seth Godin",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 379,
+    "Book_Title": "One hundred years of solitude",
+    "Author": "Gabriel Garcia Marquez",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 380,
+    "Book_Title": "Presence - Bringing your boldest self..",
+    "Author": "Amy Cuddy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 381,
+    "Book_Title": "Mindset",
+    "Author": "Dr Carol S. Dweck",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 382,
+    "Book_Title": "The compound effect",
+    "Author": "Darren Hardy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 383,
+    "Book_Title": "The power of Habit",
+    "Author": "Charles Duhigg",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 384,
+    "Book_Title": "Hooked - How to build habbit forming products",
+    "Author": "Nir Eyal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 385,
+    "Book_Title": "Thinking, Fast and Slow",
+    "Author": "Daniel Kahneman",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 386,
+    "Book_Title": "Attitude is everything",
+    "Author": "Jeff Keller",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 387,
+    "Book_Title": "12 Rules for Life",
+    "Author": "Jordan B. Peterson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 388,
+    "Book_Title": "Smarter Faster Better",
+    "Author": "Charles Duhigg",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 389,
+    "Book_Title": "The War of Art - Win your creative battles",
+    "Author": "Steven Pressfield",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 390,
+    "Book_Title": "Harry Potter and the Cursed Child",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 391,
+    "Book_Title": "Harry Potter and the Half-Blood prince B#6",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 392,
+    "Book_Title": "Harry Potter and the Chamber of Secrets",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 393,
+    "Book_Title": "Harry Potter and the Philosopher's Stone",
+    "Author": "J.K. Rowling",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 394,
+    "Book_Title": "Homo Deus: A brief history of tomorrow",
+    "Author": "Yuval Noah Harari",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 395,
+    "Book_Title": "Sapiens: A brief history of Humankind",
+    "Author": "Yuval Noah Harari",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 396,
+    "Book_Title": "Deep Work",
+    "Author": "Cal Newport",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 397,
+    "Book_Title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+    "Author": "Susan Cain",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 398,
+    "Book_Title": "Make Time",
+    "Author": "Jake Knapp, John Zeratsky",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 399,
+    "Book_Title": "Flow: Classic work on how to achieve happiness",
+    "Author": "Mihaly Csikszentmihalyi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 400,
+    "Book_Title": "The subtle Art of Not giving a F*ck",
+    "Author": "Mark Manson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 401,
+    "Book_Title": "The Checklist manifesto",
+    "Author": "Atul Gawande",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 402,
+    "Book_Title": "Atomic Habits",
+    "Author": "James Clear",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 403,
+    "Book_Title": "The Productivity Project",
+    "Author": "Chris Bailey",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 404,
+    "Book_Title": "Pivot",
+    "Author": "Jenny Blake",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 405,
+    "Book_Title": "Cant Hurt Me",
+    "Author": "David Goggins",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 406,
+    "Book_Title": "Emotional Agility",
+    "Author": "Susan David",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 407,
+    "Book_Title": "The Power of Passion and Perseverance",
+    "Author": "Angela Duckworth",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 408,
+    "Book_Title": "If you are so smart, why aren't you Happy",
+    "Author": "Raj Raghunathan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 409,
+    "Book_Title": "The Strength in our scars",
+    "Author": "Bianca Sparacino",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 410,
+    "Book_Title": "Quotes from Sri Sri",
+    "Author": "Sri Sri Ravishankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 411,
+    "Book_Title": "Unbroken",
+    "Author": "Laura Hillenbrand",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 412,
+    "Book_Title": "The Upside-Down King",
+    "Author": "Sudha Murthy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 413,
+    "Book_Title": "Great stories for children",
+    "Author": "Ruskin Bond",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 414,
+    "Book_Title": "Ark Angel (Alex Rider Book 6)",
+    "Author": "Anthony Horowitz",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 415,
+    "Book_Title": "Point Blank (Alex Rider Book 2)",
+    "Author": "Anthony Horowitz",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 416,
+    "Book_Title": "Krishna the man and his philosophy",
+    "Author": "Osho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 417,
+    "Book_Title": "From the rat race to financial freedom",
+    "Author": "Manoj Arora",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 418,
+    "Book_Title": "How to be your own financial planner in 10 steps",
+    "Author": "Manish Chauhan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 419,
+    "Book_Title": "Who says you can't? You Do",
+    "Author": "Daniel Chidiac",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 420,
+    "Book_Title": "Business leadership",
+    "Author": "Jossey–Bass Publishers",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 421,
+    "Book_Title": "The Naked Leader",
+    "Author": "David Taylor",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 422,
+    "Book_Title": "The art of winning commitment",
+    "Author": "Richards",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 423,
+    "Book_Title": "Achieve Leadership Genius",
+    "Author": "Zigarmi Fowler Lyles",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 424,
+    "Book_Title": "What type of Leader ar you?",
+    "Author": "Lapid-Bogda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 425,
+    "Book_Title": "The 18 challenges of leadership",
+    "Author": "Trevor Waldock, Shenaz Kelly-Rawat",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 426,
+    "Book_Title": "Mavericks at Work",
+    "Author": "William C. Taylor, Polly LaBarre",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 427,
+    "Book_Title": "Leadership for the disillusioned",
+    "Author": "Amanda Sinclair",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 428,
+    "Book_Title": "Strategy Safari",
+    "Author": "Mintzberg Ahlstrand Lampel",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 429,
+    "Book_Title": "Man's Search for Ultimate Meaning",
+    "Author": "Viktor E. Frankl",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 430,
+    "Book_Title": "Tigers for dinner",
+    "Author": "Ruskin Bond",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 431,
+    "Book_Title": "Aliens get Rickrolled",
+    "Author": "Various",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 432,
+    "Book_Title": "Jane Eyre",
+    "Author": "Charlotte Brontë",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 433,
+    "Book_Title": "Intelligence: The creative response to Now",
+    "Author": "Osho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 434,
+    "Book_Title": "Maturity: The responsibility of being oneself",
+    "Author": "Osho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 435,
+    "Book_Title": "The perfect storm",
+    "Author": "Sebastian Junger",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 436,
+    "Book_Title": "Hindu Mythology",
+    "Author": "W.J. Wilkins",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 437,
+    "Book_Title": "Einstein: The Life and Times",
+    "Author": "Ronald Clark",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 438,
+    "Book_Title": "Why MARS & VENUS COLLIED",
+    "Author": "John cray",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 439,
+    "Book_Title": "Success The best of Napoleon Hill",
+    "Author": "Napoleon Hill",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 440,
+    "Book_Title": "Know can do",
+    "Author": "Ken Blanchard",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 441,
+    "Book_Title": "Games people play",
+    "Author": "Eric Berne M. D",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 442,
+    "Book_Title": "Life strategies",
+    "Author": "Dr. Phillip C McGraw",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 443,
+    "Book_Title": "The Winner stands alone",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 444,
+    "Book_Title": "Inspirations",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 445,
+    "Book_Title": "Like the flowing River",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 446,
+    "Book_Title": "Brida",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 447,
+    "Book_Title": "To kill a Mockingbird",
+    "Author": "Harper Lee",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 448,
+    "Book_Title": "Life after death",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 449,
+    "Book_Title": "iCon Steve Jobs",
+    "Author": "Jeffrey S. Young, William L. Simon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 450,
+    "Book_Title": "Buffettology",
+    "Author": "Mary Buffett",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 451,
+    "Book_Title": "Who says elephants can't Dance",
+    "Author": "Louis v. Gerstner, JR. ",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 452,
+    "Book_Title": "iWoz",
+    "Author": "Steve Wozniak",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 453,
+    "Book_Title": "Social Intelligence",
+    "Author": "Daniel Goleman",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 454,
+    "Book_Title": "The Steve Jobs Way",
+    "Author": "Jay Elliott with William L Simon",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 455,
+    "Book_Title": "The Witch of Portobello",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 456,
+    "Book_Title": "Healing the Heart",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 457,
+    "Book_Title": "Emotional Intelligence",
+    "Author": "Daniel Goleman",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 458,
+    "Book_Title": "Buffet's Bites",
+    "Author": "Rittenhouse",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 459,
+    "Book_Title": "52 ways to live success",
+    "Author": "Jeanne Sharbuno",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 460,
+    "Book_Title": "Boundless Energy",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 461,
+    "Book_Title": "Why Can't I Get What I Want",
+    "Author": "Elliott & Lassen",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 462,
+    "Book_Title": "Outliers",
+    "Author": "Malcolm Gladwell",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 463,
+    "Book_Title": "The Monk Who sold his Ferrari",
+    "Author": "Robin Sharma",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 464,
+    "Book_Title": "The google story",
+    "Author": "David A. Vise",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 465,
+    "Book_Title": "The Tibetan book of the dead",
+    "Author": "Robert A. F. Thurman",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 466,
+    "Book_Title": "Crossing The Chasm",
+    "Author": "Moore",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 467,
+    "Book_Title": "What Got You Here Won't Get You There",
+    "Author": "Marshall goldsmith",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 468,
+    "Book_Title": "The Karma Handbook",
+    "Author": "Trutz Hardo",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 469,
+    "Book_Title": "The Art Of Talking So That People Will Listen",
+    "Author": "Paul W. Swets",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 470,
+    "Book_Title": "Rules and Tools For Leaders",
+    "Author": "Smith",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 471,
+    "Book_Title": "The Rise Of The Creative Class",
+    "Author": "Richard Florida",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 472,
+    "Book_Title": "How to Feel Confident",
+    "Author": "Leil Lowndes",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 473,
+    "Book_Title": "The one Minute Manager",
+    "Author": "Kenneth Blanchard and Spencer Johnson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 474,
+    "Book_Title": "The Art Of Closing Any Deal",
+    "Author": "James W. Pickens",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 475,
+    "Book_Title": "The only negotiating guide you'll ever need",
+    "Author": "Peter B. Stark and Jane Flaherty",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 476,
+    "Book_Title": "Make your Workplace Great",
+    "Author": "Stein",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 477,
+    "Book_Title": "The last Mughal",
+    "Author": "William Dalrymple",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 478,
+    "Book_Title": "Managing for results",
+    "Author": "Peter Drucker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 479,
+    "Book_Title": "Extreme Management",
+    "Author": "Mark Stevens",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 480,
+    "Book_Title": "The little manual of happiness",
+    "Author": "Vikas Malkani",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 481,
+    "Book_Title": "The practice of management",
+    "Author": "Peter Drucker",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 482,
+    "Book_Title": "The quick and easy way to effective speaking",
+    "Author": "Dale Carnegie",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 483,
+    "Book_Title": "Lateral Thinking",
+    "Author": "Edward De Bono",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 484,
+    "Book_Title": "How to get from where you are to Where you want to be",
+    "Author": "Jack Canfield",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 485,
+    "Book_Title": "What they don't teach you at Harvard Business School",
+    "Author": "Mark H. McCormack",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 486,
+    "Book_Title": "First things first",
+    "Author": "Stephen R. Covey",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 487,
+    "Book_Title": "Ever- Green Messages",
+    "Author": "Swami Chinmayananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 488,
+    "Book_Title": "The seven spiritual law of success",
+    "Author": "Deepak Chopra",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 489,
+    "Book_Title": "You'll see It when you believe it",
+    "Author": "Dr. Wayne W. Dyer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 490,
+    "Book_Title": "How to stop Worrying and Start Living",
+    "Author": "Dale Carnegie",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 491,
+    "Book_Title": "Tough Times Never Last, But Tough people Do! ",
+    "Author": "Schuller",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 492,
+    "Book_Title": "Don't Say yes when you want to say no",
+    "Author": "Herbert fensterheim, and Jean Baer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 493,
+    "Book_Title": "Tuesdays with morrie",
+    "Author": "Mitch Albom",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 494,
+    "Book_Title": "Alibaba and the forty Thieves",
+    "Author": "Antoine Galland",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 495,
+    "Book_Title": "Fantastic Mr. Fox",
+    "Author": "Roald Dahl",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 496,
+    "Book_Title": "A Mulgudi Omnibus",
+    "Author": "R K Narayan",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 497,
+    "Book_Title": "Ivanhoe",
+    "Author": "Sir Walter Scott",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 498,
+    "Book_Title": "The Phantom Tollbooth",
+    "Author": "Norton Juster",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 499,
+    "Book_Title": "The old man and his God",
+    "Author": "Sudha Murty",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 500,
+    "Book_Title": "Just Not Stories",
+    "Author": "Amul bahi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 501,
+    "Book_Title": "Paulo Coelho: Confession of pilgrim",
+    "Author": "Juan Arias",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 502,
+    "Book_Title": "Effective Time Management",
+    "Author": "Underwood",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 503,
+    "Book_Title": "Kudumbhajeevitham (കുടുംബജീവിതം)",
+    "Author": "Dr. P. M mathew vellur",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 504,
+    "Book_Title": "How to be more Interesting",
+    "Author": "Edward de Bono",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 505,
+    "Book_Title": "The hungry tide",
+    "Author": "Amitav Ghosh",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 506,
+    "Book_Title": "And the followers showered ",
+    "Author": "Osho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 507,
+    "Book_Title": "Vipassana: The essence of meditation",
+    "Author": "Osho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 508,
+    "Book_Title": "Unleashing the Ideavirus",
+    "Author": "Seth Godin",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 509,
+    "Book_Title": "The teachings of Sri Ramana Maharshi",
+    "Author": "Maharshi's Gospel",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 510,
+    "Book_Title": "The temptation of jack Orkney",
+    "Author": "Doris Lessing",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 511,
+    "Book_Title": "Hyperspace",
+    "Author": "Michio Kaku",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 512,
+    "Book_Title": "A tour of the calculus",
+    "Author": "David Berlinski",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 513,
+    "Book_Title": "Your personality. Your Health",
+    "Author": "Carol Ritberger",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 514,
+    "Book_Title": "Reminiscences of a Stock Operator",
+    "Author": "Edwin Lefevre",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 515,
+    "Book_Title": "Malayala lakhu nighandu (മലയാള ലഘ നിഘണ്ടു )",
+    "Author": "Vattaparambil Gopinadhapilla",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 516,
+    "Book_Title": "Punathilinte novellakal (പുനത്തിലിൻ്റെ നോവെല്ലകൾ )",
+    "Author": "Punathil Kunjabdulla",
+    "Rent_per_week": 10,
+    "Language": "Malayalam"
+  },
+  {
+    "S_No": 517,
+    "Book_Title": "Best of Fyoder Dostoevsky",
+    "Author": "Fyoder Dostoevsky",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 518,
+    "Book_Title": "The Latte Factor",
+    "Author": "David Bach and John David",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 519,
+    "Book_Title": "Doglapan",
+    "Author": "Ashneer Grover",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 520,
+    "Book_Title": "Ready, Study, Go! ",
+    "Author": "Khurshed Batliwala & Dinesh Ghodke",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 521,
+    "Book_Title": "Gurudev's Tales",
+    "Author": "Sri Sri Ravi Shankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 522,
+    "Book_Title": "Cross word ",
+    "Author": "Dan word",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 523,
+    "Book_Title": "Kant",
+    "Author": "Paul Guyer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 524,
+    "Book_Title": "The Art of Wealth ",
+    "Author": "Thomas Cleary",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 525,
+    "Book_Title": "Drive",
+    "Author": "Daniel H. Pink",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 526,
+    "Book_Title": "Between Parent And Child ",
+    "Author": "Haim G. Ginott",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 527,
+    "Book_Title": "One - Minute Super Dad",
+    "Author": "Dr. Prashant Jindal",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 528,
+    "Book_Title": "Narada Bhakti Sutra - The Aphorisms of Love",
+    "Author": "Sri Sri Ravi Shankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 529,
+    "Book_Title": "Know your child - The art of raising children ",
+    "Author": "Sri Sri Ravi Shankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 530,
+    "Book_Title": "Bang on the Door",
+    "Author": "Sri Sri Ravi Shankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 531,
+    "Book_Title": "How to Raise a Brighter Child The Case for Early Learning",
+    "Author": "Joan Beck",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 532,
+    "Book_Title": "The Art of Innovation",
+    "Author": "Tom Kelley",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 533,
+    "Book_Title": "The Fork, The witch, and the worm ",
+    "Author": "Christopher paolini",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 534,
+    "Book_Title": "The rules of wealth",
+    "Author": "Templar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 535,
+    "Book_Title": "Change your thoughts..... change your life",
+    "Author": "Dr. Wayne W. Dyer",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 536,
+    "Book_Title": "Jacked up: GE Becoming the World’s Greatest Company ",
+    "Author": "Bill Lane",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 537,
+    "Book_Title": "Mahabharata: The Greatest Epic of all time",
+    "Author": "Sterling Publishers",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 538,
+    "Book_Title": "The sacred stories of GITA",
+    "Author": "Sawan, Sahil Gupta",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 539,
+    "Book_Title": "Tales of Tenali Raman",
+    "Author": "Sawan, Sahil Gupta",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 540,
+    "Book_Title": "Shri Krishna Leela",
+    "Author": "Sawan, Sahil Gupta",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 541,
+    "Book_Title": "Akbar- Birbal Stories",
+    "Author": "Vivek Kumar Pandey & Shambhunath",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 542,
+    "Book_Title": "All time favorite Hanuman",
+    "Author": "Little Scolarz",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 543,
+    "Book_Title": "The Tipping Point",
+    "Author": "M. M. Colm Gladwell",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 544,
+    "Book_Title": "Losing my Virginity Richard Branson The Autobiography",
+    "Author": "Richard Branson",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 545,
+    "Book_Title": "Friedrich Nietzsche The Gay Science",
+    "Author": "Walter Kaufmann",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 546,
+    "Book_Title": "Mulgudi Schooldays",
+    "Author": "R. K. Nayaran",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 547,
+    "Book_Title": "Good vibes Good life",
+    "Author": "Vex King",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 548,
+    "Book_Title": "The Count of Monte Cristo",
+    "Author": "Alexandre Dumas",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 549,
+    "Book_Title": "Wuthering Heights",
+    "Author": "Emily Bronte",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 550,
+    "Book_Title": "Pride and Prejudice",
+    "Author": "Jane Austen",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 551,
+    "Book_Title": "Murder in Pahargani",
+    "Author": "Kulpreet Yadav",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 552,
+    "Book_Title": "The Mind of God",
+    "Author": "Paul Davies",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 553,
+    "Book_Title": "The Jatakas birth stories of bodhisatta",
+    "Author": "Sarah Shaw",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 554,
+    "Book_Title": "Unaccustomed Earth",
+    "Author": "Jhampa lahiri",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 555,
+    "Book_Title": "The Laws of manu",
+    "Author": "Penguin Classics",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 556,
+    "Book_Title": "Awaken the giant within",
+    "Author": "Antony Robbins",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 557,
+    "Book_Title": "Manual of the warrior of Light",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 558,
+    "Book_Title": "The supreme yoga",
+    "Author": "Swami Venkatesananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 559,
+    "Book_Title": "Eagle Strike",
+    "Author": "Antony Horowitz",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 560,
+    "Book_Title": "The Spooks Battle",
+    "Author": "Joseph Delaney",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 561,
+    "Book_Title": "Mother",
+    "Author": "Maxim Gorky",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 562,
+    "Book_Title": "Trouble Twisters",
+    "Author": "Garth Nix & Sean Williams",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 563,
+    "Book_Title": "The kingdom of fantasy",
+    "Author": "G. Stiton",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 564,
+    "Book_Title": " The Golden Notebook",
+    "Author": "Doris Lessing",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 565,
+    "Book_Title": "The Difference maker",
+    "Author": "John C. Maxwell",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 566,
+    "Book_Title": "The 7 habits of highly effective people",
+    "Author": "Stephen R. covey",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 567,
+    "Book_Title": "Fooled by Randomness",
+    "Author": "Nassim Nicholas Taleb",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 568,
+    "Book_Title": "Eat that Frog ",
+    "Author": "Brian Tracy",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 569,
+    "Book_Title": "The Alchemist",
+    "Author": "Paulo Coelho",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 570,
+    "Book_Title": "Mind your Money",
+    "Author": "Pranjal Karma",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 571,
+    "Book_Title": "Freedom at Midnight",
+    "Author": "Dominique Lapierre and Larry Collins",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 572,
+    "Book_Title": "The kite Runner",
+    "Author": "Khaled Hosseini",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 573,
+    "Book_Title": "Tarangini 2",
+    "Author": "Swami Chinmayananda and Swami Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 574,
+    "Book_Title": "Tarangini 3",
+    "Author": "Swami Chinmayananda and Swami Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 575,
+    "Book_Title": "Tarangini 4",
+    "Author": "Swami Chinmayananda and Swami Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 576,
+    "Book_Title": "Tarangini 5",
+    "Author": "Swami Chinmayananda and Swami Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 577,
+    "Book_Title": "Tarangini 6",
+    "Author": "Swami Chinmayananda and Swami Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 578,
+    "Book_Title": "Tarangini 7",
+    "Author": "Swami Chinmayananda and Swami Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 579,
+    "Book_Title": "Tell me a story - 2",
+    "Author": "Swamini Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 580,
+    "Book_Title": "Tell me a story - 3",
+    "Author": "Swamini Saradapriyananda",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 581,
+    "Book_Title": "The Balvihar book of prayers and their explanations",
+    "Author": "Swamini Aaradhanananda and Bharati Sukhtankar",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 582,
+    "Book_Title": "The rat's wedding and other stories",
+    "Author": "Flora Annie Webster Steel",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 583,
+    "Book_Title": "Adam Bede",
+    "Author": "George Eliot",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 584,
+    "Book_Title": "Robinson Crusoe",
+    "Author": "Daniel Defoe",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 585,
+    "Book_Title": "Think and Grow Rich",
+    "Author": "Napoleon Hill",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 586,
+    "Book_Title": "The wonderful Wizard of oz",
+    "Author": "Frank Baum",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 587,
+    "Book_Title": "Imagining India",
+    "Author": "Nandan Nilekani",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 588,
+    "Book_Title": "The secret of the nagas",
+    "Author": "Amish Tripathi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 589,
+    "Book_Title": "The immortals of meluha",
+    "Author": "Amish Tripathi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 590,
+    "Book_Title": "The oath of the vayuputras",
+    "Author": "Amish Tripathi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 591,
+    "Book_Title": "Scion of Ikshvaku",
+    "Author": "Amish Tripathi",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 592,
+    "Book_Title": "Unbroken now a major motion picture",
+    "Author": "Laura Hillenbrand",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 593,
+    "Book_Title": "The Upside - Down King",
+    "Author": "Sudha Murty",
+    "Rent_per_week": 10,
+    "Language": "English"
+  },
+  {
+    "S_No": 594,
+    "Book_Title": "The Da Vinci Code",
+    "Author": "Dan Brown",
+    "Rent_per_week": 10,
+    "Language": "English"
+  }
+]
