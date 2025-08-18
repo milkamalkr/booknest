@@ -52,6 +52,9 @@ def is_duplicate_title(json_array, new_title):
     """Check if a book with the same title exists in json_array"""
     return any(book[key_title].lower() == new_title.lower() for book in json_array)
 
+# Initialize a global set to collect all genres
+all_genres = set()
+
 # Modify the main loop
 for row in records:
     if row.get("Title (English)") and row["Author/Publisher"]:
@@ -71,17 +74,27 @@ for row in records:
             book[key_rent] = row["Expected Rent per week"]
             book[key_language] = row["Language"]
             book[key_description] = row["Description"]
-            book[key_genre] = [row["Genres"]]
+            
+            # Collect genres and add to global set
+            genres = row["Genres"].split(",") if row["Genres"] else []
+            genres = [genre.strip() for genre in genres]
+            book[key_genre] = genres
+            all_genres.update(genres)
+
             book[key_age_category] = row["AgeCategory"]
             json_array.append(book)
             print(f"Added: {title}")
         else:
             print(f"Skipped duplicate: {title}")
 
+# Create the final JSON structure
+final_json = {
+    "all_genres": sorted(list(all_genres)),  # Sort genres alphabetically
+    "age_groups":["Toddler ","Children ","Teenage ","Young Adult ","Adult "],
+    "languages":["English", "Malayalam", "Tamil"],
+    "all_books": json_array
+}
 
-# Print or write to file
-#print(json.dumps(json_array, indent=2, ensure_ascii=False))
-
-# Optionally save to file
+# Save to file
 with open("csvjson.json", "w", encoding="utf-8") as f:
-     json.dump(json_array, f, indent=2, ensure_ascii=False)
+    json.dump(final_json, f, indent=2, ensure_ascii=False)
