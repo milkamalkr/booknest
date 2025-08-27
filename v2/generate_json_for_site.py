@@ -14,7 +14,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("D:\\BookNest\\utilitie
 # Authorize the client
 client = gspread.authorize(creds)
 
-# Open the Google Sheet by URL or title
+# Open the Google Sheet by URL or title 
 #sheet_url = "https://docs.google.com/spreadsheets/d/1WBAOPiIMEUuE0g30PUjHisoFlNpEDsdRmUjlPmkDnvI"
 sheet_url = "https://docs.google.com/spreadsheets/d/182AATzul9y2SvvPAJlmZQHkDHotYGzY37njtcE73rUw"
 
@@ -52,8 +52,9 @@ def is_duplicate_title(json_array, new_title):
     """Check if a book with the same title exists in json_array"""
     return any(book[key_title].lower() == new_title.lower() for book in json_array)
 
-# Initialize a global set to collect all genres
+# Initialize a global set to collect all genres and age groups
 all_genres = set()
+age_groups = set()
 
 # Modify the main loop
 for row in records:
@@ -81,7 +82,11 @@ for row in records:
             book[key_genre] = genres
             all_genres.update(genres)
 
-            book[key_age_category] = row["AgeCategory"]
+            # Collect age categories and add to global set
+            age_category = row["AgeCategory"]
+            book[key_age_category] = age_category
+            age_groups.add(age_category)
+
             json_array.append(book)
             print(f"Added: {title}")
         else:
@@ -90,8 +95,8 @@ for row in records:
 # Create the final JSON structure
 final_json = {
     "all_genres": sorted(list(all_genres)),  # Sort genres alphabetically
-    "age_groups":["Toddler ","Children ","Teenage ","Young Adult ","Adult "],
-    "languages":["English", "Malayalam", "Tamil"],
+    "age_groups": sorted(list(age_groups)),  # Sort age groups alphabetically
+    "languages": ["English", "Malayalam", "Tamil"],
     "all_books": json_array
 }
 

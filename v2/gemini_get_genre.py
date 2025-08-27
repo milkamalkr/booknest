@@ -99,6 +99,9 @@ def get_gemini_genres_and_age(title, author, description, categories):
 
 # Modify the main loop
 for idx, row in enumerate(records):
+    if idx <= 5:
+        continue
+    
     if row.get("Title (English)") and row.get("Author/Publisher"):
         title = row["Title (English)"]
         author = row["Author/Publisher"]
