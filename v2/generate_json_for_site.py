@@ -15,8 +15,8 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("D:\\BookNest\\utilitie
 client = gspread.authorize(creds)
 
 # Open the Google Sheet by URL or title 
-#sheet_url = "https://docs.google.com/spreadsheets/d/1WBAOPiIMEUuE0g30PUjHisoFlNpEDsdRmUjlPmkDnvI"
-sheet_url = "https://docs.google.com/spreadsheets/d/182AATzul9y2SvvPAJlmZQHkDHotYGzY37njtcE73rUw"
+sheet_url = "https://docs.google.com/spreadsheets/d/1Lp66xVcGh7nshszkunAlQKEoPj-CHvJ8PZ_6Yp0g2mU"
+#sheet_url = "https://docs.google.com/spreadsheets/d/182AATzul9y2SvvPAJlmZQHkDHotYGzY37njtcE73rUw"
 
 sheet = client.open_by_url(sheet_url)
 
@@ -52,28 +52,36 @@ def is_duplicate_title(json_array, new_title):
     """Check if a book with the same title exists in json_array"""
     return any(book[key_title].lower() == new_title.lower() for book in json_array)
 
-# Initialize a global set to collect all genres and age groups
+# Initialize a global set to collect all genres, age groups, and languages
 all_genres = set()
 age_groups = set()
+all_languages = set()
 
 # Modify the main loop
+idx = 0
 for row in records:
+    idx += 1
     if row.get("Title (English)") and row["Author/Publisher"]:
         # Construct the title first
         if row.get("Title in language (If not English) "):
             title = row["Title (English)"] + " (" + row["Title in language (If not English) "] + ")"
         else:    
             title = row["Title (English)"]
-            
+        
+        title = title.strip()
+        #print(title)
         # Check for duplicates before adding
         if not is_duplicate_title(json_array, title):
             book = {}
             book[key_sn] = cnt
             cnt += 1
+            # Collect languages and add to global set
+            language = row["Language"].strip()
             book[key_title] = title
-            book[key_author] = row["Author/Publisher"]
-            book[key_rent] = row["Expected Rent per week"]
-            book[key_language] = row["Language"]
+            book[key_author] = row["Author/Publisher"].strip()
+            #book[key_rent] = row["Expected Rent per week"]
+            book[key_language] = language
+            #print(row)
             book[key_description] = row["Description"]
             
             # Collect genres and add to global set
@@ -83,20 +91,26 @@ for row in records:
             all_genres.update(genres)
 
             # Collect age categories and add to global set
-            age_category = row["AgeCategory"]
+            age_category = row["AgeCategory"].strip()
             book[key_age_category] = age_category
             age_groups.add(age_category)
+            all_languages.add(language)
 
             json_array.append(book)
             print(f"Added: {title}")
         else:
             print(f"Skipped duplicate: {title}")
+        
+        print("-" * 50)
+        if ( idx == 50):
+            print("Break...Reached the end of the list. Exiting...")
+            break
 
 # Create the final JSON structure
 final_json = {
     "all_genres": sorted(list(all_genres)),  # Sort genres alphabetically
     "age_groups": sorted(list(age_groups)),  # Sort age groups alphabetically
-    "languages": ["English", "Malayalam", "Tamil"],
+    "all_languages": sorted(list(all_languages)),  # Sort languages alphabetically
     "all_books": json_array
 }
 

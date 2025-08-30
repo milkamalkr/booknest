@@ -1,0 +1,962 @@
+[
+    {
+        "S_No": 1,
+        "Book_Title": "Bible (ബൈബിൾ)",
+        "Author": "POC",
+        "Language": "Malayalam",
+        "Description": "Old Testament & New testament of Christianity",
+        "Genre": [
+            "Christianity",
+            "Spirituality",
+            "History",
+            "Jesus"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "History & Culture",
+            "Religion, Philosophy & Spirituality"
+        ]
+    },
+    {
+        "S_No": 2,
+        "Book_Title": "Question Basket",
+        "Author": "The Art of Living,  Sri sri Ravishankar",
+        "Language": "English",
+        "Description": "Questions answered by Sri Sri Ravi Shankar",
+        "Genre": [
+            "Self-help",
+            "Philosophy",
+            "Spirituality",
+            "Inspirational",
+            "Conduct of Life"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Religion, Philosophy & Spirituality",
+            "Lifestyle & Practical Guides"
+        ]
+    },
+    {
+        "S_No": 3,
+        "Book_Title": "Canakya On Management",
+        "Author": "Ashok R Garde",
+        "Language": "English",
+        "Description": "Canakya’s Arthasastra deals with the different aspects of managing a kingdom, including management of men. The principles contained in Canakya’s work have the unique distinction of being used successfully in practice to achieve good results on a sustainable basis. The management principles used in the USA or in Japan are derived from their own cultural background. There exists enough evidence to show that these systems, even when meticulously and earnestly adopted in India, rarely take roots or produce the desired results. We need to look for those principles that make sense in our own social and work culture and which would hopefully deliver better results for all concerned - the customers, the investors, the employees and the society. This book on the management philosophy and practice of Canakya is the author’s earnest attempt to help Indian readership to become familiar with the great work of the First Total Management Guru of the world.",
+        "Genre": [
+            "Business",
+            "Economics",
+            "Management",
+            "Self-Help",
+            "History"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "History & Culture",
+            "Business, Economics & Management"
+        ]
+    },
+    {
+        "S_No": 4,
+        "Book_Title": "12 Rules for Life: An Antidote to Chaos",
+        "Author": "Jordan Peterson",
+        "Language": "English",
+        "Description": "Jordan Peterson's work as a clinical psychologist has reshaped the modern understanding of personality, and now he has become one of the world's most popular public thinkers, with his lectures on topics ranging from the Bible to romantic relationships drawing tens of millions of viewers. In an era of polarizing politics, echo chambers and trigger warnings, his startling message about the value of personal responsibility and the dangers of ideology has resonated around the world. In this book, he combines ancient wisdom with decades of experience to provide twelve profound and challenging principles for how to live a meaningful life, from setting your house in order before criticising others to comparing yourself to who you were yesterday, not someone else today. Gripping, thought-provoking and deeply rewarding, 12 Rules for Lifeoffers an antidote to the chaos in our lives- eternal truths applied to our modern problems.",
+        "Genre": [
+            "Self-Help",
+            "Philosophy",
+            "Psychology",
+            "Sociology",
+            "Non-Fiction"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Non-Fiction",
+            "Religion, Philosophy & Spirituality",
+            "Social Sciences & Studies"
+        ]
+    },
+    {
+        "S_No": 5,
+        "Book_Title": "Code Name Bananas",
+        "Author": "David Walliams",
+        "Language": "English",
+        "Description": "Go back in time with No. 1 bestselling author David Walliams for a whizz-bang epic adventure of action, laughter and secret plots – and the extraordinary friendship between a little boy and a huge gorilla that just might save the day...",
+        "Genre": [
+            "Children's Literature",
+            "Adventure Fiction",
+            "Humorous Fiction",
+            "Historical Fiction",
+            "Friendship Fiction"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 6,
+        "Book_Title": "The Beast Of Buckingham Palace",
+        "Author": "David Walliams",
+        "Language": "English",
+        "Description": "The UK's #1 bestselling children's author, David Walliams, is back with a fantastical tale of myth and legend, good and evil, and one small boy on a quest to save the world—chock-full of Walliams’s unmistakable humor and perfect for fans of Jeff Kinney and Roald Dahl. The kingdom has fallen into darkness. Prince Alfred has never left the safety of Buckingham Palace. But there are strange goings on inside the palace walls—and Alfred’s life is about to change forever. In the dead of night something terrible stalks the corridors. When Alfred’s beloved mother the queen is dragged off to the Tower of London, the boy must summon all his courage to embark on an epic quest to save her… and the entire world.",
+        "Genre": [
+            "Children's Literature",
+            "Fantasy",
+            "Adventure",
+            "Humor",
+            "Mythical Fiction"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Fantasy",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 7,
+        "Book_Title": "Five Survive",
+        "Author": "Holly Jackson",
+        "Language": "English",
+        "Description": "AN INSTANT NUMBER 1 NYT BESTSELLER AND SUNDAY TIMES BESTSELLER! THE EXPLOSIVE NEW YA CRIME THRILLER FROM THE BESTSELLING AUTHOR OF A GOOD GIRL’S GUIDE TO MURDER.",
+        "Genre": [
+            "Young Adult Fiction",
+            "Mystery",
+            "Thriller",
+            "Crime Fiction",
+            "Suspense"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Fiction",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 8,
+        "Book_Title": "As Good As Dead",
+        "Author": "Holly Jackson",
+        "Language": "English",
+        "Description": "A must-have special edition of the thrilling finale to the A Good Girl's Guide to Murder series, featuring gorgeous sprayed edges and exclusive content from mutimillion-copy bestselling author Holly Jackson! Pip is about to head to college, but she is still haunted by the way her last investigation ended. She's used to online death threats in the wake of her viral true-crime podcast, but she can't help noticing an anonymous person who keeps asking her: Who will look for you when you're the one who disappears? Soon the threats escalate, and Pip realizes that someone is following her in real life. When she starts to find connections between her stalker and a local serial killer caught six years ago, she wonders if maybe the wrong man is behind bars. Police refuse to act, so Pip has only one choice: find the suspect herself—or be the next victim. As the deadly game plays out, Pip discovers that everything in her small town is coming full circle . . . and if she doesn’t find the answers, this time she will be the one who disappears. . . . Look for the whole series: A GOOD GIRL’S GUIDE TO MURDER • GOOD GIRL, BAD BLOOD • AS GOOD AS DEAD",
+        "Genre": [
+            "Mystery",
+            "Thriller",
+            "Young Adult Fiction",
+            "Crime Fiction",
+            "Suspense"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Fiction",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 9,
+        "Book_Title": "Good Girl, Bad Blood",
+        "Author": "Holly Jackson",
+        "Language": "English",
+        "Description": "The New York Times best-selling, brilliantly crafted crime-thriller sequel to the no.1 debut of 2019, A GOOD GIRL'S GUIDE TO MURDER.",
+        "Genre": [
+            "Mystery",
+            "Thriller",
+            "Young Adult Fiction",
+            "Crime Fiction",
+            "Suspense"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Fiction",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 10,
+        "Book_Title": "A Good Girl's Guide to Murder",
+        "Author": "Holly Jackson",
+        "Language": "English",
+        "Description": "THE MUST-READ MULTIMILLION BESTSELLING MYSTERY SERIES—NOW ON NETFLIX! • This is the story about an investigation turned obsession, full of twists and turns and with an ending you'll never expect. Everyone in Fairview knows the story. Pretty and popular high school senior Andie Bell was murdered by her boyfriend, Sal Singh, who then killed himself. It was all anyone could talk about. And five years later, Pip sees how the tragedy still haunts her town. But she can't shake the feeling that there was more to what happened that day. She knew Sal when she was a child, and he was always so kind to her. How could he possibly have been a killer? Now a senior herself, Pip decides to reexamine the closed case for her final project, at first just to cast doubt on the original investigation. But soon she discovers a trail of dark secrets that might actually prove Sal innocent . . . and the line between past and present begins to blur. Someone in Fairview doesn't want Pip digging around for answers, and now her own life might be in danger. And don't miss the sequel, Good Girl, Bad Blood! \"The perfect nail-biting mystery.\" —Natasha Preston, #1 New York Times bestselling author",
+        "Genre": [
+            "Young Adult Fiction",
+            "Mystery",
+            "Thriller",
+            "Crime Fiction",
+            "Investigative Fiction"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Fiction",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 11,
+        "Book_Title": "Baby Sitter Club - Dawn and the Impossible Three",
+        "Author": "Martin & Galligan",
+        "Language": "English",
+        "Description": "A graphic novel adapted and illustrated by New York Times and USA Today bestselling author Gale Galligan! Dawn Schafer is the newest member of The Baby-sitters Club. Even though she's still adjusting to life in Stoneybrook after moving from sunny California, she's eager to accept her first big job. But taking care of the three Barrett kids would be too much for any baby-sitter. The house is always a mess, the kids are out of control, and Mrs. Barrett never does any of the things she promises. On top of all that, Dawn wants to fit in with the other members of the BSC, but she can't figure out how to get along with Kristy. Was joining The Baby-sitters Club a mistake?",
+        "Genre": [
+            "Graphic Novel",
+            "Children's Literature",
+            "Coming-of-Age",
+            "Friendship Fiction",
+            "Family Fiction"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 12,
+        "Book_Title": "The Boy in the Dress",
+        "Author": "David Walliams",
+        "Language": "English",
+        "Description": "The sparkling debut children’s novel from David Walliams, number one bestseller and fastest growing children’s author in the country.",
+        "Genre": [
+            "Children's Literature",
+            "Middle Grade Fiction",
+            "Humorous Fiction",
+            "Coming-of-Age Story",
+            "LGBTQ+ themes"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Others",
+            "Other",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 13,
+        "Book_Title": "The Murder of Roger Ackroyd",
+        "Author": "Agatha Christie",
+        "Language": "English",
+        "Description": "Hercule Poirot takes over the investigation of two murders.",
+        "Genre": [
+            "Mystery",
+            "Detective Fiction",
+            "Crime Fiction",
+            "Whodunit",
+            "Thriller"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 14,
+        "Book_Title": "The last bear",
+        "Author": "Hannah Gold",
+        "Language": "English",
+        "Description": "Imagine making friends with a polar bear... The Last Bear is perfect for readers of 8+, beautifully illustrated throughout by Levi Pinfold – winner of the Kate Greenaway Medal and illustrator of Harry Potter 20th anniversary edition covers.",
+        "Genre": [
+            "Children's Literature",
+            "Animal Fantasy",
+            "Adventure Fiction",
+            "Environmental Fiction",
+            "Illustrated Children's Book"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Fantasy",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 15,
+        "Book_Title": "the Bad Guys - Movie Novelization",
+        "Author": "DreamWorks",
+        "Language": "English",
+        "Description": "The Bad Guys are back for their second big-screen movie, and it's bigger and BADDER than ever! It takes a bad guy to catch a bad guy! Get ready for another thrilling adventure for our favorite bad guys. Fresh out of prison, Mr. Wolf, Mr. Snake, Mr. Shark, Ms. Tarantula, and Mr. Piranha struggle to make it as good guys. That is, until a fresh wave of crime sweeps the city. Can the Bad Guys help catch these dastardly foes? Read and find out in the action-packed novelization. Includes an eight page full-colored insert.",
+        "Genre": [
+            "Children's Literature",
+            "Adventure Fiction",
+            "Comedy",
+            "Crime Fiction",
+            "Movie Novelization"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Entertainment, Sports & Hobbies",
+            "Fiction",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 16,
+        "Book_Title": "Diary of a Wimpy Kid - Cabin fever",
+        "Author": "Jeff Kinney",
+        "Language": "English",
+        "Description": "School property has been damaged and Greg is the prime suspect. The authorities are closing in, but then a surprise blizzard hits and the Heffley family is trapped indoors. Greg knows that when the snow melts he's going to have to face the music but could any punishment be worse than being stuck inside with your family for the holidays?",
+        "Genre": [
+            "Humor",
+            "Children's Literature",
+            "Realistic Fiction",
+            "Family Fiction",
+            "Coming-of-Age"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 17,
+        "Book_Title": "Diary of a Wimpy Kid - The Third Wheel",
+        "Author": "Jeff Kinney",
+        "Language": "English",
+        "Description": "Join Greg Heffley in the seventh book in Jeff Kinney's hilarious Diary of a Wimpy Kid series! When you live in a house with four other people, some fool is always gonna come along and ruin things for you. Love is in the air, but what does that mean for Greg Heffley? A Valentine's Day dance at Greg's school has turned his world upside down. As Greg scrambles to find a date, he's worried he'll be left out in the cold on the big night. His best friend, Rowley, doesn't have any prospects either but that's small consolation. Then an unexpected twist gives Greg a partner for the dance and leaves Rowley the odd man out. But a lot can happen in one night, and in the end, you never know who's going to be lucky in love . . . The world is full of millions of Wimpy Kid fans! 7+ readers of all abilities can't get their heads out of Greg's diaries. Praise for Jeff Kinney: 'The world has gone crazy for Jeff Kinney's Diary of a Wimpy Kid' - The Sun 'Kinney is right up there with J K Rowling as one of the bestselling children's authors on the planet' - Independent 'Hilarious' - Telegraph *Winner of Blue Peter's Best Book of the Last 10 Years award.*",
+        "Genre": [
+            "Children's Literature",
+            "Humor",
+            "Coming-of-Age",
+            "Realistic Fiction",
+            "Diary/Journal"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 18,
+        "Book_Title": "Diary of a Wimpy Kid - Old School",
+        "Author": "Jeff Kinney",
+        "Language": "English",
+        "Description": "In Old School, Book 10 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, life was better in the old days. Or was it? That’s the question Greg Heffley is asking as his town voluntarily unplugs and goes electronics-free. But modern life has its conveniences, and Greg isn’t cut out for an old-fashioned world. With tension building inside and outside the Heffley home, will Greg find a way to survive? Or is going “old school” just too hard for a kid like Greg? Collect all the books in the #1 bestselling Diary of a Wimpy Kid series: Diary of a Wimpy Kid (#1) | Rodrick Rules (#2) | The Last Straw (#3) | Dog Days (#4) | The Ugly Truth (#5) | Cabin Fever (#6) | The Third Wheel (#7) | Hard Luck (#8) | The Long Haul (#9) | Old School (#10) | Double Down (#11) | The Getaway (#12) | The Meltdown (#13) | Wrecking Ball (#14) | The Deep End (#15) | Big Shot (#16) | Diper Överlöde (#17) | No Brainer (#18) | Hot Mess (#19) See the Wimpy Kid World in a whole new way with the #1 bestselling Awesome Friendly books, told from the perspective of Greg Heffley’s best friend Rowley Jefferson: Diary of an Awesome Friendly Kid: Rowley Jefferson’s Journal | Rowley Jefferson’s Awesome Friendly Adventure | Rowley Jefferson’s Awesome Friendly Spooky Stories",
+        "Genre": [
+            "Children's Literature",
+            "Humor",
+            "Coming-of-Age",
+            "Realistic Fiction",
+            "Graphic Novel"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 19,
+        "Book_Title": "Diary of a Wimpy Kid - Hard Luck",
+        "Author": "Jeff Kinney",
+        "Language": "English",
+        "Description": "In Hard Luck, book 8 of the Diary of a Wimpy Kid series from #1 international bestselling author Jeff Kinney, Greg Heffley's on a losing streak. His best friend, Rowley Jefferson, has ditched him, and finding new friends in middle school is proving to be a tough task. To change his fortunes, Greg decides to take a leap of faith and turn his decisions over to chance. Will a roll of the dice turn things around, or is Greg's life destined to be just another hard-luck story? Collect all the books in the #1 bestselling Diary of a Wimpy Kid series: Diary of a Wimpy Kid (#1) | Rodrick Rules (#2) | The Last Straw (#3) | Dog Days (#4) | The Ugly Truth (#5) | Cabin Fever (#6) | The Third Wheel (#7) | Hard Luck (#8) | The Long Haul (#9) | Old School (#10) | Double Down (#11) | The Getaway (#12) | The Meltdown (#13) | Wrecking Ball (#14) | The Deep End (#15) | Big Shot (#16) | Diper Överlöde (#17) | No Brainer (#18) | Hot Mess (#19) See the Wimpy Kid World in a whole new way with the #1 bestselling Awesome Friendly books, told from the perspective of Greg Heffley’s best friend Rowley Jefferson: Diary of an Awesome Friendly Kid: Rowley Jefferson’s Journal | Rowley Jefferson’s Awesome Friendly Adventure | Rowley Jefferson’s Awesome Friendly Spooky Stories",
+        "Genre": [
+            "Children's Literature",
+            "Humor",
+            "Middle Grade Fiction",
+            "Realistic Fiction",
+            "Coming-of-Age"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 20,
+        "Book_Title": "Diary of a Wimpy Kid - The Ugly Truth",
+        "Author": "Jeff Kinney",
+        "Language": "English",
+        "Description": "Dive into Jeff Kinney's fifth instalment of his rib-tickling and bestselling Diary of a Wimpy Kid series! I'm in the market for a new best friend. The problem is, I invested all my time in Rowley, and I don't have anyone lined up to take his place. Greg Heffley has always been in a hurry to grow up. But is getting older really all it's cracked up to be? Suddenly Greg is dealing with the pressures of boy-girl parties, increased responsibilities, and even the awkward changes that come with getting older. And after a fight with his best friend Rowley, it looks like Greg is going to have to face the \"ugly truth\" all by himself . . . Filled with brilliantly funny cartoons, 7+ readers (including reluctant readers) will devour Jeff Kinney's award-winning books. Praise for Jeff Kinney and the Diary of a Wimpy Kid series: 'The world has gone crazy for Jeff Kinney's Diary of a Wimpy Kid series' - The Sun 'Kinney is right up there with J K Rowling as one of the bestselling children's authors on the planet' - Independent 'Hilarious!' - Sunday Telegraph www.wimpykidclub.co.uk",
+        "Genre": [
+            "Children's Literature",
+            "Humor",
+            "Coming-of-Age",
+            "Graphic Novel",
+            "Realistic Fiction"
+        ],
+        "Age_category": "Children",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 21,
+        "Book_Title": "Diary of a Wimpy Kid - No Brainer",
+        "Author": "Jeff Kinney",
+        "Language": "English",
+        "Description": "",
+        "Genre": [],
+        "Age_category": "",
+        "main_categories": []
+    },
+    {
+        "S_No": 22,
+        "Book_Title": "Half Girlfriend",
+        "Author": "Chetan Bhagat",
+        "Language": "English",
+        "Description": "Once upon a time, there was a Bihari boy called Madhav. He fell in love with a rich girl from Delhi called Riya. Madhav didn't speak English well. Riya did. Madhav wanted a relationship. Riya didn't. Riya just wanted friendship. Madhav didn't. Riya suggested a compromise. She agreed to be his half-girlfriend. From the author of the blockbuster novels Five Point Someone, One Night @ the Call Center, The 3 Mistakes of My Life, 2 States and Revolution 2020 comes a simple and beautiful love story that will touch your heart and inspire you to chase your dreams.",
+        "Genre": [
+            "Romance",
+            "Coming-of-Age",
+            "Contemporary Fiction",
+            "Social Commentary",
+            "Chick Lit"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Others",
+            "Fiction",
+            "Romance",
+            "Social Sciences & Studies"
+        ]
+    },
+    {
+        "S_No": 23,
+        "Book_Title": "The Habit of Winning",
+        "Author": "Prakash Iyer",
+        "Language": "English",
+        "Description": "Do you feel like throwing in the towel, but want to be a great leader? Would you like to build an organization? Do you want your child to be the best she can be? If you answered yes to any of these questions, The Habit of Winning is the book for you. It is a book that will change the way you think, work and live, with stories about self-belief and perseverance, leadership and teamwork—stories that will ignite a new passion and a renewed sense of purpose in your mind. The stories in The Habit of Winning range from cola wars to cricketing heroes, from Michelle Obama’s management techniques to Mahatma Gandhi’s generosity. There are life lessons from frogs and rabbits, sharks and butterflies, kites and balloons. Together they create a heady mix that will make the winner inside you emerge and grow.",
+        "Genre": [
+            "Self-Help",
+            "Business",
+            "Motivational",
+            "Leadership",
+            "Biographical"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Business, Economics & Management",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 24,
+        "Book_Title": "It Started with a Friend Request",
+        "Author": "Sudeep Nagarkar",
+        "Language": "English",
+        "Description": "Why don't we feel the moment when we fall in love but always remember when it ends? Akash is young, single and conservative with a preference for girls with brains than in miniskirts. One day, he runs into free-spirited Aleesha at a local discotheque. A mass-media student, Aleesha is a pampered brat, the only child of her parents who dote on her. This brief meeting leads them to exchange their BlackBerry PINs and they begin chatting regularly. As BlackBerry plays cupid, they fall in love. When they hit a rough patch in their life, Aditya, Akash's close pal, guides them through it. But just when they are about to take their relationship to the next level, a sudden misfortune strikes. Can Aditya bring Akash's derailed life back on track? It Started with a Friend Request is a true story which will make you believe in love like never before.",
+        "Genre": [
+            "Romance",
+            "Contemporary Fiction",
+            "Chick Lit",
+            "Coming-of-Age",
+            "New Adult Fiction"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Others",
+            "Fiction",
+            "Romance"
+        ]
+    },
+    {
+        "S_No": 25,
+        "Book_Title": "Someone Like You",
+        "Author": "Nikita Singh, Durjoy Dutta",
+        "Language": "English",
+        "Description": "The hum of a motorbike. The uproar of the crowd in the stadium. The cheering and clapping. All fell silent... Just the thumping of their hearts remained and a question-were they going to lose him? Thanks to the makeover by her sister's friends, the nerdy Niharika entered college more confident, more attractive. She meets the sweet, shy Tanmay, and the spoilt but lovely Pia and they become best friends. And when Akshat and she began dating, life finally seemed to be falling in place. Except that it wasn't... Tanmay's success in football had begun to change him . Akshat's perfection seemed like a front for something dark and sinister. And their college senior Karthik? His aggressiveness was a cover for his mysterious past. Someone Like You is a powerful and touching story of friendship, love and betrayal.",
+        "Genre": [
+            "Contemporary Romance",
+            "Young Adult Fiction",
+            "Friendship Fiction",
+            "Coming-of-Age",
+            "Drama"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Others",
+            "Romance",
+            "Poetry & Drama",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 26,
+        "Book_Title": "Life is what you make it",
+        "Author": "Preeti Shenoy",
+        "Language": "English",
+        "Description": "What would you do if destiny twisted the road you took? What if it threw you to a place you did not want to go? Would you fight, would you run or would you accept? Set across two cities in India in the early eighties, Life is What You Make it is a gripping account of a few significant years of Ankita’s life. Ankita Sharma has the world at her feet. She is young, good-looking, smart and tones of friends and boys swooning over her. She also manages to get into a premier management school for her MBA. Six months later , she is a patient in a mental health hospital. Life has cruelly and coldly snatched that which meant the most to her and she must now fight to get it all back. It is a deeply moving and inspiring account of growing up, of the power of faith and how determination and an indomitable spirit can overcome even what destiny throws at you. A tale, at its core a love-story that makes us question our beliefs about ourselves and our concept of sanity, and forces us to believe that life is truly what one makes it.",
+        "Genre": [
+            "Contemporary Fiction",
+            "Romance",
+            "Psychological Fiction",
+            "Coming-of-Age",
+            "Women's Fiction"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Romance",
+            "Others",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 27,
+        "Book_Title": "A Thousand Splendid Suns",
+        "Author": "Khaled Hosseini",
+        "Language": "English",
+        "Description": "THE RICHARD & JUDY NUMBER ONE BESTSELLER 'A suspenseful epic' Daily Telegraph 'A triumph' Financial Times 'Heartbreaking' Mail on Sunday 'Deeply moving' Sunday Times Mariam is only fifteen when she is sent to Kabul to marry Rasheed. Nearly two decades later, a friendship grows between Mariam and a local teenager, Laila, as strong as the ties between mother and daughter. When the Taliban take over, life becomes a desperate struggle against starvation, brutality and fear. Yet love can move a person to act in unexpected ways, and lead them to overcome the most daunting obstacles with a startling heroism.",
+        "Genre": [
+            "Historical Fiction",
+            "War Fiction",
+            "Women's Fiction",
+            "Family Saga",
+            "Romance"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Romance",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 28,
+        "Book_Title": "The Backbenchers - The presidency Night",
+        "Author": "Sidharth Oberoi",
+        "Language": "English",
+        "Description": "Not available",
+        "Genre": [],
+        "Age_category": "",
+        "main_categories": []
+    },
+    {
+        "S_No": 29,
+        "Book_Title": "Two Fates",
+        "Author": "Judy Balan",
+        "Language": "English",
+        "Description": "Two Fates: The Story Of My Divorce is the story of a couple, Rishab and Deepika, falling in and out of love, and what happens when their families decide to bring their love story back on track.",
+        "Genre": [
+            "Romance",
+            "Family Drama",
+            "Contemporary Fiction",
+            "Chick Lit"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Fiction",
+            "Entertainment, Sports & Hobbies",
+            "Romance"
+        ]
+    },
+    {
+        "S_No": 30,
+        "Book_Title": "That's the way we met ..kya life hogi set",
+        "Author": "Sudeep Nagarkar",
+        "Language": "English",
+        "Description": "Can you ever forget your true love? Aditya and Riya could never imagine life without each other. Since their accidental meeting two years ago, they have been inseparable until an unexpected tragedy changes the course of their lives forever. Will their love stand the test of time? From the intoxicating rush of Mumbai and Delhi to the scenic beauty of Manali, Sudeep Nagarkar will take you on an unforgettable journey through life and love.",
+        "Genre": [
+            "Romance",
+            "Contemporary Fiction",
+            "Tragedy",
+            "Coming-of-Age Fiction"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Poetry & Drama",
+            "Fiction",
+            "Romance"
+        ]
+    },
+    {
+        "S_No": 31,
+        "Book_Title": "The Inscrutable Americans",
+        "Author": "Anurag Mathur",
+        "Language": "English",
+        "Description": "\"Gopal, a naive Indian exchange student, goes to America to study chemical engineering. With his absurd notions of the country, Gopal encounters the travails of shopping in departmental stores, the hazards of bar-hopping and of learning the difference between friendship and love the hard way\"--Back cover.",
+        "Genre": [
+            "Coming-of-age",
+            "Cultural Fiction",
+            "Humor",
+            "Satire",
+            "Romance"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction",
+            "Romance"
+        ]
+    },
+    {
+        "S_No": 32,
+        "Book_Title": "The Bestseller She Wrote",
+        "Author": "Ravi Subramanian",
+        "Language": "English",
+        "Description": "Love. Betrayal. Redemption. Paperback king Aditya Kapoor's life is straight out of a modern man's fantasy. His literary stardom is perfectly balanced by a loving wife and a spectacular career. With everything he touches turning to gold, Aditya is on a winning streak. Shreya Kaushik is a student with a heart full of ambition. Young, beautiful and reckless, Shreya speaks her mind and obsessively chases after what she wants. And what she wants is to be a bestselling author. What happens when their worlds collide? Is it possible to love two people at the same time? Can real ambition come in the way of blind passion? Can trust once broken, be regained? Master storyteller Ravi Subramanian delves into the glitzy world of bestsellers, and uncovers a risky dalliance between a superstar novelist and his alluring protege.",
+        "Genre": [
+            "Romance",
+            "Thriller",
+            "Fiction",
+            "Literary Fiction",
+            "Drama"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Poetry & Drama",
+            "Fiction",
+            "Romance",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 33,
+        "Book_Title": "The Village by the Sea",
+        "Author": "Anita Desai",
+        "Language": "English",
+        "Description": "Not available",
+        "Genre": [],
+        "Age_category": "",
+        "main_categories": []
+    },
+    {
+        "S_No": 34,
+        "Book_Title": "Complete/Convenient",
+        "Author": "Ketan Bhagat",
+        "Language": "English",
+        "Description": "Not available",
+        "Genre": [],
+        "Age_category": "",
+        "main_categories": []
+    },
+    {
+        "S_No": 35,
+        "Book_Title": "The Color of Our Sky",
+        "Author": "Amita Trasi",
+        "Language": "English",
+        "Description": "\"A sweeping, emotional journey of two childhood friends--one struggling to survive the human slave trade and the other on a mission to save her--two girls whose lives converge only to change one fateful night in 1993. India, 1986: Mukta, a ten-year-old girl from the lower caste Yellamma cult of temple prostitutes has come of age to fulfill her destiny of becoming a temple prostitute. In an attempt to escape this legacy that binds her, Mukta is transported to a foster family in Bombay. There she discovers a friend in the high spirited eight-year-old Tara, the tomboyish daughter of the family, who helps her recover from the wounds of her past. Tara introduces Mukta to a different world--ice cream and sweets, poems and stories, and a friendship the likes of which she has never experienced before. In 1993, Mukta is kidnapped from Tara's room. Eleven years later, years later, Tara who blames herself for what happened, embarks on an emotional journey to search for the kidnapped Mukta only to uncover long buried secrets in her own family\"--Amazon.",
+        "Genre": [
+            "Historical Fiction",
+            "Social Fiction",
+            "Coming-of-Age",
+            "Friendship Fiction",
+            "Adventure Fiction"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Others",
+            "Social Sciences & Studies",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 36,
+        "Book_Title": "Private India",
+        "Author": "Ashwin Sanghi & James Patterson",
+        "Language": "English",
+        "Description": " Extraordinary crimes require extraordinary detectives. Welcome to Private. When Santosh Wagh isn’t struggling out of a bottle of whisky he’s head of Private India, the Mumbai branch of the world’s finest PI agency. In a city of over thirteen million he has his work cut out at the best of times. But now someone is killing women – seemingly unconnected women murdered in a chilling ritual, with strange objects placed carefully at their death scenes. As Santosh and his team race to find the killer, an even greater danger faces Private India – a danger that could threaten the lives of thousands of innocent Mumbai citizens...",
+        "Genre": [
+            "Mystery",
+            "Thriller",
+            "Crime Fiction",
+            "Police Procedural",
+            "Suspense"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 37,
+        "Book_Title": "Connect the Dots",
+        "Author": "Rashmi Bansal",
+        "Language": "English",
+        "Description": "Mahima Mehra did it.Ranjiv Ramchandani did it.Kalyan Varma did it. Connect the Dots is the story of 20 enterprising individuals without an MBA, who started their own ventures. They were driven by the desire to prove themselves. To lead interesting, passionate, meaningful lives. Their stories say one thing loud and clear. You don’t need a fancy degree or a rich daddy to dream big and make it happen. It’s all in your head, your heart, your hands.",
+        "Genre": [
+            "Business",
+            "Entrepreneurship",
+            "Self-Help",
+            "Biography",
+            "Inspirational"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Business, Economics & Management",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 38,
+        "Book_Title": "The Professional",
+        "Author": "Subroto Bagchi",
+        "Language": "English",
+        "Description": "The Professional is Subroto Bagchi's most deeply felt book. Bagchi's first best-selling book, The High-Performance Entrepreneur, shared his story of building a company. His second best-seller, Go Kiss the World, was the story of his life, a motivation to young people that anyone can achieve. But as Subroto Bagchi says: 'Go Kiss the World did not provide a tool kit.' In The Professional he gives us his knowledge, based on his lifelong experience, of what it takes to be a professional, what qualities you need to become a great professional, and what are the challenges of the future a professional must be prepared for. Most importantly, he asks, and gives answers, to the toughest question every professional faces: Is what I am going to do now, faced with a difficult decision and multiple options, the professional choice to make? In a world where a 'sub-prime crisis' and a 'Satyam saga' were incomprehensible; where the global economic meltdown has affected the livelihoods of millions of people; where companies and individuals are routinely revealed to have made unprofessional choices, The Professional provides the explicit and implicit code of conduct-the boundaries which separate a skilled individual from a professional. Read The Professional and find the power within you to acquire the cutting edge required for the twenty-first century workplace and gain entry into the club of professionals.",
+        "Genre": [
+            "Self-Help",
+            "Business",
+            "Memoir",
+            "Leadership",
+            "Professional Development"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Education & Learning",
+            "Psychology & Self-Help",
+            "Business, Economics & Management",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 39,
+        "Book_Title": "Being Reshma",
+        "Author": "Reshma Qureshi with Tania Singh",
+        "Language": "English",
+        "Description": "On 19 May 2014, as seventeen-year-old Reshma Qureshi left home for the examination centre, everything happened in a flash. The men rushed towards her. Grabbed her. Tugged at her hair. Poured acid on her face. Soon she started to burn like a living corpse. The acid ate through her skin and aimed for her bones, but it could not quell the fire in her heart. Rising from tragedy and suffering, Reshma soon made global headlines by becoming the first acid-attack survivor to walk the runway at the New York Fashion Week. Now an international anti-acid-sale activist, vlogger, model, and the face of Make Love Not Scars, Reshma works tirelessly towards empowering other acid-attack survivors like herself and has become a beacon of hope for millions. Inspiring and life-affirming, Being Reshma is the extraordinary story of this young girl from the slums of Mumbai, who overcame insurmountable odds in an unjust world and dared to change it.",
+        "Genre": [
+            "Biography",
+            "Autobiography",
+            "Memoir",
+            "Inspirational",
+            "Social Commentary"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Social Sciences & Studies",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 40,
+        "Book_Title": "There's Something About You",
+        "Author": "Yashodhara Lal",
+        "Language": "English",
+        "Description": "This is not your typical boy-meets-girl story. Okay, they do meet, but there are some complications. Trish is twenty-eight. She's unemployed, overweight, single and snarky. She knows all that. And if one more person - just one more person - tries to fix her, she might explode. Sahil is thirty-five. He has superpowers. Well, kind of. He seems to think so, anyway. He's also hot (in a geeky kind of way, but still). And he plays the guitar, helps the underprivileged and talks about his feelings. Aren't guys like that supposed to exist only in fantasies? When Trish and Sahil meet, magic happens. Real magic, you know, like fireworks, electricity, that sort of thing. But here's the problem. Trish doesn't want anyone in her life. She has enough to deal with - dependent parents, flaky neighbours, bitchy editors, the works. And yet, Sahil is determined to be in her life. From the bestselling author of Just Married, Please Excuse and Sorting Out Sid, here is another zinger of a book.",
+        "Genre": [
+            "Romantic Comedy",
+            "Contemporary Romance",
+            "Fantasy Romance",
+            "Women's Fiction"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Fantasy",
+            "Romance",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 41,
+        "Book_Title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+        "Author": "Hector Garcia",
+        "Language": "English",
+        "Description": "AVAILABLE NOW: The Four-Way Path, a guide to how Indian spirituality holds the key to a life of happiness and purpose - the new book from the bestselling authors of Ikigai. THE MULTI-MILLION-COPY BESTSELLER Find purpose, meaning and joy in your work and life We all have an ikigai. It's the Japanese word for 'a reason to live' or 'a reason to jump out of bed in the morning'. The place where your needs, ambitions, skills and satisfaction meet. A place of balance. This book will help you unlock what your ikigai is and equip you to change your life. There is a passion inside you - a unique talent that gives you purpose and makes you the perfect candidate for something. All you have to do is discover and live it. Do that, and you can make every single day of your life joyful and meaningful. 'A refreshingly simple recipe for happiness' Stylist 'Ikigai gently unlocks simple secrets we can all use to live long, meaningful, happy lives' Neil Pasricha, bestselling author of The Happiness Equation",
+        "Genre": [
+            "Self-Help",
+            "Philosophy",
+            "Practical Psychology",
+            "Lifestyle",
+            "Positive Psychology"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Religion, Philosophy & Spirituality",
+            "Lifestyle & Practical Guides"
+        ]
+    },
+    {
+        "S_No": 42,
+        "Book_Title": "i came upon a lighthouse",
+        "Author": "Shantanu Naidu",
+        "Language": "English",
+        "Description": "An endearing portrait of an Indian legend I told him that when I write a book, I would write about another side of him and not just historic events or business milestones. I would write about us and our adventures together, and how I saw him, colours and shades of him unknown to the world. Life beyond the great steel wall of 'industry doyen'. He agreed. 'There cannot be one book that captures everything ... So you do your thing, give your perspective.' It was their shared empathy for homeless dogs that sparked an unlikely friendship. In 2014, Shantanu Naidu, an automobile design engineer in his early twenties, developed an innovation to save the local strays from being run over by speeding cars. Ratan Tata, himself known for his compassion for stray dogs, took note. Impressed, he not only decided to invest in the venture, but over the years became a mentor, boss and an unexpectedly dear friend to Shantanu. I Came Upon a Lighthouse is an honest, light-hearted telling of this uncommon bond between a millennial and an octogenarian that gives glimpses of a beloved Indian icon in a warm light.",
+        "Genre": [
+            "Biography",
+            "Memoir",
+            "Business",
+            "Inspirational",
+            "Friendship"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Business, Economics & Management",
+            "Entertainment, Sports & Hobbies",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 43,
+        "Book_Title": "400 Days",
+        "Author": "Chetan Bhagat",
+        "Language": "English",
+        "Description": "Twelve-year-old Siya has been missing for nine months. It's a cold case, but Keshav wants to help his mother, Alia, who refuses to give up. 'My daughter Siya was kidnapped. Nine months ago,' Alia said. The police had given up. They called it a cold case. Even the rest of her family had stopped searching. Alia wouldn't stop looking, though. She wanted to know if I could help her. Hi, I am Keshav Rajpurohit and I am a disappointment to everyone around me. I live with my parents, who keep telling me how I should: a) get married, b) focus on my IPS exams, c) meet more people and d) close my detective agency. But Alia Arora, neighbour and ex-model, wanted my help. And I couldn't take my eyes off her face ... I mean ... her case. Welcome to 400 Days. A mystery and romance story like no other. An unputdownable tale of suspense, human relationships, love, friendship, the crazy world we live in and, above all, a mother's determination to never give up. From India's highest-selling author comes a page-turner that will not only keep you glued to the story but also touch you deeply.",
+        "Genre": [
+            "Mystery",
+            "Thriller",
+            "Romance",
+            "Suspense",
+            "Family Drama"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Entertainment, Sports & Hobbies",
+            "Romance",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 44,
+        "Book_Title": "Gently Falls The Bakula",
+        "Author": "Sudha Murthy",
+        "Language": "English",
+        "Description": "What is more important: a successful career or a happy marriage? In the small town of Hubli, Shrikant discovers that he is attracted to his plain-looking but charming neighbour Shrimati, who always does better than him in the school exams. Shrimati too falls in love with the amiable and handsome Shrikant and the two get married. Shrikant joins an IT company and starts rapidly climbing the corporate ladder. He works relentlessly and reaches the pinnacle of his industry, while Shrimati abandons her academic aspirations and becomes his uncomplaining shasow, silently fulfilling her duties as a corporate leader’s wife. But one day, while talking to an old professor, she starts examining what she has done with her life and realizes it is dismally empty... Gently Falls the Bakula is the story of a marriage that loses its way as ambition and self-interest take their toll. Written nearly three decades ago, Sudha Murty’s first novel remains startlingly relevant in its scrutiny of modern values and work ethics.",
+        "Genre": [
+            "Contemporary Fiction",
+            "Romance",
+            "Women's Fiction",
+            "Family Drama",
+            "Social Commentary"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Romance",
+            "Social Sciences & Studies",
+            "Entertainment, Sports & Hobbies",
+            "Fiction"
+        ]
+    },
+    {
+        "S_No": 45,
+        "Book_Title": "Waiting for the Mahatma",
+        "Author": "R.K. Narayan",
+        "Language": "English",
+        "Description": "The first that indolent young Sriram knows about Mahatma Ghandi's visit to Malgudi is when a collection box is waved beneath his nose by the most beautiful girl he has ever seen. The vision's name is Bharato. Capable and quick-witted, her scorn for her gauche but ardent admirer is almost equal to her devotion to the Mahatma. Yet that is how Sriram leaves Malgudi to become a passionate apostle of the Quit India campaign - only to find his convictions tested by the rigours of a prison cell.",
+        "Genre": [
+            "Historical Fiction",
+            "Coming-of-Age",
+            "Romance",
+            "Political Fiction",
+            "Satire"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Others",
+            "Entertainment, Sports & Hobbies",
+            "Fiction",
+            "Romance"
+        ]
+    },
+    {
+        "S_No": 46,
+        "Book_Title": "What Young India Wants",
+        "Author": "Chetan Bhagat",
+        "Language": "English",
+        "Description": "\"In his latest book, What young India wants, Chetan Bhagat asks hard questions, demands answers and presents solutions for a better, more prosperous India. Aout the book Why do our students regularly commit suicide? Why is there so much corruption in India? Can't our political parties ever work together? Does our vote make any difference at all? We love our India, but shouldn t some things be different? All of us have asked these questions at some time or the other. So does Chetan Bhagat, India's most loved writer, in What young India wants, his first book of non-fiction. What young India wants is based on Chetan Bhagat's vast experience as a very successful writer and motivational speaker. In clear, simple prose, and with great insight, he analyses some of the complex issues facing modern India, offers solutions and invites discussion on them. And, at the end, he asks this important question: Unless we are all in agreement on what it is going to take to make our country better, how will things ever change? If you want to understand contemporary India, the problems that face it, and want to be a part of the solution, What young India wants is the book for you.\"--Publisher description.",
+        "Genre": [
+            "Non-fiction",
+            "Political Commentary",
+            "Social Commentary",
+            "Self-Help",
+            "Indian Studies"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Politics & Current Affairs",
+            "Social Sciences & Studies",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 47,
+        "Book_Title": "Parker Pyne Investigates",
+        "Author": "Agatha Christie",
+        "Language": "English",
+        "Description": "A collection of short stories featuring the ‘heart specialist’, Parker Pyne.",
+        "Genre": [
+            "Mystery",
+            "Detective Fiction",
+            "Short Story Collection",
+            "Crime Fiction",
+            "British Literature"
+        ],
+        "Age_category": "Adult",
+        "main_categories": [
+            "Literary Studies & Criticism",
+            "Entertainment, Sports & Hobbies",
+            "Mystery, Thriller & Suspense"
+        ]
+    },
+    {
+        "S_No": 48,
+        "Book_Title": "Take Me Home",
+        "Author": "Rashmi Bansal",
+        "Language": "English",
+        "Description": "The Inspiring Stories Of 20 Entrepreneurs From SmallTown India With BigTime Dreams Parakram Singh Jadeja did it in Rajkot. Deepak Dadhoti did it in Belgaum. Vibhor Agrawal did it in Meerut. Take Me Home is the story of 20 entrepreneurs who have built remarkable enterprises, while remaining true to their roots. From small towns across India, they run giant global companies with locally trained talent. The ability to run a professional business is no longer limited by location. What you need is a vision and a mission and a burning desire. To make it happen, wherever you are. About the Author: Rashmi Bansal Rashmi Bansal is a writer, entrepreneur and youth expert. Her five books on entrepreneurship Stay Hungry Stay Foolish, Connect the Dots, I Have a Dream, Follow Every Rainbow and Poor Little Rich Slum have sold over 7,50,000 copies and been translated into 10 languages. Rashmi is a motivational speaker and mentor to students and young entrepreneurs. She is an economics graduate of Sophia College, Mumbai, and an MBA from IIM Ahmedabad.",
+        "Genre": [
+            "Self-Help",
+            "Business",
+            "Entrepreneurship",
+            "Inspirational",
+            "Biography"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Psychology & Self-Help",
+            "Business, Economics & Management",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 49,
+        "Book_Title": "I am Malala",
+        "Author": "Malala Yousafzai",
+        "Language": "English",
+        "Description": "*Winner of the 2014 Nobel Peace Prize* In 2009 Malala Yousafzai began writing a blog on BBC Urdu about life in the Swat Valley as the Taliban gained control, at times banning girls from attending school. When her identity was discovered, Malala began to appear in both Pakistani and international media, advocating the freedom to pursue education for all. In October 2012, gunmen boarded Malala's school bus and shot her in the face, a bullet passing through her head and into her shoulder. Remarkably, Malala survived the shooting. At a very young age, Malala Yousafzai has become a worldwide symbol of courage and hope. Her shooting has sparked a wave of solidarity across Pakistan, not to mention globally, for the right to education, freedom from terror and female emancipation.",
+        "Genre": [
+            "Biography",
+            "Autobiography",
+            "Memoir",
+            "Non-Fiction",
+            "Historical Non-Fiction"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "History & Culture",
+            "Non-Fiction",
+            "Biography & Memoir"
+        ]
+    },
+    {
+        "S_No": 50,
+        "Book_Title": "The Girl in Room 105",
+        "Author": "Chetan Bhagat",
+        "Language": "English",
+        "Description": "Hi, I'm Keshav, and my life is screwed. I hate my job and my girlfriend left me. Ah, the beautiful Zara. Zara is from Kashmir. She is a Muslim. And did I tell you my family is a bit, well, traditional? Anyway, leave that. Zara and I broke up four years ago. She moved on in life. I didn't. I drank every night to forget her. I called, messaged, and stalked her on social media. She just ignored me. However, that night, on the eve of her birthday, Zara messaged me. She called me over, like old times, to her hostel room 105. I shouldn't have gone, but I did... and my life changed forever. This is not a love story. It is an unlove story. From the author of Five Point Someone and 2 States, comes a fast-paced, funny and unputdownable thriller about obsessive love and finding purpose in life against the backdrop of contemporary India.",
+        "Genre": [
+            "Thriller",
+            "Romance",
+            "Mystery",
+            "Contemporary Fiction",
+            "Coming-of-Age"
+        ],
+        "Age_category": "Young Adult",
+        "main_categories": [
+            "Others",
+            "Fiction",
+            "Romance",
+            "Mystery, Thriller & Suspense"
+        ]
+    }
+]

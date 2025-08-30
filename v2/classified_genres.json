@@ -1,0 +1,184 @@
+[
+    {
+        "main_Category": "Entertainment, Sports & Hobbies",
+        "sub_categories": [
+            "Adventure",
+            "Comedy",
+            "Family Drama",
+            "Family Saga",
+            "Friendship",
+            "Friendship Fiction",
+            "Humor",
+            "Humorous Fiction",
+            "Movie Novelization",
+            "Satire",
+            "Short Story Collection"
+        ]
+    },
+    {
+        "main_Category": "Fiction",
+        "sub_categories": [
+            "Adventure Fiction",
+            "Children's Literature",
+            "Coming-of-Age Fiction",
+            "Contemporary Fiction",
+            "Cultural Fiction",
+            "Environmental Fiction",
+            "Family Fiction",
+            "Fiction",
+            "Historical Fiction",
+            "Illustrated Children's Book",
+            "Literary Fiction",
+            "Middle Grade Fiction",
+            "New Adult Fiction",
+            "Political Fiction",
+            "Psychological Fiction",
+            "Realistic Fiction",
+            "War Fiction",
+            "Women's Fiction",
+            "Young Adult Fiction"
+        ]
+    },
+    {
+        "main_Category": "Fantasy",
+        "sub_categories": [
+            "Animal Fantasy",
+            "Fantasy",
+            "Fantasy Romance",
+            "Mythical Fiction"
+        ]
+    },
+    {
+        "main_Category": "Biography & Memoir",
+        "sub_categories": [
+            "Autobiography",
+            "Biographical",
+            "Biography",
+            "Diary/Journal",
+            "Memoir",
+            "Non-fiction"
+        ]
+    },
+    {
+        "main_Category": "Literary Studies & Criticism",
+        "sub_categories": [
+            "British Literature"
+        ]
+    },
+    {
+        "main_Category": "Business, Economics & Management",
+        "sub_categories": [
+            "Business",
+            "Economics",
+            "Entrepreneurship",
+            "Management"
+        ]
+    },
+    {
+        "main_Category": "Romance",
+        "sub_categories": [
+            "Chick Lit",
+            "Contemporary Romance",
+            "Romance",
+            "Romantic Comedy"
+        ]
+    },
+    {
+        "main_Category": "Religion, Philosophy & Spirituality",
+        "sub_categories": [
+            "Christianity",
+            "Jesus",
+            "Philosophy",
+            "Spirituality"
+        ]
+    },
+    {
+        "main_Category": "Others",
+        "sub_categories": [
+            "Coming-of-Age",
+            "Coming-of-Age Story",
+            "Coming-of-age",
+            "Graphic Novel"
+        ]
+    },
+    {
+        "main_Category": "Lifestyle & Practical Guides",
+        "sub_categories": [
+            "Conduct of Life",
+            "Lifestyle"
+        ]
+    },
+    {
+        "main_Category": "Mystery, Thriller & Suspense",
+        "sub_categories": [
+            "Crime Fiction",
+            "Detective Fiction",
+            "Investigative Fiction",
+            "Mystery",
+            "Police Procedural",
+            "Suspense",
+            "Thriller",
+            "Whodunit"
+        ]
+    },
+    {
+        "main_Category": "Poetry & Drama",
+        "sub_categories": [
+            "Drama",
+            "Tragedy"
+        ]
+    },
+    {
+        "main_Category": "History & Culture",
+        "sub_categories": [
+            "Historical Non-Fiction",
+            "History"
+        ]
+    },
+    {
+        "main_Category": "Social Sciences & Studies",
+        "sub_categories": [
+            "Indian Studies",
+            "Social Commentary",
+            "Social Fiction",
+            "Sociology"
+        ]
+    },
+    {
+        "main_Category": "Psychology & Self-Help",
+        "sub_categories": [
+            "Inspirational",
+            "Leadership",
+            "Motivational",
+            "Positive Psychology",
+            "Practical Psychology",
+            "Psychology",
+            "Self-Help",
+            "Self-help"
+        ]
+    },
+    {
+        "main_Category": "Other",
+        "sub_categories": [
+            "LGBTQ+ themes"
+        ]
+    },
+    {
+        "main_Category": "Non-Fiction",
+        "sub_categories": [
+            "Non-Fiction"
+        ]
+    },
+    {
+        "main_Category": "Politics & Current Affairs",
+        "sub_categories": [
+            "Political Commentary"
+        ]
+    },
+    {
+        "main_Category": "Education & Learning",
+        "sub_categories": [
+            "Professional Development"
+        ]
+    }
+]
