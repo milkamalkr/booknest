@@ -51,7 +51,7 @@ def classify_genre(genre: str) -> str:
     Classify the following genre into exactly one of the 20 main categories below. 
     If uncertain, choose the closest match.
     Always classify under 'Fiction' if the Genre has 'Fiction' word in it
-    Always classify the following genres under 'Other':
+    Always classify the following genres under 'Others':
        - LGBTQ+ themes
        - Coming-of-Age Story
        - Coming-of-age

@@ -92,6 +92,8 @@ for row in records:
 
             # Collect age categories and add to global set
             age_category = row["AgeCategory"].strip()
+            if not age_category:  # If age_category is empty
+                age_category = "NA"
             book[key_age_category] = age_category
             age_groups.add(age_category)
             all_languages.add(language)
@@ -102,14 +104,27 @@ for row in records:
             print(f"Skipped duplicate: {title}")
         
         print("-" * 50)
-        if ( idx == 50):
+        if ( idx == 5000):
             print("Break...Reached the end of the list. Exiting...")
             break
+
+# Define a custom sort function for age_groups
+def custom_sort_age_groups(age_groups):
+    order = {
+        "Children": 1,
+        "Toddler": 2,
+        "Teenage": 3,
+        "Young Adult": 4,
+        "Adult": 5,
+        "All Ages": 6,
+        "NA": 7
+    }
+    return sorted(age_groups, key=lambda x: order.get(x, float('inf')))
 
 # Create the final JSON structure
 final_json = {
     "all_genres": sorted(list(all_genres)),  # Sort genres alphabetically
-    "age_groups": sorted(list(age_groups)),  # Sort age groups alphabetically
+    "age_groups": custom_sort_age_groups(age_groups),  # Sort age groups using custom order
     "all_languages": sorted(list(all_languages)),  # Sort languages alphabetically
     "all_books": json_array
 }

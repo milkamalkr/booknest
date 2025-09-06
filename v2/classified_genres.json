@@ -1,95 +1,496 @@
 [
     {
-        "main_Category": "Entertainment, Sports & Hobbies",
-        "sub_categories": [
-            "Adventure",
-            "Comedy",
-            "Family Drama",
-            "Family Saga",
-            "Friendship",
-            "Friendship Fiction",
-            "Humor",
-            "Humorous Fiction",
-            "Movie Novelization",
-            "Satire",
-            "Short Story Collection"
-        ]
-    },
-    {
         "main_Category": "Fiction",
         "sub_categories": [
+            "Absurd Fiction",
             "Adventure Fiction",
+            "Allegory",
+            "Animal Fiction",
+            "Autobiographical Fiction",
+            "Bildungsroman",
+            "Bimbo Transformation Fiction",
+            "Biographical Fiction",
+            "Boarding School Fiction",
+            "Bullying Fiction",
+            "Business Fiction",
+            "Castaway Fiction",
+            "Chapter Book",
+            "Children's Fiction",
             "Children's Literature",
+            "Christmas Story",
+            "Classic Children's Literature",
+            "Classic Fiction",
+            "Classic Literature",
+            "Classics",
             "Coming-of-Age Fiction",
             "Contemporary Fiction",
             "Cultural Fiction",
+            "Death and Dying",
+            "Diary/Journal Fiction",
+            "Disaster",
+            "Domestic Fiction",
             "Environmental Fiction",
+            "Epic Fiction",
+            "Escape Literature",
+            "Existential Fiction",
+            "Fable",
             "Family Fiction",
+            "Feminist Literature",
             "Fiction",
+            "Fiction (allegory)",
+            "Financial Fiction",
+            "Folktale",
+            "Folktales",
+            "Foster Care Fiction",
+            "Gangster",
+            "Gothic Fiction",
             "Historical Fiction",
+            "Holiday Fiction",
+            "Holocaust Fiction",
+            "Horse Fiction",
             "Illustrated Children's Book",
+            "Immigrant Literature",
+            "Indian Fiction",
+            "Inspirational Fiction",
+            "Juvenile Fiction",
             "Literary Fiction",
+            "Malayalam Literature",
+            "Maritime",
+            "Men's Literature",
+            "Middle Grade",
             "Middle Grade Fiction",
+            "Modernist Literature",
+            "Moral Fiction",
+            "Nature/Animal Fiction",
             "New Adult Fiction",
+            "Novel",
+            "Parable",
+            "Philosophical Fiction",
+            "Picture Book",
             "Political Fiction",
+            "Princess/Royal Fiction",
             "Psychological Fiction",
+            "Realism",
             "Realistic Fiction",
+            "Religious Fiction",
+            "Retelling",
+            "Retellings",
+            "School Stories",
+            "School Story",
+            "Series Fiction",
+            "Siblings Fiction",
+            "Slice-of-life Fiction",
+            "Southern Gothic",
+            "Spiritual Fiction",
+            "Surreal Fiction",
+            "Survival Fiction",
+            "Teen Fiction",
+            "Travel Fiction",
+            "Victorian Fiction",
+            "Victorian Literature",
             "War Fiction",
+            "War Literature",
+            "Whimsical Fiction",
             "Women's Fiction",
-            "Young Adult Fiction"
+            "World Literature",
+            "Young Adult Fiction",
+            "Young Adult Literature"
+        ]
+    },
+    {
+        "main_Category": "Education & Learning",
+        "sub_categories": [
+            "Academic",
+            "Academic Textbook",
+            "Career Guidance",
+            "Child Development",
+            "Communication Skills",
+            "Comparative Education",
+            "Creative Thinking",
+            "ESL/EFL Textbook",
+            "Early Childhood Education",
+            "Early Readers",
+            "Educational",
+            "Educational Psychology",
+            "Educational Theory",
+            "Higher Education",
+            "IT",
+            "Language Learning",
+            "Learning Strategies",
+            "Professional Development",
+            "Programming",
+            "Public Speaking",
+            
+            "Quiz Book",
+            "Reference",
+            "Study Guide",
+            "Study Skills",
+            "Test Prep",
+            "Test Preparation",
+            "Textbook",
+            "Translation Studies",
+            "Trivia Book",
+            "Value-Based Education",
+            "Vocabulary Building",
+            "Young Adult Nonfiction"
+        ]
+    },
+    {
+        "main_Category": "Entertainment, Sports & Hobbies",
+        "sub_categories": [
+            "Action-Adventure",
+            "Adventure",
+            "Anthologies",
+            "Anthology",
+            "Comedy",
+            "Cricket",
+            "Crossword Puzzles",
+            "Dark Humor",
+            "Family Drama",
+            "Family Life",
+            "Family Saga",
+            "Farm Story",
+            "Friendship",
+            "Friendship Fiction",
+            "Games & Activities",
+            "Humor",
+            "Humorous Fiction",
+            "Indian Cinema",
+            "Island Adventure",
+            "Movie Novelization",
+            "Music",
+            "Satire",
+            "Short Stories",
+            "Short Story",
+            "Short Story Collection",
+            "Sports",
+            "Strategy",
+            "Survival",
+            "Toy Story"
         ]
     },
     {
         "main_Category": "Fantasy",
         "sub_categories": [
+            "Adventure Fantasy",
             "Animal Fantasy",
+            "Dark Fantasy",
+            "Epic Fantasy",
+            "Fairy Tale",
+            "Fairy Tales",
+            "Fairytale",
             "Fantasy",
+            "Fantasy Fiction",
             "Fantasy Romance",
-            "Mythical Fiction"
+            "High Fantasy",
+            "Magic Realism",
+            "Magical Realism",
+            "Mythical Fiction",
+            "Mythological Fiction",
+            "Political Fantasy",
+            "Urban Fantasy",
+            "Young Adult Fantasy"
+        ]
+    },
+    {
+        "main_Category": "Science & Mathematics",
+        "sub_categories": [
+            "Algorithm Analysis",
+            "Algorithms",
+            "Astrophysics",
+            "Cognitive Science",
+            "Computer Science",
+            "Cosmology",
+            "Engineering",
+            "Geology",
+            "History of Mathematics",
+            "Mathematics",
+            "Neuroscience",
+            "Philosophy of Mathematics",
+            "Physics",
+            "Pop-Science",
+            "Popular Science",
+            "Science",
+            "Science Biography",
+            "Technical Analysis",
+            "Theoretical Physics"
+        ]
+    },
+    {
+        "main_Category": "Health, Medicine & Wellness",
+        "sub_categories": [
+            "Alternative Medicine",
+            "Anti-Aging",
+            "Ayurveda",
+            "Health",
+            "Health & Fitness",
+            "Health & Wellness",
+            "Holistic Health",
+            "Medical",
+            "Mind-Body Medicine",
+            "Psychiatry",
+            "Wellness",
+            "Yoga"
+        ]
+    },
+    {
+        "main_Category": "Literary Studies & Criticism",
+        "sub_categories": [
+            "Analysis",
+            "Author Study",
+            "British Literature",
+            "Critical Analysis",
+            "Ecocriticism",
+            "Essays",
+            "Literary Criticism",
+            "Marxist Literary Theory",
+            "Translation"
+            
+        ]
+    },
+    {
+        "main_Category": "Mystery, Thriller & Suspense",
+        "sub_categories": [
+            "Animal Mystery",
+            "Cozy Mystery",
+            "Crime Fiction",
+            "Detective Fiction",
+            "Espionage Fiction",
+            "Girl Detective Fiction",
+            "Heist Fiction",
+            "International Thriller",
+            "Investigative Fiction",
+            "Mystery",
+            "Mystery (if the \"Secret Seven\" aspect is significant throughout the book",
+            "Mystery Fiction",
+            "Noir",
+            "Police Procedural",
+            "Psychological",
+            "Psychological Thriller",
+            "Revenge",
+            "Suspense",
+            "Thriller",
+            "Whodunit"
+        ]
+    },
+    {
+        "main_Category": "Social Sciences & Studies",
+        "sub_categories": [
+            "Anthropology",
+            "Behavioral Science",
+            "Criminology",
+            "Cultural Studies",
+            "Development Studies",
+            "Diaspora Studies",
+            "Disability Studies",
+            "Environmental Humanities",
+            "Humanitarian Issues",
+            "Indian Studies",
+            "Law",
+            "Migration Studies",
+            "Political Science",
+            "Postcolonial Studies",
+            "Social Commentary",
+            "Social Fiction",
+            "Social Issue",
+            "Social Psychology",
+            "Social Science",
+            "Social Sciences",
+            "Socialist Realism",
+            "Sociology",
+            "Sociology of Religion",
+            "Transnational Studies",
+            "Urban Studies",
+            "Women's Studies"
+        ]
+    },
+    {
+        "main_Category": "Science Fiction & Technology",
+        "sub_categories": [
+            "Artificial Intelligence",
+            "Futurology",
+            "High-Tech",
+            "IT",
+            "Science Fiction",
+            "Space Exploration",
+            "Technology"
+        ]
+    },
+    {
+        "main_Category": "Psychology & Self-Help",
+        "sub_categories": [
+            "Assertiveness Training",
+            "Behavior Therapy",
+            "Behavioral Change",
+            "Career Development",
+            "Coaching",
+            "Cognitive Enhancement",
+            "Cognitive Psychology",
+            "Emotional Intelligence",
+            "Experimental Psychology",
+            "Grief Counseling",
+            "Habit Improvement",
+            "Healing",
+            "Industrial Psychology",
+            "Inspirational",
+            "Leadership",
+            "Leadership Development",
+            "Life Coaching",
+            "Memory Improvement",
+            "Mindfulness",
+            "Motivation",
+            "Motivational",
+            "Performance Psychology",
+            "Personal Development",
+            "Personality Development",
+            "Personality Psychology",
+            "Popular Psychology",
+            "Positive Psychology",
+            "Practical Psychology",
+            "Productivity",
+            "Psychology",
+            "Reflection",
+            "Relationship Advice",
+            "Relationship Improvement",
+            "Resilience",
+            "Self-Help",
+            "Self-Help (for aspiring musicians)",
+            "Social Skills",
+            "Spiritual Self-Help",
+            "Sports Psychology",
+            "Success",
+            "Transactional Analysis"
         ]
     },
     {
         "main_Category": "Biography & Memoir",
         "sub_categories": [
             "Autobiography",
+            "Autobiography (implied)",
             "Biographical",
+            "Biographical Drama",
+            "Biographical Narrative",
+            "Biographies & Memoirs",
             "Biography",
+            "Business Biography",
             "Diary/Journal",
+            "Environmental Memoir",
+            "Hagiography",
+            "Historical Biography",
+            "Interview",
+            "Literary Biography",
             "Memoir",
-            "Non-fiction"
-        ]
-    },
-    {
-        "main_Category": "Literary Studies & Criticism",
-        "sub_categories": [
-            "British Literature"
+            "Non-Fiction",
+            "Non-fiction",
+            "Political Memoir",
+            "Sports Biography",
+            "True Crime"
         ]
     },
     {
         "main_Category": "Business, Economics & Management",
         "sub_categories": [
+            "Behavioral Economics",
             "Business",
+            "Business & Economics",
+            "Business Strategy",
+            "Business/Leadership",
+            "Design Thinking",
             "Economics",
             "Entrepreneurship",
-            "Management"
+            "Finance",
+            "Human Resources",
+            "Innovation",
+            "Investing",
+            "Lean Manufacturing",
+            "Management",
+            "Marketing",
+            "Negotiation",
+            "Operations Management",
+            "Personal Finance",
+            "Product Management",
+            "Project Management",
+            "Sales",
+            "Systems Thinking",
+            "Time Management",
+            "IT",
+            "Trading"
+        ]
+    },
+    {
+        "main_Category": "History & Culture",
+        "sub_categories": [
+            "Big History",
+            "Broadcasting History",
+            "Business History",
+            "Corporate History",
+            "Film History",
+            "Folklore",
+            "Greek Mythology",
+            "Hip Hop Music History",
+            "Historical Non-Fiction",
+            "Historical Non-fiction",
+            "Historical Nonfiction",
+            "History",
+            "Holocaust literature",
+            "Indian History",
+            "Indian Literature",
+            "Indian Mythology",
+            "Intellectual History",
+            "Literary History",
+            "Medieval Literature",
+            "Mythology",
+            "Postcolonial Literature",
+            "Radio History",
+            "Technology History",
+            "War"
+        ]
+    },
+    {
+        "main_Category": "Religion, Philosophy & Spirituality",
+        "sub_categories": [
+            "Buddhist Philosophy",
+            "Christianity",
+            "Eastern Philosophy",
+            "Eastern Religion",
+            "Eastern Religions",
+            "Ethics",
+            "Hinduism",
+            "Indian Philosophy",
+            "Jesus",
+            "Meditation",
+            "Metaphysics",
+            "New Age",
+            "New Thought",
+            "Philosophical",
+            "Philosophy",
+            "Philosophy of Education",
+            "Philosophy of Science",
+            "Religion",
+            "Religious",
+            "Religious Non-Fiction",
+            "Religious Studies",
+            "Religious Text",
+            "Religious Texts",
+            "Spiritual",
+            "Spiritual Growth",
+            "Spiritual Non-Fiction",
+            "Spirituality",
+            "Theology"
         ]
     },
     {
         "main_Category": "Romance",
         "sub_categories": [
             "Chick Lit",
+            "Chivalry Romance",
             "Contemporary Romance",
+            "Erotica",
+            "Paranormal Romance",
+            "Persuasion",
             "Romance",
-            "Romantic Comedy"
-        ]
-    },
-    {
-        "main_Category": "Religion, Philosophy & Spirituality",
-        "sub_categories": [
-            "Christianity",
-            "Jesus",
-            "Philosophy",
-            "Spirituality"
+            "Romantic Comedy",
+            "Romantic Fiction"
         ]
     },
     {
@@ -98,87 +499,64 @@
             "Coming-of-Age",
             "Coming-of-Age Story",
             "Coming-of-age",
-            "Graphic Novel"
+            "Creative Writing",
+            "Creativity",
+            
+            "Graphic Novel",
+            "Interpersonal Relationships",
+            "LGBTQ+ themes",
+            "Problem-Solving",
+            "Series",
+            "Summarized Book"
+        ]
+    },
+    {
+        "main_Category": "Politics & Current Affairs",
+        "sub_categories": [
+            "Commentary",
+            "Current Affairs",
+            "Journalism",
+            "Political Commentary",
+            "Political History",
+            "Political Intrigue",
+            "Politics"
         ]
     },
     {
         "main_Category": "Lifestyle & Practical Guides",
         "sub_categories": [
             "Conduct of Life",
-            "Lifestyle"
-        ]
-    },
-    {
-        "main_Category": "Mystery, Thriller & Suspense",
-        "sub_categories": [
-            "Crime Fiction",
-            "Detective Fiction",
-            "Investigative Fiction",
-            "Mystery",
-            "Police Procedural",
-            "Suspense",
-            "Thriller",
-            "Whodunit"
+            "Culinary",
+            "Do-It-Yourself (DIY)",
+            "How-to",
+            "Lifestyle",
+            "Parenting",
+            "Practical Advice",
+            "Practical Guide",
+            "Practical Parenting"
         ]
     },
     {
         "main_Category": "Poetry & Drama",
         "sub_categories": [
             "Drama",
+            "Epic Poetry",
+            "Legal Drama",
+            "Oratory",
+            "Poetry",
+            "Revenge Tragedy",
+            "Speech",
             "Tragedy"
         ]
     },
     {
-        "main_Category": "History & Culture",
+        "main_Category": "Horror & Supernatural",
         "sub_categories": [
-            "Historical Non-Fiction",
-            "History"
-        ]
-    },
-    {
-        "main_Category": "Social Sciences & Studies",
-        "sub_categories": [
-            "Indian Studies",
-            "Social Commentary",
-            "Social Fiction",
-            "Sociology"
-        ]
-    },
-    {
-        "main_Category": "Psychology & Self-Help",
-        "sub_categories": [
-            "Inspirational",
-            "Leadership",
-            "Motivational",
-            "Positive Psychology",
-            "Practical Psychology",
-            "Psychology",
-            "Self-Help",
-            "Self-help"
-        ]
-    },
-    {
-        "main_Category": "Other",
-        "sub_categories": [
-            "LGBTQ+ themes"
-        ]
-    },
-    {
-        "main_Category": "Non-Fiction",
-        "sub_categories": [
-            "Non-Fiction"
-        ]
-    },
-    {
-        "main_Category": "Politics & Current Affairs",
-        "sub_categories": [
-            "Political Commentary"
-        ]
-    },
-    {
-        "main_Category": "Education & Learning",
-        "sub_categories": [
-            "Professional Development"
+            "Ghost Story",
+            "Horror",
+            "Supernatural",
+            "Supernatural Fiction",
+            "Supernatural Mystery"
         ]
     }
 ]

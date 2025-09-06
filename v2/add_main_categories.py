@@ -25,8 +25,16 @@ for book in all_books:
     book["main_categories"] = list(main_categories)
     #break
 
-# Save the updated books back to a new JSON file
-with open("updated_books.json", "w", encoding="utf-8") as f:
-    json.dump(all_books, f, indent=4, ensure_ascii=False)
+# Create an object to store the final data
+output_object = {
+    "age_groups": data.get("age_groups", []),
+    "all_languages": data.get("all_languages", []),
+    "all_books": all_books,
+    "classified_genres": classified_genres
+}
 
-print("Updated books with main categories saved to updated_books.json.")
+# Write the object to updated_books.json
+with open("updated_books.json", "w", encoding="utf-8") as f:
+    json.dump(output_object, f, indent=4, ensure_ascii=False)
+
+print("Updated object with age_groups, all_languages, all_books, and classified_genres saved to updated_books.json.")
