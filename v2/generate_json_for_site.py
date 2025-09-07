@@ -59,8 +59,16 @@ all_languages = set()
 
 # Modify the main loop
 idx = 0
+cnt = 624
 for row in records:
     idx += 1
+    if idx <= 637:
+        print("skip", idx)
+        continue
+    
+    print("start")
+    
+    
     if row.get("Title (English)") and row["Author/Publisher"]:
         # Construct the title first
         if row.get("Title in language (If not English) "):
