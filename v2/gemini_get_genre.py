@@ -12,6 +12,7 @@ api_key = os.getenv("GEMINI_KEY")
 if not api_key:
     raise ValueError("Environment variable GEMINI_KEY is not set.")
 
+
 genai.configure(api_key=api_key)
 
 # Define scope
@@ -28,7 +29,7 @@ client = gspread.authorize(creds)
 
 # Open the Google Sheet by URL or title
 #sheet_url = "https://docs.google.com/spreadsheets/d/1WBAOPiIMEUuE0g30PUjHisoFlNpEDsdRmUjlPmkDnvI"
-sheet_url = "https://docs.google.com/spreadsheets/d/182AATzul9y2SvvPAJlmZQHkDHotYGzY37njtcE73rUw"
+sheet_url = "https://docs.google.com/spreadsheets/d/1kzDWwU-PUyd_gLgh8irkXmNg3CEUp990UhEQbXfPfK0"
 
 sheet = client.open_by_url(sheet_url)
 
@@ -54,7 +55,7 @@ key_title = "Book_Title"
 key_author = "Author"
 key_rent = "Rent_per_week"
 key_language = "Language"
-
+print("start")
 def get_google_books_data(title, author):
     query = f"{title} {author}"
     url = f"https://www.googleapis.com/books/v1/volumes?q={query}"
@@ -101,7 +102,7 @@ def get_gemini_genres_and_age(title, author, description, categories):
 for idx, row in enumerate(records):
     if idx <= 5:
         continue
-    
+    print("process")
     if row.get("Title (English)") and row.get("Author/Publisher"):
         title = row["Title (English)"]
         author = row["Author/Publisher"]
@@ -110,7 +111,13 @@ for idx, row in enumerate(records):
         # Get Google Books data
         try:
             google_data = get_google_books_data(title, author)
-            description = google_data["description"]
+
+            # Use the description from the sheet if it is not empty
+            if row.get("Description"):
+                description = row["Description"]
+            else:
+                description = google_data["description"]
+
             categories = google_data["categories"]
 
             if description or categories:
@@ -154,7 +161,7 @@ for idx, row in enumerate(records):
             print(f"Google Books API error: {str(e)}")
 
         print("-" * 50)
-        if ( idx == 5):
+        if ( idx == 500):
             print("Break...Reached the end of the list. Exiting...")
             break
 

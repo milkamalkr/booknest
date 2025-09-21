@@ -59,10 +59,14 @@ all_languages = set()
 
 # Modify the main loop
 idx = 0
-cnt = 624
+# Give cnt existing S_no + 1
+cnt = 639
+# Give last row count from master_book_data
+skip_rows = 0
+
 for row in records:
     idx += 1
-    if idx <= 637:
+    if idx < skip_rows:
         print("skip", idx)
         continue
     
@@ -112,7 +116,7 @@ for row in records:
             print(f"Skipped duplicate: {title}")
         
         print("-" * 50)
-        if ( idx == 5000):
+        if ( idx == skip_rows + 200):
             print("Break...Reached the end of the list. Exiting...")
             break
 
